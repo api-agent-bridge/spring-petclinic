@@ -1,12 +1,20 @@
 """
 Read-only view of the Petclinic data. The fields mirror what the web pages show.
+An id identifies an object within its type, so an owner and a pet can have the same id.
 """
 type Query {
 	"""
 	Owners whose last name starts with the given text, one page at a time.
-	An empty lastName matches every owner. Pages start at 1.
+	A page past the last one holds an empty list of owners.
 	"""
-	owners(lastName: String = "", page: Int! = 1, size: Int! = 5): OwnerPage!
+	owners(
+		"The start of the last name. Leave it out, or pass an empty text, to match every owner."
+		lastName: String = ""
+		"The page to return, starting at 1. A value below 1 returns the first page."
+		page: Int! = 1
+		"The number of owners on a page, from 1 to 50. A value outside that range is moved to the nearest limit."
+		size: Int! = 5
+	): OwnerPage!
 
 	"One owner with their pets and visits, or null when the id is unknown."
 	owner(id: ID!): Owner
@@ -20,54 +28,72 @@ type Query {
 
 "One page of owners."
 type OwnerPage {
+	"The owners on this page."
 	owners: [Owner!]!
 	"The page that was returned, starting at 1."
 	page: Int!
+	"The number of pages available for the same lastName and size."
 	totalPages: Int!
+	"The number of owners that match lastName, counted across every page."
 	totalOwners: Int!
 }
 
+"A client of the clinic, with the pets they have registered."
 type Owner {
 	id: ID!
 	firstName: String!
 	lastName: String!
+	"The street and house number, for example 110 W. Liberty St."
 	address: String!
+	"The city the owner lives in."
 	city: String!
+	"The owner's telephone number as ten digits, for example 6085551023."
 	telephone: String!
 	"The owner's pets, sorted by name."
 	pets: [Pet!]!
 }
 
+"An animal that an owner has registered with the clinic."
 type Pet {
 	id: ID!
 	name: String!
+	"The day the pet was born, or null when the clinic has not recorded it."
 	birthDate: Date
+	"The kind of pet, or null when the clinic has not recorded it."
 	type: PetType
 	"The pet's visits to the clinic, oldest first."
 	visits: [Visit!]!
 }
 
+"A kind of pet the clinic treats, such as cat or dog."
 type PetType {
 	id: ID!
+	"The name of the kind, for example hamster."
 	name: String!
 }
 
+"A visit of a pet to the clinic, past or planned."
 type Visit {
 	id: ID!
+	"The day of the visit."
 	date: Date!
+	"What the visit was for, for example a rabies shot."
 	description: String!
 }
 
+"A veterinarian who works at the clinic."
 type Vet {
 	id: ID!
 	firstName: String!
 	lastName: String!
-	"The vet's specialties, sorted by name."
+	"The vet's specialties, sorted by name. The list is empty for a vet without a specialty."
 	specialties: [Specialty!]!
 }
 
+"An area of veterinary medicine a vet specialises in, such as radiology or surgery."
 type Specialty {
 	id: ID!
+	"The name of the specialty, for example dentistry."
 	name: String!
 }
 

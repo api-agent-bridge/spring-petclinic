@@ -79,6 +79,22 @@ class PetclinicGraphQlIntegrationTests {
 	}
 
 	@Test
+	void ownersPagesFollowTheOrderOfTheIds() {
+		this.graphQl.document("""
+				{
+				  first: owners(page: 1, size: 4) { owners { id } }
+				  second: owners(page: 2, size: 4) { owners { id } }
+				}""")
+			.execute()
+			.path("first.owners[*].id")
+			.entityList(String.class)
+			.containsExactly("1", "2", "3", "4")
+			.path("second.owners[*].id")
+			.entityList(String.class)
+			.containsExactly("5", "6", "7", "8");
+	}
+
+	@Test
 	void vetsWithSpecialties() {
 		this.graphQl.document("{ vets { lastName specialties { name } } }")
 			.execute()

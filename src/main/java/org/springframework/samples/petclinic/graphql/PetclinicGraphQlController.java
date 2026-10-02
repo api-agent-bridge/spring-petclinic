@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.samples.petclinic.owner.Owner;
@@ -42,6 +43,12 @@ class PetclinicGraphQlController {
 	 */
 	static final int MAX_PAGE_SIZE = 50;
 
+	/**
+	 * Order of the owners across pages. SQL leaves the order of rows open unless the
+	 * query sorts them, and paging needs the same order on every request.
+	 */
+	static final Sort OWNER_ORDER = Sort.by("id");
+
 	private final OwnerRepository owners;
 
 	private final VetRepository vets;
@@ -61,7 +68,8 @@ class PetclinicGraphQlController {
 		// the database
 		int pageIndex = Math.max(page, 1) - 1;
 		int pageSize = Math.min(Math.max(size, 1), MAX_PAGE_SIZE);
-		return OwnerPage.of(this.owners.findByLastNameStartingWith(prefix, PageRequest.of(pageIndex, pageSize)));
+		return OwnerPage
+			.of(this.owners.findByLastNameStartingWith(prefix, PageRequest.of(pageIndex, pageSize, OWNER_ORDER)));
 	}
 
 	@QueryMapping

@@ -28,7 +28,7 @@ type Query {
 
 "One page of owners."
 type OwnerPage {
-	"The owners on this page."
+	"The owners on this page, sorted by id as a number."
 	owners: [Owner!]!
 	"The page that was returned, starting at 1."
 	page: Int!

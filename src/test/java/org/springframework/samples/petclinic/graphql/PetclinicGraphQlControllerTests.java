@@ -66,6 +66,10 @@ class PetclinicGraphQlControllerTests {
 	@MockitoBean
 	private PetTypeRepository petTypes;
 
+	private static PageRequest page(int index, int size) {
+		return PageRequest.of(index, size, PetclinicGraphQlController.OWNER_ORDER);
+	}
+
 	private Owner george() {
 		Owner george = new Owner();
 		george.setId(1);
@@ -150,8 +154,8 @@ class PetclinicGraphQlControllerTests {
 
 	@Test
 	void ownersUsesTheSamePagingAsTheWebPages() {
-		given(this.owners.findByLastNameStartingWith("", PageRequest.of(0, 5)))
-			.willReturn(new PageImpl<>(List.of(george()), PageRequest.of(0, 5), 11));
+		given(this.owners.findByLastNameStartingWith("", page(0, 5)))
+			.willReturn(new PageImpl<>(List.of(george()), page(0, 5), 11));
 
 		this.graphQl.document("{ owners { page totalPages totalOwners owners { lastName } } }")
 			.execute()
@@ -171,8 +175,8 @@ class PetclinicGraphQlControllerTests {
 
 	@Test
 	void ownersFiltersByLastNameAndPage() {
-		given(this.owners.findByLastNameStartingWith("Dav", PageRequest.of(1, 2)))
-			.willReturn(new PageImpl<>(List.of(), PageRequest.of(1, 2), 2));
+		given(this.owners.findByLastNameStartingWith("Dav", page(1, 2)))
+			.willReturn(new PageImpl<>(List.of(), page(1, 2), 2));
 
 		this.graphQl.document("{ owners(lastName: \" Dav \", page: 2, size: 2) { page totalPages } }")
 			.execute()
@@ -186,8 +190,8 @@ class PetclinicGraphQlControllerTests {
 
 	@Test
 	void ownersClampsPageAndSizeFromTheClient() {
-		given(this.owners.findByLastNameStartingWith("", PageRequest.of(0, 50)))
-			.willReturn(new PageImpl<>(List.of(), PageRequest.of(0, 50), 0));
+		given(this.owners.findByLastNameStartingWith("", page(0, 50)))
+			.willReturn(new PageImpl<>(List.of(), page(0, 50), 0));
 
 		this.graphQl.document("{ owners(page: -2147483648, size: 2147483647) { page } }")
 			.execute()
@@ -195,7 +199,7 @@ class PetclinicGraphQlControllerTests {
 			.entity(Integer.class)
 			.isEqualTo(1);
 
-		verify(this.owners).findByLastNameStartingWith("", PageRequest.of(0, 50));
+		verify(this.owners).findByLastNameStartingWith("", page(0, 50));
 	}
 
 	@Test

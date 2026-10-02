@@ -40,6 +40,33 @@ You can then access the Petclinic at <http://localhost:8080/>.
 You can, of course, run Petclinic in your favorite IDE.
 See below for more details.
 
+## GraphQL API
+
+The data shown on the web pages is also available through a read-only GraphQL API at <http://localhost:8080/graphql>. The schema is in `src/main/resources/graphql/schema.graphqls`.
+
+GraphiQL, a browser client for trying queries, runs at <http://localhost:8080/graphiql>. This query returns one owner with their pets and visits:
+
+```graphql
+{
+  owner(id: 6) {
+    firstName
+    lastName
+    pets {
+      name
+      type { name }
+      visits { date description }
+    }
+  }
+}
+```
+
+The same query from the command line:
+
+```bash
+curl -s http://localhost:8080/graphql -H 'Content-Type: application/json' \
+  -d '{"query":"{ owner(id: 6) { firstName lastName pets { name visits { date description } } } }"}'
+```
+
 ## Building a Container
 
 There is no `Dockerfile` in this project. You can build a container image (if you have a docker daemon) using the Spring Boot build plugin:

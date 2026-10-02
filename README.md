@@ -42,7 +42,7 @@ See below for more details.
 
 ## GraphQL API
 
-The data shown on the web pages is also available through a read-only GraphQL API at <http://localhost:8080/graphql>. The schema is in `src/main/resources/graphql/schema.graphqls`.
+The data shown on the web pages is also available through a GraphQL API at <http://localhost:8080/graphql>. Its queries read the owners, pets, visits, vets and pet types, and its mutations do what the web forms do. The schema is in `src/main/resources/graphql/schema.graphqls`.
 
 GraphiQL, a browser client for trying queries, runs at <http://localhost:8080/graphiql>. This query returns one owner with their pets and visits:
 
@@ -66,6 +66,22 @@ The same query from the command line:
 curl -s http://localhost:8080/graphql -H 'Content-Type: application/json' \
   -d '{"query":"{ owner(id: 6) { firstName lastName pets { name visits { date description } } } }"}'
 ```
+
+The five mutations are `addOwner`, `updateOwner`, `addPet`, `updatePet` and `addVisit`. Each one applies the rules of the matching web form and returns the object it saved. This mutation registers a pet for an owner:
+
+```graphql
+mutation {
+  addPet(input: {ownerId: 6, name: "Bobbie", birthDate: "2020-05-01", typeId: 2}) {
+    id
+    name
+    type { name }
+  }
+}
+```
+
+A value that breaks a rule returns a `BAD_REQUEST` error that names the field, and an id that does not exist returns `NOT_FOUND`. Sending the mutation above a second time returns `name: is already in use`, because an owner cannot have two pets with the same name.
+
+A query or mutation may select up to 200 fields. The limit is the property `petclinic.graphql.max-query-complexity`.
 
 ## Building a Container
 

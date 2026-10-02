@@ -1,5 +1,5 @@
 """
-Read-only view of the Petclinic data. The fields mirror what the web pages show.
+Reads the Petclinic data. The fields mirror what the web pages show.
 An id identifies an object within its type, so an owner and a pet can have the same id.
 """
 type Query {
@@ -24,6 +24,37 @@ type Query {
 
 	"The kinds of pet the clinic treats, sorted by name."
 	petTypes: [PetType!]!
+}
+
+"""
+Changes to the Petclinic data. Each mutation applies the rules of the matching web form.
+A value that breaks a rule returns one BAD_REQUEST error for each field, and the data stays as it was.
+An id that does not exist returns a NOT_FOUND error.
+"""
+type Mutation {
+	"""
+	Registers a new owner. Every call registers one more owner,
+	so calling it twice with the same input creates two owners.
+	"""
+	addOwner(input: AddOwnerInput!): Owner!
+
+	"Replaces the details of an owner. Calling it again with the same input leaves the owner unchanged."
+	updateOwner(input: UpdateOwnerInput!): Owner!
+
+	"""
+	Registers a new pet for an owner. An owner cannot have two pets with the same name,
+	so a second call with the same input is refused.
+	"""
+	addPet(input: AddPetInput!): Pet!
+
+	"Replaces the details of a pet. Calling it again with the same input leaves the pet unchanged."
+	updatePet(input: UpdatePetInput!): Pet!
+
+	"""
+	Books a visit for a pet. Every call books one more visit,
+	so calling it twice with the same input creates two visits.
+	"""
+	addVisit(input: AddVisitInput!): Visit!
 }
 
 "One page of owners."
@@ -95,6 +126,70 @@ type Specialty {
 	id: ID!
 	"The name of the specialty, for example dentistry."
 	name: String!
+}
+
+"The details of a new owner."
+input AddOwnerInput {
+	"At most 30 characters."
+	firstName: String!
+	"At most 30 characters."
+	lastName: String!
+	"The street and house number, at most 255 characters."
+	address: String!
+	"At most 80 characters."
+	city: String!
+	"Exactly ten digits, for example 6085551023."
+	telephone: String!
+}
+
+"The new details of an existing owner. Every field replaces the stored value."
+input UpdateOwnerInput {
+	"The id of the owner to change."
+	id: ID!
+	"At most 30 characters."
+	firstName: String!
+	"At most 30 characters."
+	lastName: String!
+	"The street and house number, at most 255 characters."
+	address: String!
+	"At most 80 characters."
+	city: String!
+	"Exactly ten digits, for example 6085551023."
+	telephone: String!
+}
+
+"The details of a new pet."
+input AddPetInput {
+	"The id of the owner the pet belongs to."
+	ownerId: ID!
+	"At most 30 characters, and different from the names of the owner's other pets."
+	name: String!
+	"The day the pet was born. A day after today is refused."
+	birthDate: Date!
+	"The id of the kind of pet, as the petTypes query lists them."
+	typeId: ID!
+}
+
+"The new details of an existing pet. Every field replaces the stored value."
+input UpdatePetInput {
+	"The id of the pet to change."
+	id: ID!
+	"At most 30 characters, and different from the names of the owner's other pets."
+	name: String!
+	"The day the pet was born. A day after today is refused."
+	birthDate: Date!
+	"The id of the kind of pet, as the petTypes query lists them."
+	typeId: ID!
+}
+
+"The details of a visit to book."
+input AddVisitInput {
+	"The id of the pet the visit is for."
+	petId: ID!
+	"The day of the visit, which must be after today. Leave it out to book the visit for tomorrow."
+	date: Date
+	"What the visit is for, at most 255 characters."
+	description: String!
 }
 
 "A calendar date without a time zone, in the ISO-8601 pattern YYYY-MM-DD, for example 2013-01-04."

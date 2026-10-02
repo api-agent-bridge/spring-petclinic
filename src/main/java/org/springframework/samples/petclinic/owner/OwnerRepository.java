@@ -59,4 +59,12 @@ public interface OwnerRepository extends JpaRepository<Owner, Integer> {
 	 */
 	Optional<Owner> findById(Integer id);
 
+	/**
+	 * Retrieve the {@link Owner} of a pet from the data store.
+	 * @param petId the id of the pet
+	 * @return an {@link Optional} containing the {@link Owner} of the pet, or an empty
+	 * {@link Optional} if the id does not belong to a pet.
+	 */
+	Optional<Owner> findByPetsId(Integer petId);
+
 }

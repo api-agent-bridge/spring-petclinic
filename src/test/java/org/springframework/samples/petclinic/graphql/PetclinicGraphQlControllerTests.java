@@ -39,9 +39,12 @@ import org.springframework.samples.petclinic.vet.VetRepository;
 import org.springframework.test.context.aot.DisabledInAotMode;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
+import static graphql.ErrorType.ValidationError;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
+import static org.springframework.graphql.execution.ErrorType.BAD_REQUEST;
 
 /**
  * Test class for the {@link PetclinicGraphQlController}
@@ -181,6 +184,35 @@ class PetclinicGraphQlControllerTests {
 			.isEqualTo(1);
 
 		verify(this.owners).findByLastNameStartingWith("", PageRequest.of(0, 50));
+	}
+
+	@Test
+	void ownersRejectsANullPageOrSize() {
+		for (String arguments : List.of("page: null", "size: null")) {
+			this.graphQl.document("{ owners(" + arguments + ") { page } }")
+				.execute()
+				.errors()
+				.satisfy((errors) -> assertThat(errors).singleElement()
+					.satisfies((error) -> assertThat(error.getErrorType()).isEqualTo(ValidationError)));
+		}
+
+		verifyNoInteractions(this.owners);
+	}
+
+	@Test
+	void ownersReportsANullPageFromAVariableAsABadRequest() {
+		// validation accepts a nullable variable here because the argument has a default,
+		// so the null is found when the query runs
+		this.graphQl.document("query($page: Int) { owners(page: $page) { page } }")
+			.variable("page", null)
+			.execute()
+			.errors()
+			.satisfy((errors) -> assertThat(errors).singleElement().satisfies((error) -> {
+				assertThat(error.getErrorType()).isEqualTo(BAD_REQUEST);
+				assertThat(error.getMessage()).contains("'page'");
+			}));
+
+		verifyNoInteractions(this.owners);
 	}
 
 	@Test

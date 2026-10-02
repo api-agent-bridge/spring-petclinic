@@ -6,7 +6,7 @@ type Query {
 	Owners whose last name starts with the given text, one page at a time.
 	An empty lastName matches every owner. Pages start at 1.
 	"""
-	owners(lastName: String = "", page: Int = 1, size: Int = 5): OwnerPage!
+	owners(lastName: String = "", page: Int! = 1, size: Int! = 5): OwnerPage!
 
 	"One owner with their pets and visits, or null when the id is unknown."
 	owner(id: ID!): Owner

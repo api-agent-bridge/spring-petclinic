@@ -16,11 +16,17 @@
 
 package org.springframework.samples.petclinic.graphql;
 
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.graphql.test.autoconfigure.tester.AutoConfigureGraphQlTester;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.graphql.test.tester.GraphQlTester;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Runs GraphQL queries against the sample data of the H2 database.
@@ -31,6 +37,9 @@ class PetclinicGraphQlIntegrationTests {
 
 	@Autowired
 	private GraphQlTester graphQl;
+
+	@Value("${petclinic.graphql.max-query-complexity}")
+	private int maxQueryComplexity;
 
 	@Test
 	void ownerWithPetsAndVisits() {
@@ -85,6 +94,37 @@ class PetclinicGraphQlIntegrationTests {
 			.path("petTypes[*].name")
 			.entityList(String.class)
 			.containsExactly("bird", "cat", "dog", "hamster", "lizard", "snake");
+	}
+
+	@Test
+	void refusesAQueryThatRepeatsAFieldPastTheLimit() {
+		// each alias selects two fields, so this query selects twice the limit
+		String aliases = IntStream.range(0, this.maxQueryComplexity)
+			.mapToObj((index) -> "a" + index + ": petTypes { name }")
+			.collect(Collectors.joining(" "));
+
+		this.graphQl.document("{ " + aliases + " }")
+			.execute()
+			.errors()
+			.satisfy((errors) -> assertThat(errors).singleElement()
+				.satisfies((error) -> assertThat(error.getMessage()).isEqualTo("maximum query complexity exceeded "
+						+ (2 * this.maxQueryComplexity) + " > " + this.maxQueryComplexity)));
+	}
+
+	@Test
+	void acceptsTheQueryThatSelectsEveryFieldOfTheSchema() {
+		this.graphQl.document("""
+				{
+				  owners(size: 50) {
+				    page totalPages totalOwners
+				    owners {
+				      id firstName lastName address city telephone
+				      pets { id name birthDate type { id name } visits { id date description } }
+				    }
+				  }
+				  vets { id firstName lastName specialties { id name } }
+				  petTypes { id name }
+				}""").execute().path("owners.totalOwners").entity(Integer.class).isEqualTo(10);
 	}
 
 }

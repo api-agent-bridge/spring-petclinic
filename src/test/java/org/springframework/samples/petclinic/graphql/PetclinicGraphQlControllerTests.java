@@ -124,6 +124,18 @@ class PetclinicGraphQlControllerTests {
 	}
 
 	@Test
+	void dateScalarTakesItsDescriptionAndSpecificationFromTheSchemaFile() {
+		this.graphQl.document("{ __type(name: \"Date\") { description specifiedByURL } }")
+			.execute()
+			.path("__type.description")
+			.entity(String.class)
+			.satisfies((description) -> assertThat(description).contains("YYYY-MM-DD"))
+			.path("__type.specifiedByURL")
+			.entity(String.class)
+			.isEqualTo("https://scalars.graphql.org/andimarek/local-date.html");
+	}
+
+	@Test
 	void ownerIsNullWhenTheIdIsUnknown() {
 		given(this.owners.findById(99)).willReturn(Optional.empty());
 

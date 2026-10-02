@@ -35,14 +35,14 @@ import org.springframework.stereotype.Component;
 
 /**
  * Registers the <code>Date</code> scalar of the schema, which carries a {@link LocalDate}
- * as an ISO-8601 string such as <code>2013-01-04</code>.
+ * as an ISO-8601 string such as <code>2013-01-04</code>. The schema file holds the
+ * description of the scalar and the link to its specification.
  */
 @Component
 class DateScalar implements RuntimeWiringConfigurer {
 
 	private static final GraphQLScalarType DATE = GraphQLScalarType.newScalar()
 		.name("Date")
-		.description("A calendar date in ISO-8601 format")
 		.coercing(new LocalDateCoercing())
 		.build();
 

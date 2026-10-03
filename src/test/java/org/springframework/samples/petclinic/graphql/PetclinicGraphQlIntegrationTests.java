@@ -79,6 +79,64 @@ class PetclinicGraphQlIntegrationTests {
 	}
 
 	@Test
+	void ownersByFirstAndLastName() {
+		this.graphQl.document("""
+				{
+				  je: owners(firstName: "Je") { owners { firstName } }
+				  harold: owners(firstName: "H", lastName: "Davis") { totalOwners owners { firstName } }
+				}""")
+			.execute()
+			.path("je.owners[*].firstName")
+			.entityList(String.class)
+			.containsExactly("Jean", "Jeff")
+			.path("harold.totalOwners")
+			.entity(Integer.class)
+			.isEqualTo(1)
+			.path("harold.owners[*].firstName")
+			.entityList(String.class)
+			.containsExactly("Harold");
+	}
+
+	@Test
+	void petsByNameAndType() {
+		this.graphQl.document("""
+				{
+				  lucky: pets(name: "Lu") { pets { id type { name } } }
+				  dogs: pets(type: "dog") { totalPets pets { name } }
+				  luckyDog: pets(name: "Lu", type: "dog") { pets { id } }
+				}""")
+			.execute()
+			.path("lucky.pets[*].type.name")
+			.entityList(String.class)
+			.containsExactly("bird", "dog")
+			.path("dogs.totalPets")
+			.entity(Integer.class)
+			.isEqualTo(4)
+			.path("dogs.pets[*].name")
+			.entityList(String.class)
+			.containsExactly("Rosy", "Jewel", "Mulligan", "Lucky")
+			.path("luckyDog.pets[*].id")
+			.entityList(String.class)
+			.containsExactly("12");
+	}
+
+	@Test
+	void nameAndTypeFiltersIgnoreCase() {
+		this.graphQl.document("""
+				{
+				  owners(firstName: "h", lastName: "DAVIS") { owners { firstName } }
+				  pets(name: "lU", type: "Dog") { pets { id } }
+				}""")
+			.execute()
+			.path("owners.owners[*].firstName")
+			.entityList(String.class)
+			.containsExactly("Harold")
+			.path("pets.pets[*].id")
+			.entityList(String.class)
+			.containsExactly("12");
+	}
+
+	@Test
 	void ownersPagesFollowTheOrderOfTheIds() {
 		this.graphQl.document("""
 				{
@@ -138,9 +196,20 @@ class PetclinicGraphQlIntegrationTests {
 				      pets { id name birthDate type { id name } visits { id date description } }
 				    }
 				  }
+				  pets(size: 50) {
+				    page totalPages totalPets
+				    pets { id name birthDate type { id name } visits { id date description } }
+				  }
 				  vets { id firstName lastName specialties { id name } }
 				  petTypes { id name }
-				}""").execute().path("owners.totalOwners").entity(Integer.class).isEqualTo(10);
+				}""")
+			.execute()
+			.path("owners.totalOwners")
+			.entity(Integer.class)
+			.isEqualTo(10)
+			.path("pets.totalPets")
+			.entity(Integer.class)
+			.isEqualTo(13);
 	}
 
 }

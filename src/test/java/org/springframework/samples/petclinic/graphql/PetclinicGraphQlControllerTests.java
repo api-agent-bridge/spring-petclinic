@@ -30,6 +30,7 @@ import org.springframework.graphql.test.tester.GraphQlTester;
 import org.springframework.samples.petclinic.owner.Owner;
 import org.springframework.samples.petclinic.owner.OwnerRepository;
 import org.springframework.samples.petclinic.owner.Pet;
+import org.springframework.samples.petclinic.owner.PetRepository;
 import org.springframework.samples.petclinic.owner.PetType;
 import org.springframework.samples.petclinic.owner.PetTypeRepository;
 import org.springframework.samples.petclinic.owner.Visit;
@@ -42,8 +43,10 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import static graphql.ErrorType.ValidationError;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.springframework.graphql.execution.ErrorType.BAD_REQUEST;
 
 /**
@@ -61,13 +64,16 @@ class PetclinicGraphQlControllerTests {
 	private OwnerRepository owners;
 
 	@MockitoBean
+	private PetRepository pets;
+
+	@MockitoBean
 	private VetRepository vets;
 
 	@MockitoBean
 	private PetTypeRepository petTypes;
 
 	private static PageRequest page(int index, int size) {
-		return PageRequest.of(index, size, PetclinicGraphQlController.OWNER_ORDER);
+		return PageRequest.of(index, size, PetclinicGraphQlController.ID_ORDER);
 	}
 
 	private Owner george() {
@@ -153,9 +159,9 @@ class PetclinicGraphQlControllerTests {
 	}
 
 	@Test
-	void ownersUsesTheSamePagingAsTheWebPages() {
-		given(this.owners.findByLastNameStartingWith("", page(0, 5)))
-			.willReturn(new PageImpl<>(List.of(george()), page(0, 5), 11));
+	void ownersReturnsTheFirstPageOfTenByDefault() {
+		given(this.owners.findByFirstNameStartingWithAndLastNameStartingWithAllIgnoreCase("", "", page(0, 10)))
+			.willReturn(new PageImpl<>(List.of(george()), page(0, 10), 11));
 
 		this.graphQl.document("{ owners { page totalPages totalOwners owners { lastName } } }")
 			.execute()
@@ -164,7 +170,7 @@ class PetclinicGraphQlControllerTests {
 			.isEqualTo(1)
 			.path("owners.totalPages")
 			.entity(Integer.class)
-			.isEqualTo(3)
+			.isEqualTo(2)
 			.path("owners.totalOwners")
 			.entity(Integer.class)
 			.isEqualTo(11)
@@ -174,11 +180,12 @@ class PetclinicGraphQlControllerTests {
 	}
 
 	@Test
-	void ownersFiltersByLastNameAndPage() {
-		given(this.owners.findByLastNameStartingWith("Dav", page(1, 2)))
+	void ownersFiltersByFirstAndLastNameAndPage() {
+		given(this.owners.findByFirstNameStartingWithAndLastNameStartingWithAllIgnoreCase("Har", "Dav", page(1, 2)))
 			.willReturn(new PageImpl<>(List.of(), page(1, 2), 2));
 
-		this.graphQl.document("{ owners(lastName: \" Dav \", page: 2, size: 2) { page totalPages } }")
+		this.graphQl.document("""
+				{ owners(firstName: " Har ", lastName: " Dav ", page: 2, size: 2) { page totalPages } }""")
 			.execute()
 			.path("owners.page")
 			.entity(Integer.class)
@@ -189,8 +196,20 @@ class PetclinicGraphQlControllerTests {
 	}
 
 	@Test
+	void ownersMatchesEveryNameForANullName() {
+		given(this.owners.findByFirstNameStartingWithAndLastNameStartingWithAllIgnoreCase("", "", page(0, 10)))
+			.willReturn(new PageImpl<>(List.of(george()), page(0, 10), 1));
+
+		this.graphQl.document("{ owners(firstName: null, lastName: null) { owners { lastName } } }")
+			.execute()
+			.path("owners.owners[*].lastName")
+			.entityList(String.class)
+			.containsExactly("Franklin");
+	}
+
+	@Test
 	void ownersClampsPageAndSizeFromTheClient() {
-		given(this.owners.findByLastNameStartingWith("", page(0, 50)))
+		given(this.owners.findByFirstNameStartingWithAndLastNameStartingWithAllIgnoreCase("", "", page(0, 50)))
 			.willReturn(new PageImpl<>(List.of(), page(0, 50), 0));
 
 		this.graphQl.document("{ owners(page: -2147483648, size: 2147483647) { page } }")
@@ -199,7 +218,7 @@ class PetclinicGraphQlControllerTests {
 			.entity(Integer.class)
 			.isEqualTo(1);
 
-		verify(this.owners).findByLastNameStartingWith("", page(0, 50));
+		verify(this.owners).findByFirstNameStartingWithAndLastNameStartingWithAllIgnoreCase("", "", page(0, 50));
 	}
 
 	@Test
@@ -213,6 +232,42 @@ class PetclinicGraphQlControllerTests {
 		}
 
 		verifyNoInteractions(this.owners);
+	}
+
+	@Test
+	void petsFiltersByNameAndType() {
+		Pet leo = george().getPet("Leo");
+		given(this.pets.findByNameStartingWithAndTypeNameAllIgnoreCase("Le", "cat", page(0, 10)))
+			.willReturn(new PageImpl<>(List.of(leo), page(0, 10), 1));
+
+		this.graphQl.document("{ pets(name: \" Le \", type: \" cat \") { totalPets pets { name type { name } } } }")
+			.execute()
+			.path("pets.totalPets")
+			.entity(Integer.class)
+			.isEqualTo(1)
+			.path("pets.pets[*].name")
+			.entityList(String.class)
+			.containsExactly("Leo")
+			.path("pets.pets[0].type.name")
+			.entity(String.class)
+			.isEqualTo("cat");
+	}
+
+	@Test
+	void petsMatchesEveryTypeWhenTheTypeIsLeftOutEmptyOrNull() {
+		given(this.pets.findByNameStartingWithIgnoreCase("", page(0, 10)))
+			.willReturn(new PageImpl<>(List.of(), page(0, 10), 0));
+
+		for (String arguments : List.of("", "(type: \"\")", "(type: null)")) {
+			this.graphQl.document("{ pets" + arguments + " { totalPets } }")
+				.execute()
+				.path("pets.totalPets")
+				.entity(Integer.class)
+				.isEqualTo(0);
+		}
+
+		verify(this.pets, times(3)).findByNameStartingWithIgnoreCase("", page(0, 10));
+		verifyNoMoreInteractions(this.pets);
 	}
 
 	@Test

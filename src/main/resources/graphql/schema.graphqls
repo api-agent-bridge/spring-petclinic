@@ -4,20 +4,39 @@ An id identifies an object within its type, so an owner and a pet can have the s
 """
 type Query {
 	"""
-	Owners whose last name starts with the given text, one page at a time.
+	Owners whose first and last name start with the given texts, one page at a time.
+	The names match in upper or lower case.
 	A page past the last one holds an empty list of owners.
 	"""
 	owners(
-		"The start of the last name. Leave it out, or pass an empty text, to match every owner."
+		"The start of the first name. Leave it out, or pass an empty text, to match any first name."
+		firstName: String = ""
+		"The start of the last name. Leave it out, or pass an empty text, to match any last name."
 		lastName: String = ""
 		"The page to return, starting at 1. A value below 1 returns the first page."
 		page: Int! = 1
 		"The number of owners on a page, from 1 to 50. A value outside that range is moved to the nearest limit."
-		size: Int! = 5
+		size: Int! = 10
 	): OwnerPage!
 
 	"One owner with their pets and visits, or null when the id is unknown."
 	owner(id: ID!): Owner
+
+	"""
+	Pets whose name starts with the given text and whose type has the given name, one page at a time.
+	The name and the type match in upper or lower case.
+	A page past the last one holds an empty list of pets.
+	"""
+	pets(
+		"The start of the pet's name. Leave it out, or pass an empty text, to match any name."
+		name: String = ""
+		"The name of a pet type as the petTypes query lists it, for example cat. Leave it out, or pass an empty text, to match any type."
+		type: String = ""
+		"The page to return, starting at 1. A value below 1 returns the first page."
+		page: Int! = 1
+		"The number of pets on a page, from 1 to 50. A value outside that range is moved to the nearest limit."
+		size: Int! = 10
+	): PetPage!
 
 	"Every veterinarian of the clinic."
 	vets: [Vet!]!
@@ -63,10 +82,22 @@ type OwnerPage {
 	owners: [Owner!]!
 	"The page that was returned, starting at 1."
 	page: Int!
-	"The number of pages available for the same lastName and size."
+	"The number of pages available for the same filters and size."
 	totalPages: Int!
-	"The number of owners that match lastName, counted across every page."
+	"The number of owners that match the filters, counted across every page."
 	totalOwners: Int!
+}
+
+"One page of pets."
+type PetPage {
+	"The pets on this page, sorted by id as a number."
+	pets: [Pet!]!
+	"The page that was returned, starting at 1."
+	page: Int!
+	"The number of pages available for the same filters and size."
+	totalPages: Int!
+	"The number of pets that match the filters, counted across every page."
+	totalPets: Int!
 }
 
 "A client of the clinic, with the pets they have registered."

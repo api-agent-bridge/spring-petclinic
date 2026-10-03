@@ -67,6 +67,8 @@ curl -s http://localhost:8080/graphql -H 'Content-Type: application/json' \
   -d '{"query":"{ owner(id: 6) { firstName lastName pets { name visits { date description } } } }"}'
 ```
 
+The `owners` query finds owners by the start of their first and last name and returns them one page at a time. For example, `owners(firstName: "H", lastName: "Davis")` returns Harold Davis. The `pets` query works the same way with the start of a pet's name and the name of its type, so `pets(name: "Lu", type: "dog")` returns the dog called Lucky. Both queries match names in upper or lower case.
+
 The five mutations are `addOwner`, `updateOwner`, `addPet`, `updatePet` and `addVisit`. Each one applies the rules of the matching web form and returns the object it saved. This mutation registers a pet for an owner:
 
 ```graphql

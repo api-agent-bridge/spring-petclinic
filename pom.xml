@@ -88,6 +88,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-webservices</artifactId>
     </dependency>
+    <!-- Makes the MCP endpoint an OAuth 2.1 resource server -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security-oauth2-resource-server</artifactId>
+    </dependency>
     <!-- Serves recorded responses of the external services when the "mock" profile is active -->
     <dependency>
       <groupId>org.wiremock</groupId>

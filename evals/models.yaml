@@ -1,0 +1,51 @@
+# I try to have one per "Vendor"
+# I ran a few times all the models I have installed locally, but takes FOREVER, so just select the best ones per Vendor
+
+# Alibaba
+- id: ./mcp-agent.mjs
+  label: qwen3.5-0.8b
+  config: { model: 'qwen3.5:0.8b' }
+# Meta
+- id: ./mcp-agent.mjs
+  label: llama3.2-3b
+  config: { model: 'llama3.2:latest' }
+# Liquid AI
+- id: ./mcp-agent.mjs
+  label: lfm2.5-8b
+  config: { model: 'lfm2.5:8b' }
+# IBM
+- id: ./mcp-agent.mjs
+  label: granite4.1-8b
+  config: { model: 'granite4.1:8b' }
+# DeepReinforce, Qwen3.5-9B trained further for agentic coding
+- id: ./mcp-agent.mjs
+  label: ornith-9b
+  config: { model: 'ornith:9b' }
+# Mistral AI
+- id: ./mcp-agent.mjs
+  label: ministral3-14b
+  config: { model: 'ministral-3:14b' }
+# OpenAI
+- id: ./mcp-agent.mjs
+  label: gpt-oss-20b
+  config: { model: 'gpt-oss:20b' }
+# Alibaba
+- id: ./mcp-agent.mjs
+  label: qwen3.8-27b
+  config: { model: 'qwen3.8:27b' }
+# Google
+- id: ./mcp-agent.mjs
+  label: gemma4-26b
+  config: { model: 'gemma4:26b' }
+# Z.ai
+- id: ./mcp-agent.mjs
+  label: glm4.7-flash
+  config: { model: 'glm-4.7-flash:latest' }
+# Poolside
+- id: ./mcp-agent.mjs
+  label: laguna-xs2.1
+  config: { model: 'laguna-xs-2.1:latest' }
+# NVIDIA
+- id: ./mcp-agent.mjs
+  label: nemotron3-33b
+  config: { model: 'nemotron3:33b' }

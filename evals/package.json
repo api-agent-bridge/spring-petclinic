@@ -1,0 +1,16 @@
+{
+  "name": "petclinic-evals",
+  "version": "1.0.0",
+  "description": "Asks local models the Petclinic questions through the MCP server and checks their answers",
+  "private": true,
+  "scripts": {
+    "queries": "mkdir -p results && promptfoo eval -c queries.yaml --no-cache -o results/queries.json",
+    "mutations": "mkdir -p results && promptfoo eval -c mutations.yaml --no-cache -o results/mutations.json",
+    "grid": "node summarise.mjs",
+    "view": "promptfoo view"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "promptfoo": "0.123.1"
+  }
+}

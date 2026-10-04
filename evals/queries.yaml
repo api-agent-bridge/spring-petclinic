@@ -1,0 +1,276 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+#
+# The sixteen read questions of docs/mcp-queries.md, asked to every local model
+# through the Petclinic MCP server. Each answer passes when it holds the facts of
+# the expected answer. Each question about the clinic's data names the tools that
+# hold the data, and the agent has to call one of them, so an invented answer fails
+# the tools mark. The last three questions pass only without a tool call.
+# Every answer records its tool calls, so the viewer shows how many calls each
+# model needed.
+#
+# Uses Ollama, and the app on 127.0.0.1:8080 with fresh sample data. See README.md.
+description: Petclinic read questions over MCP, local models
+
+prompts:
+  - '{{question}}'
+
+providers: file://models.yaml
+
+# One question at a time, so Ollama holds one model in memory and the order of
+# the calls stays readable in the server log.
+evaluateOptions:
+  maxConcurrency: 1
+
+# The questions only read. The provider declines every call of a write tool, so the
+# data stays the same for every run, and the tools mark fails the run that wrote.
+defaultTest:
+  metadata:
+    readOnly: true
+
+tests:
+  - description: q01 pet types
+    vars:
+      id: q01-pet-types
+      question: Which type of pets does the clinic treat?
+    assert:
+      - type: icontains-all
+        value: [bird, cat, dog, hamster, lizard, snake]
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { called: [listPetTypes] }
+
+  - description: q02 vets
+    vars:
+      id: q02-vets
+      question: Which vets work at the clinic?
+    assert:
+      - type: icontains-all
+        value: [Carter, Leary, Douglas, Ortega, Stevens, Jenkins]
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { called: [listVets] }
+
+  - description: q03 owners with the last name Davis
+    vars:
+      id: q03-davis
+      question: Is there an owner with the Davis last name?
+    assert:
+      - type: icontains-all
+        value: [Betty, Harold]
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { called: [findOwners] }
+
+  - description: q04 dogs
+    vars:
+      id: q04-dogs
+      question: Which dogs are registered at the clinic?
+    assert:
+      - type: icontains-all
+        value: [Rosy, Jewel, Mulligan, Lucky]
+        metric: answer
+      # the cats, the hamster, the lizard and the bird Freddy are other kinds of pet
+      - type: not-icontains-any
+        value: [Leo, Basil, Iggy, Samantha, Freddy, Sly]
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { calledAny: [findPets, getOwnerDetails] }
+
+  - description: q05 who owns Lucky
+    vars:
+      id: q05-lucky
+      question: Who owns Lucky?
+    assert:
+      # the models often write Esteban, and the data spells it Estaban
+      - type: icontains
+        value: Black
+        metric: answer
+      - type: regex
+        value: 'Est[ae]ban'
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { calledAny: [findPets, getOwnerDetails] }
+
+  - description: q06 number of owners
+    vars:
+      id: q06-count
+      question: How many pet owners are registered in the clinic?
+    assert:
+      # the 10 has to be the number of owners, as in "has 10 owners" or "Total owners: 10",
+      # so "a default page size of 10" fails
+      - type: regex
+        value: '\b(has|have|are|is|of)\b[^.\n\d]{0,15}\b(10|[Tt]en)\b\**\s+(registered\s+)?(pet\s+)?owners|owners\**\s*[:=]\s*\**(10|[Tt]en)\b'
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { called: [findOwners] }
+
+  - description: q07 vets who operate
+    vars:
+      id: q07-operations
+      question: Which vets can perform operations?
+    assert:
+      - type: icontains-all
+        value: [Douglas, Ortega]
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { called: [listVets] }
+
+  - description: q08 vets without a specialty
+    vars:
+      id: q08-no-specialty
+      question: Which vets do not have a specialty?
+    assert:
+      - type: icontains-all
+        value: [Carter, Jenkins]
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { called: [listVets] }
+
+  - description: q09 owners with more than one pet
+    vars:
+      id: q09-several-pets
+      question: Which owners have more than one pet?
+    assert:
+      # the models often write Rodriguez, Rodríguez and Esteban, and the data spells them
+      # Rodriquez and Estaban
+      - type: regex
+        value: 'Rodr[ií][gq]uez'
+        metric: answer
+      - type: icontains
+        value: Coleman
+        metric: answer
+      - type: regex
+        value: 'Est[ae]ban'
+        metric: answer
+      # an answer that names an owner with one pet has to say that the owner has one, as in
+      # "only one pet" or "1 pet (Leo the cat)"; "more than one pet" repeats the question
+      - type: javascript
+        value: '!/Franklin|Davis|McTavish|Black|Escobito|Schroeder/.test(output) || /(?<!(more than|at least) )\b(one|1|a single) pet\b|\bsingle pet\b/i.test(output)'
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { calledAny: [findPets, getOwnerDetails] }
+
+  - description: q10 oldest pet
+    vars:
+      id: q10-oldest
+      question: Which pet is the oldest, and who owns it?
+    assert:
+      - type: icontains-all
+        value: [Mulligan, Escobito]
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { calledAny: [findPets, getOwnerDetails] }
+
+  - description: q11 pets without visits
+    vars:
+      id: q11-no-visits
+      question: Which pets have not visited the clinic yet?
+    assert:
+      # a list of the eleven pets, or "every pet except Max and Samantha"
+      - type: javascript
+        value: file://assert-no-visits.mjs
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { calledAny: [findPets, getOwnerDetails] }
+
+  - description: q12 address of George Franklin
+    vars:
+      id: q12-franklin
+      question: What is the address and telephone number of George Franklin?
+    assert:
+      # some models write a narrow no-break space, U+202F, between the words
+      - type: regex
+        value: '110\s+W(\.|est)?\s+Liberty'
+        metric: answer
+      - type: regex
+        value: '608\D?555\D?1023'
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { argsAnyCall: { getOwnerDetails: { id: 1 } } }
+
+  - description: q13 pets and visits of Jean Coleman
+    vars:
+      id: q13-coleman
+      question: What pets does Jean Coleman have, and when did they last visit the clinic?
+    assert:
+      # the question asks when, so the answer gives the dates of the last visits:
+      # Max on 3 January 2013 and Samantha on 4 January 2013, in any common format
+      - type: icontains-all
+        value: [Max, Samantha]
+        metric: answer
+      - type: regex
+        value: '2013\D0?1\D0?3\b|\b[Jj]an(uary)?\.?\s+0?3(rd)?\b|\b0?3(rd)?\s+(of\s+)?[Jj]an|\b3(rd)?,?\s+2013|\b0?1/0?3/2013'
+        metric: answer
+      - type: regex
+        value: '2013\D0?1\D0?4\b|\b[Jj]an(uary)?\.?\s+0?4(th)?\b|\b0?4(th)?\s+(of\s+)?[Jj]an|\b4(th)?,?\s+2013|\b0?1/0?4/2013'
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { argsAnyCall: { getOwnerDetails: { id: 6 } } }
+
+  - description: q14 off-topic question
+    vars:
+      id: q14-off-topic
+      question: What is the capital of Croatia?
+    assert:
+      # Zagreb and a polite refusal are both fine, another city is invented
+      - type: javascript
+        value: '/zagreb/i.test(output) || /\b(cannot|can.t|unable|not able|only help|outside|don.t have|do not have)\b/i.test(output)'
+        metric: answer
+      # a tool call is the mistake
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { noTools: true }
+
+  - description: q15 greeting
+    vars:
+      id: q15-greeting
+      question: Hello! What can you help me with?
+    assert:
+      - type: icontains-any
+        value: [owner, pet, visit, vet]
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { noTools: true }
+
+  - description: q16 opening hours the tools do not hold
+    vars:
+      id: q16-opening-hours
+      question: What are the clinic's opening hours?
+    assert:
+      # any time of day in the answer is invented
+      - type: not-regex
+        value: '\b\d{1,2}(:\d{2})?\s?([AaPp]\.?[Mm]\.?)|\b\d{1,2}[:.]\d{2}\b'
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { noTools: true }

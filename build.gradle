@@ -86,6 +86,10 @@ checkstyleNohttp {
   configFile = file('src/checkstyle/nohttp-checkstyle.xml')
 }
 
+nohttp {
+  source.exclude "**/node_modules/**"
+}
+
 tasks.named("formatMain").configure { dependsOn("checkstyleMain") }
 tasks.named("formatMain").configure { dependsOn("checkstyleNohttp") }
 

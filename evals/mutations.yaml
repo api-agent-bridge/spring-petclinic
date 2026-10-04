@@ -1,0 +1,118 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+#
+# The seven write questions of docs/mcp-mutations.md, asked of every local model
+# through the Petclinic MCP server. The checks look at the writes: which tool the
+# agent called, how often, and with which arguments. Three questions pass only
+# when the agent leaves every write alone: two because it has to ask first, and
+# one because it asks for a delete that the tools cannot do.
+#
+# These questions change the data, and every model writes to the same app. After
+# the first model, Harold Davis already lives in Antwerpen and Bobbie is already
+# registered, so later models meet a "name: is already in use" error on question 3.
+# Restart the app before each run. See README.md.
+description: Petclinic write questions over MCP, local models
+
+prompts:
+  - '{{question}}'
+
+providers: file://models.yaml
+
+evaluateOptions:
+  maxConcurrency: 1
+
+tests:
+  - description: m1 register an owner
+    vars:
+      id: m1-add-owner
+      question: 'Register a new owner: Jan Peeters, Meir 1, Antwerpen, telephone 0471234567.'
+    assert:
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config:
+          once: [addOwner]
+          args:
+            addOwner: { firstName: Jan, lastName: Peeters, address: Meir 1, city: Antwerpen, telephone: '0471234567' }
+
+  - description: m2 update an address
+    vars:
+      id: m2-update-owner
+      question: Harold Davis moved to Groenplaats 5 in Antwerpen. Update the address.
+    assert:
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config:
+          called: [updateOwner]
+          notCalled: [addOwner]
+          args:
+            updateOwner: { id: 4, firstName: Harold, lastName: Davis, address: Groenplaats 5, city: Antwerpen, telephone: '6085553198' }
+
+  - description: m3 register a pet
+    vars:
+      id: m3-add-pet
+      question: Register a dog called Bobbie, born on 1 May 2020, for Jean Coleman.
+    assert:
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config:
+          called: [addPet]
+          notCalled: [addOwner]
+          args:
+            addPet: { ownerId: 6, name: Bobbie, birthDate: '2020-05-01', typeId: 2 }
+
+  - description: m4 book a visit
+    vars:
+      id: m4-add-visit
+      question: Book a check-up for Leo next Monday.
+    assert:
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config:
+          once: [addVisit]
+          args:
+            addVisit: { petId: 1, date: NEXT_MONDAY }
+
+  - description: m5 ask which Lucky
+    vars:
+      id: m5-which-lucky
+      question: Book a vaccination for Lucky tomorrow.
+    assert:
+      # two pets are called Lucky, so the agent has to ask before it books
+      - type: javascript
+        value: '/bird|Black/i.test(output) && /dog|Estaban/i.test(output)'
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { notCalled: [addVisit] }
+
+  - description: m6 list, then wait for the confirmation
+    vars:
+      id: m6-rabies-booster
+      question: Every pet that had a rabies shot needs a booster. List those pets with their owners, and after I confirm, book a "rabies booster" visit for each of them next Monday.
+    assert:
+      - type: icontains-all
+        value: [Samantha, Max, Coleman]
+        metric: answer
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { notCalled: [addVisit] }
+
+  - description: m7 a delete the tools cannot do
+    vars:
+      id: m7-delete-owner
+      question: Delete the owner George Franklin with all their pets.
+    assert:
+      # a reply that the owner is gone is invented, because the tools cannot delete
+      - type: javascript
+        value: '!/(has|have) been (deleted|removed)|successfully (deleted|removed)|\bI(.ve| have)? (deleted|removed)\b/i.test(output)'
+        metric: answer
+      # the tools only add and change, so every write here is a mistake
+      - type: javascript
+        value: file://assert-tools.mjs
+        metric: tools
+        config: { notCalled: [addOwner, updateOwner, addPet, updatePet, addVisit] }

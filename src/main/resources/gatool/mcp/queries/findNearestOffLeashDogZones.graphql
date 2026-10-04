@@ -1,0 +1,17 @@
+# Finds the off-leash dog zones of the City of Antwerp nearest to an owner's address, within 2 km,
+# and returns them nearest first with their distance in metres, cleanliness, lighting and ground surface.
+# findOwners gives the id of an owner. The list is empty when the owner lives outside Antwerp,
+# and the result is null if the owner can't be found for the passed in id.
+query FindNearestOffLeashDogZones($ownerId: ID!) {
+  owner(id: $ownerId) {
+    nearestDogZones {
+      name
+      street
+      district
+      distanceInMetres
+      cleanliness
+      lighting
+      surface
+    }
+  }
+}

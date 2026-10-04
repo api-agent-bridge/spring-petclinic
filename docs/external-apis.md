@@ -128,7 +128,7 @@ Layer `9` stores each zone as a point, so it answers which zones lie within a di
 | Address to coordinates | `findAddressCandidates` | Yes, over REST |
 | Zones within a distance of a point | Layer `9`, `query` with `geometry`, `distance` and `units` | Yes, over REST |
 | The zone that contains a point | Layer `622`, `query` with `geometry` and `spatialRel=esriSpatialRelIntersects` | Yes, over REST |
-| The same calls over SOAP | `GeocodeAddress` on the geocoder, `QueryFeatureData` with a `SpatialFilter` on the map | The geocoder's WSDL loads, the calls are untested |
+| The same flow over SOAP | `GeocodeAddress` on the geocoder, `QueryFeatureData` with a `SpatialFilter` on the map | Yes. `Owner.nearestDogZones` uses it |
 
 ```
 GET .../LOC_CRAB/GeocodeServer/findAddressCandidates?Street=Groenendaallaan&House=394&Postal=2030&City=Antwerpen&outSR=4326&maxLocations=1&f=json
@@ -172,6 +172,52 @@ The query returned 15 zones. This is one of them:
 
 The nearest of the 15 is the dog meadow on Groenendaallaan in Merksem, about 400 m away. The same point sent to layer `622` does not fall inside any zone.
 
+### The same flow over SOAP
+
+`GeocodeAddress` takes the address as a property set, a list of keys and values:
+
+```xml
+<e:GeocodeAddress xmlns:e="http://www.esri.com/schemas/ArcGIS/10.8">
+  <Address xsi:type="e:PropertySet">
+    <PropertyArray xsi:type="e:ArrayOfPropertySetProperty">
+      <PropertySetProperty xsi:type="e:PropertySetProperty"><Key>Street</Key><Value xsi:type="xs:string">Groenendaallaan</Value></PropertySetProperty>
+      <PropertySetProperty xsi:type="e:PropertySetProperty"><Key>House</Key><Value xsi:type="xs:string">394</Value></PropertySetProperty>
+      <PropertySetProperty xsi:type="e:PropertySetProperty"><Key>City</Key><Value xsi:type="xs:string">Antwerpen</Value></PropertySetProperty>
+    </PropertyArray>
+  </Address>
+  <PropMods xsi:type="e:PropertySet"><PropertyArray xsi:type="e:ArrayOfPropertySetProperty"/></PropMods>
+</e:GeocodeAddress>
+```
+
+The answer is a property set too. The point is in Belgian Lambert 72 (EPSG:31370), whose coordinates are metres, and it matches the Flanders geocoder to the centimetre:
+
+```xml
+<PropertySetProperty><Key>Shape</Key>
+  <Value xsi:type="tns:PointN"><X>153324.41770908271</X><Y>215113.82966433687</Y>...<WKID>31370</WKID>...</Value>
+</PropertySetProperty>
+<PropertySetProperty><Key>Status</Key><Value xsi:type="xsd:string">M</Value></PropertySetProperty>
+<PropertySetProperty><Key>Score</Key><Value xsi:type="xsd:double">100</Value></PropertySetProperty>
+<PropertySetProperty><Key>Match_addr</Key><Value xsi:type="xsd:string">Groenendaallaan 394, 2030, Antwerpen</Value></PropertySetProperty>
+```
+
+`QueryFeatureData` then takes a `SpatialFilter` with a square around that point, in the same Lambert 72 metres:
+
+```xml
+<QueryFilter xsi:type="e:SpatialFilter">
+  <SubFields>naam,postcode,district,netheid,verlichting,shape</SubFields>
+  <WhereClause/>
+  <SearchOrder>esriSearchOrderSpatial</SearchOrder>
+  <SpatialRel>esriSpatialRelIntersects</SpatialRel>
+  <FilterGeometry xsi:type="e:EnvelopeN">
+    <XMin>151324.4</XMin><YMin>213113.8</YMin><XMax>155324.4</XMax><YMax>217113.8</YMax>
+    <SpatialReference xsi:type="e:ProjectedCoordinateSystem"><WKID>31370</WKID></SpatialReference>
+  </FilterGeometry>
+  <GeometryFieldName>shape</GeometryFieldName>
+</QueryFilter>
+```
+
+The map answers with the 17 zones of the square, each with its point in Web Mercator. Those points sit about 107 m north-west of where the REST interface puts the same zones. The map stores the zones in Lambert 72 and converts them to Web Mercator without the shift from the Belgian 1972 datum to WGS84: it reads the Belgian latitude and longitude of a zone as if they were WGS84. Taking the same steps backwards, from Web Mercator to latitude and longitude and from there to Lambert 72 on the Belgian ellipsoid, lands on the zone's correct position to the centimetre. After that correction, the distances over SOAP match the REST distances within 6 m: 418 m to Groenendaallaan, 967 m to Columbiastraat and 1001 m to Hendrik van Boutersemstraat.
+
 ### Dutch to English
 
 | Field | English | Values seen |
@@ -196,6 +242,9 @@ The nearest of the 15 is the dog meadow on Groenendaallaan in Merksem, about 400
 - Missing values appear both as `null` and as an empty string.
 - A distance query returns the zones in the server's own order. The client computes the distance to each zone and sorts them.
 - The geocoder's single-line field is called `Single Line Input`, with spaces. A request with `SingleLine` comes back with an empty candidate list, so the structured fields are the reliable way in.
+- Over SOAP, the geocoder answers an address it cannot find with HTTP status `200`, `Status` `U` and a point at `NaN`. A client that skips the status reads `NaN` as a coordinate.
+- Over SOAP, the map answers in Web Mercator whatever the request asks for. It ignores `OutputSpatialReference` in `QueryFeatureData` and in `QueryFeatureData2`, and `GeoTransformation` in `QueryFeatureData2`. The geocoder honours `OutputSpatialReference` in its `PropMods`.
+- The geocoder and the map use different versions of Esri's schema: `ArcGIS/10.8` and `ArcGIS/3.5.0`.
 
 ## FAMHP medicines reference data
 

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.esri.com/schemas/ArcGIS/3.5.0">
+  <soap:Body>
+    <tns:QueryFeatureDataResponse>
+      <Result xsi:type="tns:RecordSet">
+        <Fields xsi:type="tns:Fields">
+          <FieldArray xsi:type="tns:ArrayOfField">
+            <Field xsi:type="tns:Field">
+              <Name>OBJECTID</Name>
+              <Type>esriFieldTypeOID</Type>
+              <IsNullable>false</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <Required>true</Required>
+              <Editable>false</Editable>
+              <AliasName>ObjectID</AliasName>
+              <ModelName>ObjectID</ModelName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>id</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>10</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>id</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>naam</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>60</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>naam</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>straatnaam</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>80</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>straatnaam</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>postcode</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>4</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>postcode</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>district</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>30</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>district</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>opp_ha</Name>
+              <Type>esriFieldTypeDouble</Type>
+              <IsNullable>true</IsNullable>
+              <Length>8</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>opp_ha</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>netheid</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>15</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>netheid</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>verlichting</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>20</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>verlichting</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>hoogte_afsluiting</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>15</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>hoogte_afsluiting</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>materiaal_afsluiting</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>35</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>materiaal_afsluiting</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>aantal_vuilnisbakken</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>aantal_vuilnisbakken</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>aantal_zitbanken</Name>
+              <Type>esriFieldTypeSmallInteger</Type>
+              <IsNullable>true</IsNullable>
+              <Length>2</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>aantal_zitbanken</AliasName>
+            </Field>
+            <Field xsi:type="tns:Field">
+              <Name>type_ondergrond</Name>
+              <Type>esriFieldTypeString</Type>
+              <IsNullable>true</IsNullable>
+              <Length>15</Length>
+              <Precision>0</Precision>
+              <Scale>0</Scale>
+              <AliasName>type_ondergrond</AliasName>
+            </Field>
+          </FieldArray>
+        </Fields>
+        <Records xsi:type="tns:ArrayOfRecord"/>
+      </Result>
+    </tns:QueryFeatureDataResponse>
+  </soap:Body>
+</soap:Envelope>

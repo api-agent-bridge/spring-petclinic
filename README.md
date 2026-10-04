@@ -85,6 +85,43 @@ A value that breaks a rule returns a `BAD_REQUEST` error that names the field, a
 
 A query or mutation may select up to 200 fields. The limit is the property `petclinic.graphql.max-query-complexity`.
 
+### External services
+
+The schema also reaches services outside Petclinic. Each one appears as ordinary fields, so a client cannot tell from a query which protocol sits behind it. `docs/external-apis.md` describes the services.
+
+| Field | Services | Protocol |
+| --- | --- | --- |
+| `Owner.nearestDogZones` | The geocoder and the off-leash dog zones of the City of Antwerp | SOAP |
+
+The field finds the owner's address with the city's geocoder, asks the dog zone service for the zones around it, and returns the nearest first. The sample owner Dev Oxx lives in Antwerp:
+
+```graphql
+{
+  owners(lastName: "Oxx") {
+    owners {
+      firstName
+      address
+      nearestDogZones { name district distanceInMetres cleanliness lighting }
+    }
+  }
+}
+```
+
+The other sample owners live in Wisconsin. Their addresses start with the house number, so the field returns an empty list without calling Antwerp.
+
+The application runs in two modes:
+
+- **Live** is the default. The fields call the real services.
+- **Mock** answers from responses recorded from the real services. Start it with the `mock` profile:
+
+```bash
+./mvnw spring-boot:run -Dspring-boot.run.profiles=mock
+```
+
+In mock mode a [WireMock](https://wiremock.org/) server starts on port 9091 inside the application, and the clients call it in place of the real URLs. The client code is the same in both modes. The recordings are in `src/main/resources/mock-upstreams`: `mappings` decides which request gets which answer, and `__files` holds the answers. Edit a file there to try a different answer, for example a slow one or a SOAP fault.
+
+<http://localhost:9091/__admin/requests> lists the calls the mock server received.
+
 ## Building a Container
 
 There is no `Dockerfile` in this project. You can build a container image (if you have a docker daemon) using the Spring Boot build plugin:

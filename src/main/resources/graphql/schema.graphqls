@@ -113,6 +113,16 @@ type Owner {
 	telephone: String!
 	"The owner's pets, sorted by name."
 	pets: [Pet!]!
+	"""
+	The off-leash dog zones of the City of Antwerp nearest to the owner's address, nearest first,
+	within 2 km. The city's geocoder finds the address and the city's dog zone service lists the
+	zones around it, both over SOAP. The list is empty when the geocoder cannot find the address,
+	as for an owner outside Antwerp, and null when an Antwerp service cannot be reached.
+	"""
+	nearestDogZones(
+		"How many zones to return, from 1 to 10."
+		first: Int! = 3
+	): [DogZone!]
 }
 
 "An animal that an owner has registered with the clinic."
@@ -161,6 +171,45 @@ type Specialty {
 	id: ID!
 	"The name of the specialty, for example dentistry."
 	name: String!
+}
+
+"""
+An off-leash dog zone of the City of Antwerp. The city publishes the data in Dutch,
+and the values are translated here.
+"""
+type DogZone {
+	id: ID!
+	name: String!
+	street: String
+	postalCode: String
+	"The district of Antwerp, or the neighbouring municipality, that the zone lies in."
+	district: String
+	"The distance from the owner's address to the zone, in metres."
+	distanceInMetres: Int!
+	areaInSquareMetres: Int
+	"How clean inspectors found the zone. Null when the city has not given the zone a clear rating."
+	cleanliness: Rating
+	lighting: Lighting
+	"The heights of the fences in metres. A zone can have fences of different heights."
+	fenceHeightsInMetres: [Float!]!
+	fenceMaterial: String
+	bins: Int
+	benches: Int
+	surface: String
+}
+
+"How clean inspectors found a dog zone."
+enum Rating {
+	GOOD
+	ACCEPTABLE
+	BAD
+}
+
+"The kind of lighting of a dog zone."
+enum Lighting {
+	DIRECT
+	INDIRECT
+	NONE
 }
 
 "The details of a new owner."

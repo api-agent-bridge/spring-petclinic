@@ -1,0 +1,109 @@
+{
+  "mappings": [
+    {
+      "name": "Antwerp geocoder: Groenendaallaan 394, Antwerpen",
+      "priority": 2,
+      "request": {
+        "method": "POST",
+        "urlPath": "/antwerp/arcgissql/services/LOC_CRAB/GeocodeServer",
+        "bodyPatterns": [
+          {
+            "matchesXPath": "//PropertyArray[PropertySetProperty[Key='Street' and Value='Groenendaallaan'] and PropertySetProperty[Key='House' and Value='394'] and PropertySetProperty[Key='City' and Value='Antwerpen']]"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml; charset=UTF-8"
+        },
+        "bodyFileName": "antwerp/geocode-groenendaallaan-394.xml"
+      },
+      "metadata": {
+        "description": "The geocoder finds the address and answers with a point in Belgian Lambert 72"
+      }
+    },
+    {
+      "name": "Antwerp geocoder: any other address",
+      "priority": 5,
+      "request": {
+        "method": "POST",
+        "urlPath": "/antwerp/arcgissql/services/LOC_CRAB/GeocodeServer"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml; charset=UTF-8"
+        },
+        "bodyFileName": "antwerp/geocode-unmatched.xml"
+      },
+      "metadata": {
+        "description": "Recorded for Onbestaandestraat 1, Antwerpen: status U, a point at NaN and HTTP status 200"
+      }
+    },
+    {
+      "name": "Antwerp dog zones: unknown map name",
+      "priority": 1,
+      "request": {
+        "method": "POST",
+        "urlPath": "/antwerp/arcgissql/services/P_Portal/portal_publiek1/MapServer",
+        "bodyPatterns": [
+          {
+            "matchesXPath": "//MapName[text() != 'portal_publiek1']"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml; charset=UTF-8"
+        },
+        "bodyFileName": "antwerp/fault-wrong-map-name.xml"
+      },
+      "metadata": {
+        "description": "ArcGIS Server answers a wrong map name with a SOAP fault and HTTP status 200"
+      }
+    },
+    {
+      "name": "Antwerp dog zones: the square around Groenendaallaan 394",
+      "priority": 2,
+      "request": {
+        "method": "POST",
+        "urlPath": "/antwerp/arcgissql/services/P_Portal/portal_publiek1/MapServer",
+        "bodyPatterns": [
+          {
+            "matchesXPath": "//FilterGeometry[starts-with(XMin, '151324.') and starts-with(YMin, '213113.')]"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml; charset=UTF-8"
+        },
+        "bodyFileName": "antwerp/dog-zones-near-groenendaallaan-394.xml"
+      },
+      "metadata": {
+        "description": "The 17 zones inside the 4 km square around Groenendaallaan 394, with their points in Web Mercator"
+      }
+    },
+    {
+      "name": "Antwerp dog zones: any other request",
+      "priority": 5,
+      "request": {
+        "method": "POST",
+        "urlPath": "/antwerp/arcgissql/services/P_Portal/portal_publiek1/MapServer"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/xml; charset=UTF-8"
+        },
+        "bodyFileName": "antwerp/dog-zones-none.xml"
+      },
+      "metadata": {
+        "description": "An answer without zones"
+      }
+    }
+  ]
+}

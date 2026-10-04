@@ -121,6 +121,36 @@ class PetclinicGraphQlIntegrationTests {
 	}
 
 	@Test
+	void petsWithTheirOwners() {
+		this.graphQl.document("{ pets(name: \"Lucky\") { pets { id owner { firstName lastName } } } }")
+			.execute()
+			.path("pets.pets[*].id")
+			.entityList(String.class)
+			.containsExactly("9", "12")
+			.path("pets.pets[*].owner.lastName")
+			.entityList(String.class)
+			.containsExactly("Black", "Estaban");
+	}
+
+	@Test
+	void petsWithTheirLastVisit() {
+		this.graphQl.document("""
+				{
+				  samantha: pets(name: "Samantha") { pets { lastVisit { date description } } }
+				  leo: pets(name: "Leo") { pets { lastVisit { date } } }
+				}""")
+			.execute()
+			.path("samantha.pets[0].lastVisit.date")
+			.entity(String.class)
+			.isEqualTo("2013-01-04")
+			.path("samantha.pets[0].lastVisit.description")
+			.entity(String.class)
+			.isEqualTo("spayed")
+			.path("leo.pets[0].lastVisit")
+			.valueIsNull();
+	}
+
+	@Test
 	void nameAndTypeFiltersIgnoreCase() {
 		this.graphQl.document("""
 				{
@@ -198,7 +228,10 @@ class PetclinicGraphQlIntegrationTests {
 				  }
 				  pets(size: 50) {
 				    page totalPages totalPets
-				    pets { id name birthDate type { id name } visits { id date description } }
+				    pets {
+				      id name birthDate type { id name } owner { id }
+				      visits { id date description } lastVisit { id }
+				    }
 				  }
 				  vets { id firstName lastName specialties { id name } }
 				  petTypes { id name }

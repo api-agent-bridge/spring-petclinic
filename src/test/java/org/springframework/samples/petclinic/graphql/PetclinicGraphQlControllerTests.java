@@ -271,6 +271,61 @@ class PetclinicGraphQlControllerTests {
 	}
 
 	@Test
+	void petOwnersOfAPageComeFromOneQuery() {
+		Owner george = george();
+		Owner betty = new Owner();
+		betty.setId(2);
+		betty.setLastName("Davis");
+		Pet basil = new Pet();
+		basil.setId(2);
+		basil.setName("Basil");
+		betty.addPet(basil);
+		given(this.pets.findByNameStartingWithIgnoreCase("", page(0, 10)))
+			.willReturn(new PageImpl<>(List.of(george.getPet("Leo"), basil), page(0, 10), 2));
+		given(this.owners.findDistinctByPetsIdIn(List.of(1, 2))).willReturn(List.of(betty, george));
+
+		this.graphQl.document("{ pets { pets { name owner { lastName } } } }")
+			.execute()
+			.path("pets.pets[*].owner.lastName")
+			.entityList(String.class)
+			.containsExactly("Franklin", "Davis");
+
+		verify(this.owners).findDistinctByPetsIdIn(List.of(1, 2));
+		verifyNoMoreInteractions(this.owners);
+	}
+
+	@Test
+	void petLastVisitIsTheVisitWithTheLatestDate() {
+		Pet leo = george().getPet("Leo");
+		Visit latest = new Visit();
+		latest.setId(2);
+		latest.setDate(LocalDate.of(2014, 2, 1));
+		latest.setDescription("check-up");
+		Visit earlier = new Visit();
+		earlier.setId(3);
+		earlier.setDate(LocalDate.of(2012, 5, 6));
+		earlier.setDescription("vaccination");
+		leo.addVisit(latest);
+		leo.addVisit(earlier);
+		Pet basil = new Pet();
+		basil.setId(2);
+		basil.setName("Basil");
+		given(this.pets.findByNameStartingWithIgnoreCase("", page(0, 10)))
+			.willReturn(new PageImpl<>(List.of(leo, basil), page(0, 10), 2));
+
+		this.graphQl.document("{ pets { pets { name lastVisit { date description } } } }")
+			.execute()
+			.path("pets.pets[0].lastVisit.date")
+			.entity(String.class)
+			.isEqualTo("2014-02-01")
+			.path("pets.pets[0].lastVisit.description")
+			.entity(String.class)
+			.isEqualTo("check-up")
+			.path("pets.pets[1].lastVisit")
+			.valueIsNull();
+	}
+
+	@Test
 	void ownersReportsANullPageFromAVariableAsABadRequest() {
 		// validation accepts a nullable variable here because the argument has a default,
 		// so the null is found when the query runs

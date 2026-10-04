@@ -19,7 +19,7 @@ type Query {
 		size: Int! = 10
 	): OwnerPage!
 
-	"One owner with their pets and visits, or null when the id is unknown."
+	"One owner with their pets and visits, or null when owner not found for the provided id."
 	owner(id: ID!): Owner
 
 	"""
@@ -123,8 +123,12 @@ type Pet {
 	birthDate: Date
 	"The kind of pet, or null when the clinic has not recorded it."
 	type: PetType
+	"The owner who registered the pet."
+	owner: Owner!
 	"The pet's visits to the clinic, oldest first."
 	visits: [Visit!]!
+	"The pet's latest visit, past or planned, or null until the first visit is booked."
+	lastVisit: Visit
 }
 
 "A kind of pet the clinic treats, such as cat or dog."

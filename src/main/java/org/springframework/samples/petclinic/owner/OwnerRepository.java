@@ -15,6 +15,8 @@
  */
 package org.springframework.samples.petclinic.owner;
 
+import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.domain.Page;
@@ -79,5 +81,12 @@ public interface OwnerRepository extends JpaRepository<Owner, Integer> {
 	 * {@link Optional} if the id does not belong to a pet.
 	 */
 	Optional<Owner> findByPetsId(Integer petId);
+
+	/**
+	 * Retrieve the {@link Owner}s of several pets from the data store in one query.
+	 * @param petIds the ids of the pets
+	 * @return the owners of the pets, each owner once
+	 */
+	List<Owner> findDistinctByPetsIdIn(Collection<Integer> petIds);
 
 }

@@ -16,18 +16,25 @@
 package org.springframework.samples.petclinic.graphql;
 
 import java.util.Collection;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.graphql.data.method.annotation.Argument;
+import org.springframework.graphql.data.method.annotation.BatchMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
+import org.springframework.graphql.data.method.annotation.SchemaMapping;
 import org.springframework.samples.petclinic.owner.Owner;
 import org.springframework.samples.petclinic.owner.OwnerRepository;
+import org.springframework.samples.petclinic.owner.Pet;
 import org.springframework.samples.petclinic.owner.PetRepository;
 import org.springframework.samples.petclinic.owner.PetType;
 import org.springframework.samples.petclinic.owner.PetTypeRepository;
+import org.springframework.samples.petclinic.owner.Visit;
 import org.springframework.samples.petclinic.vet.Vet;
 import org.springframework.samples.petclinic.vet.VetRepository;
 import org.springframework.stereotype.Controller;
@@ -46,6 +53,11 @@ import org.springframework.stereotype.Controller;
  * selects. This demo leaves the mapping as it is on purpose: lazy collections would
  * change how the web pages load their data, and the demo keeps its changes to Petclinic
  * small.
+ * <p>
+ * The owner and the last visit of a pet are the two fields without a getter on
+ * {@link Pet}. The entity does not map its owner, so {@link #owner(List)} loads it with
+ * {@code @BatchMapping}, and the owners of all the pets in a result come from one query.
+ * {@link #lastVisit(Pet)} picks the latest of the visits the pet already holds.
  */
 @Controller
 class PetclinicGraphQlController {
@@ -103,6 +115,21 @@ class PetclinicGraphQlController {
 		// the query without the type
 		return PetPage.of(typeName.isEmpty() ? this.pets.findByNameStartingWithIgnoreCase(stripped(name), pageRequest)
 				: this.pets.findByNameStartingWithAndTypeNameAllIgnoreCase(stripped(name), typeName, pageRequest));
+	}
+
+	@BatchMapping
+	List<Owner> owner(List<Pet> pets) {
+		Map<Integer, Owner> ownerByPetId = new HashMap<>();
+		for (Owner owner : this.owners.findDistinctByPetsIdIn(pets.stream().map(Pet::getId).toList())) {
+			owner.getPets().forEach((pet) -> ownerByPetId.put(pet.getId(), owner));
+		}
+		// the owners must come back in the order of the pets
+		return pets.stream().map((pet) -> ownerByPetId.get(pet.getId())).toList();
+	}
+
+	@SchemaMapping
+	Visit lastVisit(Pet pet) {
+		return pet.getVisits().stream().max(Comparator.comparing(Visit::getDate)).orElse(null);
 	}
 
 	@QueryMapping

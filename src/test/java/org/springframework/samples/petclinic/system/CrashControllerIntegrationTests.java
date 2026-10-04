@@ -22,6 +22,8 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 import java.util.List;
 import java.util.Map;
 
+import io.gatool.boot.autoconfigure.GAToolAutoConfiguration;
+import io.gatool.boot.mcp.autoconfigure.GAToolMcpAutoConfiguration;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -93,9 +95,9 @@ class CrashControllerIntegrationTests {
 				"This application has no explicit mapping for");
 	}
 
-	@SpringBootApplication(
-			exclude = { DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class,
-					HibernateJpaAutoConfiguration.class, GraphQlAutoConfiguration.class })
+	@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class,
+			DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class,
+			GraphQlAutoConfiguration.class, GAToolAutoConfiguration.class, GAToolMcpAutoConfiguration.class })
 	static class TestConfiguration {
 
 	}

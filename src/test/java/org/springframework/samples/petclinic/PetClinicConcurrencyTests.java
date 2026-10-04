@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.context.annotation.Import;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
@@ -25,7 +26,11 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@Import(McpOnlySecurityConfiguration.class)
+// The client of this test keeps no cookies, so Tomcat would put the session id into the
+// URL of the redirect after a post, which Spring Security's firewall rejects
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT,
+		properties = "server.servlet.session.tracking-modes=cookie")
 public class PetClinicConcurrencyTests {
 
 	@LocalServerPort

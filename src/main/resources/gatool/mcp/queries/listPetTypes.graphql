@@ -1,0 +1,7 @@
+# Lists the kinds of pets the clinic treats, such as cat or dog, with the id that addPet and updatePet take for a type.
+query ListPetTypes {
+  petTypes {
+    id
+    name
+  }
+}

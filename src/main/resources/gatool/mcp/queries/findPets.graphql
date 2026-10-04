@@ -1,0 +1,27 @@
+# Finds pets by the start of their name or by the name of their type, such as cat or dog, and returns the id, the name, the birth date, the type and the owner of each pet, with the date of its latest visit, past or planned.
+# The last visit is null for a pet that has not visited the clinic.
+# The name and the type match in upper or lower case, and leaving both out lists every pet.
+# The pets come one page at a time. To answer a question about all pets, read every page.
+# getOwnerDetails, called with the id of the owner, gives every visit of a pet.
+query FindPets($name: String = "", $type: String = "", $page: Int! = 1, $size: Int! = 10) {
+  pets(name: $name, type: $type, page: $page, size: $size) {
+    totalPages
+    totalPets
+    pets {
+      id
+      name
+      birthDate
+      type {
+        name
+      }
+      owner {
+        id
+        firstName
+        lastName
+      }
+      lastVisit {
+        date
+      }
+    }
+  }
+}

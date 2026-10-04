@@ -1,0 +1,10 @@
+# Lists the vets of the clinic with their specialties, such as radiology, surgery or dentistry.
+query ListVets {
+  vets {
+    firstName
+    lastName
+    specialties {
+      name
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# Finds owners by passing in the start of their first or last name, and returns the id and the name of each owner.
+# The names match in upper or lower case, and leaving both out lists every owner.
+# The owners come one page at a time. To answer a question about all owners, read every page.
+# getOwnerDetails gives the address, the telephone, the pets and the visits of one owner.
+query FindOwners($firstName: String = "", $lastName: String = "", $page: Int! = 1, $size: Int! = 10) {
+  owners(firstName: $firstName, lastName: $lastName, page: $page, size: $size) {
+    totalPages
+    totalOwners
+    owners {
+      id
+      firstName
+      lastName
+    }
+  }
+}

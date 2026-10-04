@@ -1,0 +1,24 @@
+# Returns one owner with their address and telephone, their pets, and the visits of each pet.
+# findOwners gives the id of an owner. The result is null if the owner doesn't exist for the id.
+query GetOwnerDetails($id: ID!) {
+  owner(id: $id) {
+    id
+    firstName
+    lastName
+    address
+    city
+    telephone
+    pets {
+      id
+      name
+      birthDate
+      type {
+        name
+      }
+      visits {
+        date
+        description
+      }
+    }
+  }
+}

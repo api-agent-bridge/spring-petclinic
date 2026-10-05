@@ -1,0 +1,423 @@
+{
+  "mappings": [
+    {
+      "name": "RASFF list actionTaken",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/actionTaken/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-actionTaken.json"
+      },
+      "metadata": {
+        "description": "The list of actionTaken terms"
+      }
+    },
+    {
+      "name": "RASFF list hazardCategory",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/hazardCategory/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-hazardCategory.json"
+      },
+      "metadata": {
+        "description": "The list of hazardCategory terms"
+      }
+    },
+    {
+      "name": "RASFF list notificationBasis",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notificationBasis/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-notificationBasis.json"
+      },
+      "metadata": {
+        "description": "The list of notificationBasis terms"
+      }
+    },
+    {
+      "name": "RASFF list notificationClassification",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notificationClassification/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-notificationClassification.json"
+      },
+      "metadata": {
+        "description": "The list of notificationClassification terms"
+      }
+    },
+    {
+      "name": "RASFF list notificationStatus",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notificationStatus/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-notificationStatus.json"
+      },
+      "metadata": {
+        "description": "The list of notificationStatus terms"
+      }
+    },
+    {
+      "name": "RASFF list productCategory",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/productCategory/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-productCategory.json"
+      },
+      "metadata": {
+        "description": "The list of productCategory terms"
+      }
+    },
+    {
+      "name": "RASFF list productType",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/productType/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-productType.json"
+      },
+      "metadata": {
+        "description": "The list of productType terms"
+      }
+    },
+    {
+      "name": "RASFF list riskDecision",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/riskDecision/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-riskDecision.json"
+      },
+      "metadata": {
+        "description": "The list of riskDecision terms"
+      }
+    },
+    {
+      "name": "RASFF list country",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/country/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-country.json"
+      },
+      "metadata": {
+        "description": "The list of country terms"
+      }
+    },
+    {
+      "name": "RASFF list organization",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/organization/list/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/list-organization.json"
+      },
+      "metadata": {
+        "description": "The list of organization terms"
+      }
+    },
+    {
+      "name": "RASFF search: pet food",
+      "priority": 2,
+      "request": {
+        "method": "POST",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/search/consolidated/",
+        "bodyPatterns": [
+          {
+            "matchesJsonPath": "$.productCategory[?(@ == 18429)]"
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/search-pet-food.json"
+      },
+      "metadata": {
+        "description": "The first 10 of the 270 notifications in the product category pet food"
+      }
+    },
+    {
+      "name": "RASFF search: any other search",
+      "priority": 5,
+      "request": {
+        "method": "POST",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/search/consolidated/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/search-all.json"
+      },
+      "metadata": {
+        "description": "The first 10 of the 32805 notifications, recorded without filters, for any other search"
+      }
+    },
+    {
+      "name": "RASFF notification 876211",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/876211/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-876211.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.8625: Foreign body in pet food for cats from Germany"
+      }
+    },
+    {
+      "name": "RASFF notification 876109",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/876109/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-876109.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.8624: Pet food supplements skipped veterinary checks at BCP"
+      }
+    },
+    {
+      "name": "RASFF notification 874603",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/874603/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-874603.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.8405: Obecność ciała obcego w karmie dla psów //Presence of a foreign object in dog food"
+      }
+    },
+    {
+      "name": "RASFF notification 873890",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/873890/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-873890.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.8305: Salmonella in raw petfood from the Netherlands"
+      }
+    },
+    {
+      "name": "RASFF notification 873294",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/873294/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-873294.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.8204: Salmonella spp. and enterobacteriaceae in pet food"
+      }
+    },
+    {
+      "name": "RASFF notification 872341",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/872341/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-872341.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.8038: Consignment of petfood skipped veterinary controls in Border Control Post"
+      }
+    },
+    {
+      "name": "RASFF notification 871861",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/871861/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-871861.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.7973: Excessive levels of vitamin A, vitamin D, and selenium, and the unauthorized feed additive sodium saccharin (E954) in dietary supplements for piglets from Germany"
+      }
+    },
+    {
+      "name": "RASFF notification 869202",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/869202/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-869202.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.7761: CBD in animal feed from Slovakia"
+      }
+    },
+    {
+      "name": "RASFF notification 869234",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/869234/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-869234.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.7750: CBD in animal feed from the Netherlands"
+      }
+    },
+    {
+      "name": "RASFF notification 869131",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/rasff/rasff-window/backend/public/notification/view/id/869131/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "rasff/notification-869131.json"
+      },
+      "metadata": {
+        "description": "The details of 2026.7749: CBD in animal feed from the UK"
+      }
+    },
+    {
+      "name": "RASFF notification: any other id",
+      "priority": 5,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/rasff/rasff-window/backend/public/notification/view/id/[^/]+/"
+      },
+      "response": {
+        "status": 401,
+        "headers": {
+          "Content-Type": "text/plain;charset=ISO-8859-1"
+        },
+        "bodyFileName": "rasff/notification-unknown.json"
+      },
+      "metadata": {
+        "description": "RASFF answers an id it does not publish with 401 Unauthorized, recorded for id 1"
+      }
+    }
+  ]
+}

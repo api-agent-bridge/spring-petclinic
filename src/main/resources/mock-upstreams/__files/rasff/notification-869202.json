@@ -1,0 +1,161 @@
+{
+  "id": 869202,
+  "reference": "2026.7761",
+  "subject": "CBD in animal feed from Slovakia",
+  "ecValidationDate": "02-09-2026 14:39:03",
+  "lastUpdate": "10-09-2026 10:53:55",
+  "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+  },
+  "productType": {
+    "id": 282,
+    "description": "feed"
+  },
+  "notificationBasis": {
+    "id": 18682,
+    "description": "monitoring of media"
+  },
+  "product": {
+    "id": 30977451,
+    "description": "CBD oil",
+    "productCategory": {
+      "id": 18429,
+      "description": "pet food"
+    },
+    "productDescriptions": [
+      {
+        "id": 30977573,
+        "productAspect": "300 mg/10 ml\r\nWith an active ingredient content of 300 mg, comprising: 266.66 mg CBD, 25 mg CBG, 8.33 mg CBN\r\nhttps://www.cannadolcbd.eu/hu/cbd-olaj-macskaknak",
+        "weight": "10.0",
+        "weightUnit": {
+          "id": 18971,
+          "description": "ml"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 30977522,
+        "productAspect": "1800 mg/30 ml\r\nwith a total active ingredient content of 1800 mg, comprising: 1600 mg CBD, 150 mg CBG, 50 mg CBN.\r\nhttps://www.cannadolcbd.eu/hu/cbd-olaj-kutyaknak/superdog",
+        "weight": "30.0",
+        "weightUnit": {
+          "id": 18971,
+          "description": "ml"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      }
+    ],
+    "distributionStatus": {
+      "id": 228,
+      "description": "product traded online"
+    }
+  },
+  "risk": {
+    "id": 140713,
+    "riskDecision": "potential risk",
+    "hazardObserved": "Unauthorised CBD in feed"
+  },
+  "organizationFlags": [
+    {
+      "organization": {
+        "id": 52,
+        "description": "Hungary",
+        "code": "HU",
+        "countryNetworkOrganizationId": 5017
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 869202,
+          "flagType": "NOTIFYING"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 54,
+        "description": "Slovakia",
+        "code": "SK",
+        "countryNetworkOrganizationId": 5033
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 869202,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 872046,
+          "flagType": "FOR_ATTENTION"
+        },
+        {
+          "notificationId": 869202,
+          "flagType": "ORIGIN"
+        },
+        {
+          "notificationId": 869202,
+          "flagType": "OPERATOR"
+        }
+      ]
+    }
+  ],
+  "followups": [
+    {
+      "fupNumber": 1,
+      "fupId": 870454,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "02-09-2026 14:45:09",
+      "additionalInfoId": 30994764
+    },
+    {
+      "fupNumber": 2,
+      "fupId": 872046,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "10-09-2026 10:53:55",
+      "fupType": {
+        "id": 27665,
+        "description": "request"
+      },
+      "additionalInfoId": 31015735
+    }
+  ],
+  "notificationStatus": "ec_validated",
+  "additionalInformations": [
+    {
+      "id": 30977452,
+      "organization": "Nébih",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 30994764,
+      "organization": "European Commission"
+    },
+    {
+      "id": 31015735,
+      "organization": "European Commission"
+    }
+  ],
+  "localConsumerLinksByCountry": {
+    "5017": [
+      {
+        "id": 20,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://nkfh.gov.hu/"
+      },
+      {
+        "id": 21,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://portal.nebih.gov.hu/termekvisszahivas"
+      }
+    ],
+    "5033": []
+  }
+}

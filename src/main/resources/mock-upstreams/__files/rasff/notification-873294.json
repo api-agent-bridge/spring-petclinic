@@ -1,0 +1,494 @@
+{
+  "id": 873294,
+  "reference": "2026.8204",
+  "subject": "Salmonella spp. and enterobacteriaceae in pet food",
+  "ecValidationDate": "16-09-2026 15:08:07",
+  "lastUpdate": "25-09-2026 15:34:31",
+  "notificationClassification": {
+    "id": 306,
+    "description": "alert notification"
+  },
+  "productType": {
+    "id": 282,
+    "description": "feed"
+  },
+  "notificationBasis": {
+    "id": 18684,
+    "description": "official control on the market"
+  },
+  "product": {
+    "id": 31032469,
+    "description": "pet food",
+    "productCategory": {
+      "id": 18429,
+      "description": "pet food"
+    },
+    "hazards": [
+      {
+        "id": 31032535,
+        "name": "Salmonella  - pathogenic micro-organisms",
+        "samplingDate": "02-09-2026 00:00:00",
+        "hazardCategory": {
+          "description": "pathogenic micro-organisms"
+        }
+      },
+      {
+        "id": 31032544,
+        "name": "Enterobacteriaceae  - high count - non-pathogenic micro-organisms",
+        "analyticalResult": "6,8X10 3;   8,5X10 3",
+        "unit": "CFU/g",
+        "samplingDate": "02-09-2026 00:00:00",
+        "hazardCategory": {
+          "description": "non-pathogenic micro-organisms"
+        }
+      }
+    ],
+    "productDescriptions": [
+      {
+        "id": 31032486,
+        "labelling": "HR19107024, BBD 07/2028",
+        "weight": "1.0",
+        "weightUnit": {
+          "id": 18973,
+          "description": "kg"
+        },
+        "temperature": {
+          "id": 27369,
+          "description": "frozen"
+        }
+      }
+    ],
+    "measures": [
+      {
+        "id": 31033406,
+        "takenBy": {
+          "id": 5016,
+          "organizationName": "Croatia",
+          "isoCode": "HR"
+        },
+        "url": "https://www.hapih.hr/opoziv-proizvoda-von-barf-professional-lamb-mono-1000-g/",
+        "actionTaken": {
+          "id": 18836,
+          "description": "recall from consumer"
+        }
+      },
+      {
+        "id": 31039065,
+        "takenBy": {
+          "id": 5017,
+          "organizationName": "Hungary",
+          "isoCode": "HU"
+        },
+        "url": "https://portal.nebih.gov.hu/l/termekvisszahivas/2572375192",
+        "actionTaken": {
+          "id": 18838,
+          "description": "public warning - press release"
+        }
+      },
+      {
+        "id": 31039068,
+        "takenBy": {
+          "id": 5017,
+          "organizationName": "Hungary",
+          "isoCode": "HU"
+        },
+        "url": "https://barfstore.hu/kapcsolat/",
+        "actionTaken": {
+          "id": 18836,
+          "description": "recall from consumer"
+        }
+      },
+      {
+        "id": 31039073,
+        "takenBy": {
+          "id": 5017,
+          "organizationName": "Hungary",
+          "isoCode": "HU"
+        },
+        "actionTaken": {
+          "id": 18837,
+          "description": "withdrawal from the market"
+        }
+      },
+      {
+        "id": 31043211,
+        "takenBy": {
+          "id": 5003,
+          "organizationName": "Bulgaria",
+          "isoCode": "BG"
+        },
+        "actionTaken": {
+          "id": 18839,
+          "description": "official detention"
+        }
+      },
+      {
+        "id": 31046133,
+        "takenBy": {
+          "id": 5032,
+          "organizationName": "Slovenia",
+          "isoCode": "SI"
+        },
+        "url": "https://www.gov.si/podrocja/podjetnistvo-in-gospodarstvo/varstvo-potrosnikov-in-konkurence/nevarni-in-neskladni-izdelki/hrana-za-pse-2/",
+        "actionTaken": {
+          "id": 18836,
+          "description": "recall from consumer"
+        }
+      }
+    ],
+    "distributionStatus": {
+      "id": 219,
+      "description": "distribution to other member countries"
+    }
+  },
+  "risk": {
+    "id": 141718,
+    "riskDecision": "potentially serious"
+  },
+  "organizationFlags": [
+    {
+      "organization": {
+        "id": 10,
+        "description": "Bulgaria",
+        "code": "BG",
+        "countryNetworkOrganizationId": 5003
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 873294,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 36,
+        "description": "Croatia",
+        "code": "HR",
+        "countryNetworkOrganizationId": 5016
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 873294,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 874092,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 874092,
+          "flagType": "FOR_ATTENTION"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "ORIGIN"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 12,
+        "description": "Cyprus",
+        "code": "CY",
+        "countryNetworkOrganizationId": 5005
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 873294,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 52,
+        "description": "Hungary",
+        "code": "HU",
+        "countryNetworkOrganizationId": 5017
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 873294,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 42,
+        "description": "Romania",
+        "code": "RO",
+        "countryNetworkOrganizationId": 5030
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 873294,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 59,
+        "description": "Slovenia",
+        "code": "SI",
+        "countryNetworkOrganizationId": 5032
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 873294,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 2,
+        "description": "Spain",
+        "code": "ES",
+        "countryNetworkOrganizationId": 5010
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 873294,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 873294,
+          "flagType": "OPERATOR"
+        }
+      ]
+    }
+  ],
+  "followups": [
+    {
+      "fupNumber": 1,
+      "fupId": 873443,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "16-09-2026 15:15:30",
+      "additionalInfoId": 31034774
+    },
+    {
+      "fupNumber": 2,
+      "fupId": 873731,
+      "networkOrganizationId": 52,
+      "organizationDescription": "Hungary",
+      "organizationCode": "HU",
+      "fupDate": "17-09-2026 15:34:24",
+      "fupType": {
+        "id": 27659,
+        "description": "outcome of investigations and measures taken"
+      },
+      "additionalInfoId": 31038150
+    },
+    {
+      "fupNumber": 3,
+      "fupId": 874092,
+      "networkOrganizationId": 10,
+      "organizationDescription": "Bulgaria",
+      "organizationCode": "BG",
+      "fupDate": "18-09-2026 14:14:42",
+      "fupType": {
+        "id": 27659,
+        "description": "outcome of investigations and measures taken"
+      },
+      "additionalInfoId": 31043204
+    },
+    {
+      "fupNumber": 4,
+      "fupId": 874328,
+      "networkOrganizationId": 59,
+      "organizationDescription": "Slovenia",
+      "organizationCode": "SI",
+      "fupDate": "21-09-2026 12:12:58",
+      "fupType": {
+        "id": 27659,
+        "description": "outcome of investigations and measures taken"
+      },
+      "additionalInfoId": 31046129
+    },
+    {
+      "fupNumber": 5,
+      "fupId": 875382,
+      "networkOrganizationId": 522,
+      "organizationDescription": "Veterinary Services",
+      "organizationCode": "CY",
+      "fupDate": "25-09-2026 15:34:31",
+      "fupType": {
+        "id": 27659,
+        "description": "outcome of investigations and measures taken"
+      },
+      "additionalInfoId": 31060948
+    }
+  ],
+  "notificationStatus": "ec_validated",
+  "additionalInformations": [
+    {
+      "id": 31038150,
+      "organization": "Nébih",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31043204,
+      "organization": "BFSA / MAF",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31046129,
+      "organization": "Administration for Food safety,Veterinary sector and Plant protection, Slovenia",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31060948,
+      "organization": "Ministry of Agriculture, Rural Development and Environment, Veterinary Services, Larnaca District Veterinary Office",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31032470,
+      "organization": "DIRH",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31034774,
+      "organization": "European Commission"
+    }
+  ],
+  "localConsumerLinksByCountry": {
+    "5010": [
+      {
+        "id": 35,
+        "countryNetworkOrganizationId": 5010,
+        "link": "http://aplicaciones.magrama.es/silum/web/novedades/novedades.jsp"
+      },
+      {
+        "id": 36,
+        "countryNetworkOrganizationId": 5010,
+        "link": "https://www.aesan.gob.es/AECOSAN/web/seguridad_alimentaria/seccion/alertas_alimentarias.htm"
+      }
+    ],
+    "5030": [
+      {
+        "id": 33,
+        "countryNetworkOrganizationId": 5030,
+        "link": "https://www.ansvsa.ro/informatii-pentru-public/produse-rechemateretrase/"
+      }
+    ],
+    "5016": [
+      {
+        "id": 5,
+        "countryNetworkOrganizationId": 5016,
+        "link": "https://www.hapih.hr/potrosacki-kutak/"
+      }
+    ],
+    "5032": [
+      {
+        "id": 34,
+        "countryNetworkOrganizationId": 5032,
+        "link": "https://www.gov.si/podrocja/podjetnistvo-in-gospodarstvo/varstvo-potrosnikov-in-konkurence/nevarni-in-neskladni-izdelki/"
+      }
+    ],
+    "5017": [
+      {
+        "id": 20,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://nkfh.gov.hu/"
+      },
+      {
+        "id": 21,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://portal.nebih.gov.hu/termekvisszahivas"
+      }
+    ],
+    "5003": [
+      {
+        "id": 4,
+        "countryNetworkOrganizationId": 5003,
+        "link": "https://bfsa.egov.bg/wps/portal/bfsa-web/home/news"
+      }
+    ],
+    "5005": [
+      {
+        "id": 6,
+        "countryNetworkOrganizationId": 5005,
+        "link": "http://www.moa.gov.cy/moa/vs/vs.nsf/vs49_gr/vs49_gr?OpenDocument"
+      },
+      {
+        "id": 7,
+        "countryNetworkOrganizationId": 5005,
+        "link": "https://www.moa.gov.cy/moa/da/da.nsf/home/home?openform"
+      },
+      {
+        "id": 8,
+        "countryNetworkOrganizationId": 5005,
+        "link": "http://www.moh.gov.cy/moh/mphs/phs.nsf/DMLannouncements_gr/DMLannouncements_gr?OpenDocument"
+      }
+    ]
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "mappings": [
+    {
+      "name": "Eurostat prc_hicp_minr I25",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/eurostat/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr",
+        "queryParameters": {
+          "unit": {
+            "equalTo": "I25"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "eurostat/prc_hicp_minr-i25-cp0932-be.json"
+      },
+      "metadata": {
+        "description": "Pets and pet products in Belgium, the latest 12 periods, for any category, country and period"
+      }
+    },
+    {
+      "name": "Eurostat prc_hicp_minr RCH_M",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/eurostat/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr",
+        "queryParameters": {
+          "unit": {
+            "equalTo": "RCH_M"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "eurostat/prc_hicp_minr-rch_m-cp0932-be.json"
+      },
+      "metadata": {
+        "description": "Pets and pet products in Belgium, the latest 12 periods, for any category, country and period"
+      }
+    },
+    {
+      "name": "Eurostat prc_hicp_minr RCH_A",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/eurostat/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr",
+        "queryParameters": {
+          "unit": {
+            "equalTo": "RCH_A"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "eurostat/prc_hicp_minr-rch_a-cp0932-be.json"
+      },
+      "metadata": {
+        "description": "Pets and pet products in Belgium, the latest 12 periods, for any category, country and period"
+      }
+    },
+    {
+      "name": "Eurostat prc_hicp_minr RCH_MV12MAVR",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/eurostat/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr",
+        "queryParameters": {
+          "unit": {
+            "equalTo": "RCH_MV12MAVR"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "eurostat/prc_hicp_minr-rch_mv12mavr-cp0932-be.json"
+      },
+      "metadata": {
+        "description": "Pets and pet products in Belgium, the latest 12 periods, for any category, country and period"
+      }
+    },
+    {
+      "name": "Eurostat prc_hicp_ct I25",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/eurostat/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_ct",
+        "queryParameters": {
+          "unit": {
+            "equalTo": "I25"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "eurostat/prc_hicp_ct-i25-cp0932-be.json"
+      },
+      "metadata": {
+        "description": "Pets and pet products in Belgium, the latest 12 periods, for any category, country and period"
+      }
+    },
+    {
+      "name": "Eurostat prc_hicp_ctr PC_PNT",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/eurostat/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_ctr",
+        "queryParameters": {
+          "unit": {
+            "equalTo": "PC_PNT"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "eurostat/prc_hicp_ctr-pc_pnt-cp0932-ea.json"
+      },
+      "metadata": {
+        "description": "Pets and pet products in the euro area, the latest 12 periods, for any category, country and period"
+      }
+    },
+    {
+      "name": "Eurostat prc_hicp_ainr INX_A_AVG",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/eurostat/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_ainr",
+        "queryParameters": {
+          "unit": {
+            "equalTo": "INX_A_AVG"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "eurostat/prc_hicp_ainr-inx_a_avg-cp0932-be.json"
+      },
+      "metadata": {
+        "description": "Pets and pet products in Belgium, the latest 5 periods, for any category, country and period"
+      }
+    },
+    {
+      "name": "Eurostat prc_hicp_ainr RCH_A_AVG",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/eurostat/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_ainr",
+        "queryParameters": {
+          "unit": {
+            "equalTo": "RCH_A_AVG"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "eurostat/prc_hicp_ainr-rch_a_avg-cp0932-be.json"
+      },
+      "metadata": {
+        "description": "Pets and pet products in Belgium, the latest 5 periods, for any category, country and period"
+      }
+    },
+    {
+      "name": "Eurostat prc_hicp_iw IW",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/eurostat/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_iw",
+        "queryParameters": {
+          "statinfo": {
+            "equalTo": "IW"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "eurostat/prc_hicp_iw-iw-cp0932-be.json"
+      },
+      "metadata": {
+        "description": "Pets and pet products in Belgium, the latest 5 periods, for any category, country and period"
+      }
+    }
+  ]
+}

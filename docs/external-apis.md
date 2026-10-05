@@ -11,9 +11,16 @@ Each entry says what the API does, how to call it, which operations are useful f
 | [Antwerp dog zones](#antwerp-dog-zones) | City of Antwerp | SOAP and REST | Open | Dutch | Where an owner can walk a dog |
 | [FAMHP medicines reference data](#famhp-medicines-reference-data) | Federal medicines agency | REST | Open | English, Dutch or French | Species codes for pet types |
 | [RASFF pet food alerts](#rasff-pet-food-alerts) | EU, DG SANTE | REST | Open | English | Pet food safety |
-| [EMA medicines file](#ema-medicines-file) | EU, EMA | REST | Open | English | Veterinary medicines |
+| [EMA website reports](#ema-website-reports) | EU, EMA | REST | Open | English | Veterinary medicines and residue limits |
 | [EUR-Lex web service](#eur-lex-web-service) | EU Publications Office | SOAP | WS-Security | English and 23 others | Pet travel regulation |
 | [Eurostat pet price index](#eurostat-pet-price-index) | EU, Eurostat | REST | Open | English | Cost of pets in Belgium |
+| [GBIF](#gbif) | GBIF, with Belgium as a participant | REST | Open | English | Sightings of dogs and cats, and the names of species |
+
+## In the GraphQL schema
+
+The schema reads every API in this catalogue except EUR-Lex, which needs credentials. The Antwerp dog zones are the field `Owner.nearestDogZones`. EMA, RASFF, FAMHP and Eurostat add 42 root fields to `Query`, with 55 types of their own, and GBIF adds 226 root fields with 177 types and 37 enums. Each field name starts with its API: `ema`, `rasff`, `famhp`, `eurostat` or `gbif`. The Petclinic types keep their fields, and every new field reads data.
+
+Each of the four is an HTTP interface of Spring Framework (`@HttpExchange`), registered with `@ImportHttpServices` in a group of its own. Spring Boot reads the base URL and the timeouts of a group from `spring.http.serviceclient.<group>.*`. GBIF has too many operations for an interface method each, so a generated operation table drives one fetcher, as [the GBIF section](#gbif) explains. The `mock` profile points every base URL at the recorded responses in `src/main/resources/mock-upstreams`.
 
 ## Antwerp dog zones
 
@@ -252,9 +259,9 @@ The federal medicines agency runs a public medicines database with a veterinary 
 
 - **Endpoint:** `GET https://medicinesdatabase.be/api/resources`
 - **Auth:** open for this endpoint. The product search (`/api/products`) returns `401` and is out of scope.
-- **Language:** the `Accept-Language` header selects English, Dutch or French labels.
+- **Language:** the `Accept-Language` header selects English, Dutch or French labels. Without the header, the labels come in Dutch. Petclinic asks for English.
 
-It returns 275 target species, plus delivery modes and authorisation types.
+One call returns 343 entries of five types in one list: 275 target species, 50 legal bases, 7 authorisation types, 6 document types and 5 delivery modes.
 
 ```json
 [
@@ -265,12 +272,27 @@ It returns 275 target species, plus delivery modes and authorisation types.
 ]
 ```
 
+The older species have short codes such as `Ca` for the dog. The species added later have their name as their code, for example `Dog (puppy)`.
+
+### In the schema
+
+Each field costs one call, and keeps the entries of one type.
+
+| Root field | Returns |
+| --- | --- |
+| `famhpTargetSpecies(name)` | `[FamhpTargetSpecies!]!`, sorted by name |
+| `famhpAuthorisationTypes` | `[FamhpAuthorisationType!]!`, sorted by name |
+| `famhpLegalBases(usage)` | `[FamhpLegalBasis!]!`, sorted by name |
+| `famhpDeliveryModes` | `[FamhpDeliveryMode!]!`, sorted by name |
+| `famhpDocumentTypes` | `[FamhpDocumentType!]!`, in the database's own order |
+
 ## RASFF pet food alerts
 
 RASFF is the EU's rapid alert system for food and feed. The public RASFF Window site loads its data from a JSON backend. That backend is undocumented and could change without notice.
 
 - **Search:** `POST https://webgate.ec.europa.eu/rasff-window/backend/public/notification/search/consolidated/`
 - **Detail:** `GET https://webgate.ec.europa.eu/rasff-window/backend/public/notification/view/id/{notifId}/`
+- **Lists:** `GET https://webgate.ec.europa.eu/rasff-window/backend/public/{list}/list/`, for the ten lists that classify notifications and that the search filters take: `productCategory`, `productType`, `hazardCategory`, `riskDecision`, `notificationClassification`, `notificationBasis`, `actionTaken`, `notificationStatus`, `country` and `organization`
 - **Auth:** open.
 - **Language:** English.
 
@@ -278,7 +300,7 @@ RASFF is the EU's rapid alert system for food and feed. The public RASFF Window 
 { "parameters": { "pageNumber": 1, "itemsPerPage": 1 }, "notificationReference": null, "subject": "pet food" }
 ```
 
-The search for "pet food" returned 67 notifications. This is the detail of the most recent one:
+The search for "pet food" in the subject returned 67 notifications. The product category pet food (id `18429`) holds 270. This is the detail of the most recent one:
 
 ```json
 {
@@ -296,17 +318,66 @@ The search for "pet food" returned 67 notifications. This is the detail of the m
 }
 ```
 
-## EMA medicines file
+### Things to know
 
-The European Medicines Agency publishes its medicines table as one JSON file, refreshed twice a day.
+- The search numbers its pages from 1. Page 0 comes back with the right totals and an empty list.
+- The detail of an id that does not exist, or that the public may not see, comes back as `401 Unauthorized` instead of `404 Not Found`.
+- Each list arrives in an object with a single key, and the key differs from list to list: `hazardCategory/list/` answers with `hazardCategories`, `productType/list/` with `notificationTypes` and `notificationStatus/list/` with `response`.
+- Subjects end with spaces, and hazard names contain double spaces.
+- A detail also names the officials who handled the notification. The schema leaves their names out.
+- For pet food, `numberOfPersonsAffected` counts animals. One notification reports 2, with the illness "One dog has died, the other dog has been admitted to a veterinary clinic".
 
-- **Endpoint:** `GET https://www.ema.europa.eu/en/documents/report/medicines-output-medicines_json-report_en.json`
+### In the schema
+
+Each field costs one call. The search pages on the RASFF side, so a page of `rasffNotifications` is a page of RASFF.
+
+| Root field | Returns |
+| --- | --- |
+| `rasffNotifications(filter, page, size)` | `RasffNotificationPage!`, the most recently validated first |
+| `rasffNotification(id)` | `RasffNotification`, with the product, hazards, risk, countries, measures and follow-ups |
+| `rasffProductCategories`, `rasffProductTypes`, `rasffHazardCategories`, `rasffRiskDecisions`, `rasffNotificationClassifications`, `rasffNotificationBases`, `rasffActionsTaken`, `rasffNotificationStatuses` | `[RasffTerm!]!`, the ids that the filter takes |
+| `rasffCountries` | `[RasffCountry!]!` |
+| `rasffNetworkMembers` | `[RasffMember!]!`, the members that send notifications |
+
+## EMA website reports
+
+The European Medicines Agency publishes 16 tables of its website as JSON reports, refreshed twice a day. A report is one file with every record of its table, and the only operation is to download the whole file.
+
+- **Endpoint:** `GET https://www.ema.europa.eu/en/documents/report/{report}.json`
+- **List of reports:** [Download website data in JSON data format](https://www.ema.europa.eu/en/about-us/about-website/download-website-data-json-data-format)
 - **Auth:** open.
-- **Language:** English.
+- **Language:** English. The EPAR documents also link to their translations.
 
-The file holds 2,746 medicines, of which 395 are veterinary. There is one operation: download the whole file.
+| Report | Records | Size | Root field |
+| --- | --- | --- | --- |
+| `medicines-output-medicines_json-report_en` | 2,746 | 6.6 MB | `emaMedicines` |
+| `documents-output-epar_documents_json-report_en` | 20,241 | 28 MB | `emaEparDocuments` |
+| `documents-output-non_epar_documents_json-report_en` | 50,426 | 34 MB | `emaDocuments` |
+| `events-json-report_en` | 2,501 | 1.4 MB | `emaEvents` |
+| `general-json-report_en` | 1,065 | 0.6 MB | `emaWebsiteArticles` |
+| `medicine-use-outside-eu-output-json-report_en` | 19 | 25 KB | `emaOutsideEuOpinions` |
+| `medicines-output-herbal_medicines-report-output-json_en` | 251 | 0.2 MB | `emaHerbalSubstances` |
+| `medicines-output-maximum_residue_limits-json-report_en` | 529 | 0.3 MB | `emaMaximumResidueLimits` |
+| `medicines-output-orphan_designations-json-report_en` | 3,310 | 2 MB | `emaOrphanDesignations` |
+| `medicines-output-paediatric_investigation_plans-output-json-report_en` | 3,377 | 3.8 MB | `emaPaediatricInvestigationPlans` |
+| `medicines-output-periodic_safety_update_report_single_assessments-output-json-report_en` | 2,720 | 1.4 MB | `emaPeriodicSafetyAssessments` |
+| `medicines-output-post_authorisation_json-report_en` | 152 | 0.2 MB | `emaPostAuthorisationProcedures` |
+| `news-json-report_en` | 3,890 | 2.2 MB | `emaNews` |
+| `referrals-output-json-report_en` | 592 | 0.7 MB | `emaReferrals` |
+| `shortages-output-json-report_en` | 85 | 69 KB | `emaShortages` |
+| `dhpc-output-json-report_en` | 174 | 0.1 MB | `emaSafetyCommunications` |
 
-The `species_veterinary` field is filled for 65 of the 395 veterinary records, and for only 2 of the 308 authorised ones. The file is therefore good for looking up a medicine by name or active substance, and poor for listing medicines by species.
+The medicines report holds 395 veterinary medicines. The `species_veterinary` field is filled for 65 of them, and for only 2 of the 308 authorised ones. The report is therefore good for looking up a medicine by name or active substance, and poor for listing medicines by species. The maximum residue limits report is veterinary throughout: it says how much of a substance may remain in food from treated animals.
+
+### Things to know
+
+- Every value is a text. Most reports write dates as `04/10/2026`, the two document reports write ISO-8601 timestamps, yes-or-no columns hold `Yes` and `No`, and columns with several values separate them with semicolons, sometimes with a value twice (`Veterinary;Veterinary`).
+- The herbal report's `meta.total_records` says 204, and the file holds 251 records.
+- Spring's JDK HTTP client applies the read timeout to the whole exchange, the body included. The EMA client has a read timeout of 60 seconds, because the 10 seconds of the other services would cut a slow download of the 34 MB report.
+
+### In the schema
+
+Each root field reads one report, filters its records in memory and returns one page, the most recently changed first. Petclinic downloads a report the first time a query needs it and keeps it for 12 hours (`petclinic.upstream.ema.refresh-after`). The two document reports take about 5 seconds to download and read, and all 16 reports together take about 120 MB of heap.
 
 ## EUR-Lex web service
 
@@ -320,21 +391,99 @@ The WSDL declares one operation, `doQuery`, which runs an expert query. A call w
 
 ## Eurostat pet price index
 
-Eurostat's harmonised index of consumer prices has a category for "Pets and related products; veterinary and other services for pets".
+Eurostat's harmonised index of consumer prices (HICP) has categories for pets, pet products and veterinary services. In 2026 Eurostat moved the index to version 2 of the European classification of consumption (ECOICOP 2), with new datasets and new category codes. The datasets of version 1, such as `prc_hicp_midx`, end with December 2025.
 
-- **Endpoint:** `GET https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx?format=JSON&lang=EN&coicop=CP0934_0935&geo=BE&unit=I15&lastTimePeriod=3`
+- **Endpoint:** `GET https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&coicop18=CP0932&geo=BE&unit=I25&lastTimePeriod=3`
 - **Auth:** open.
 - **Language:** English.
 
+| Code | Category |
+| --- | --- |
+| `CP0932` | Pets and pet products |
+| `CP09321` | Pets |
+| `CP09322` | Products for pets and other household animals |
+| `CP0945` | Veterinary and other services for pets |
+
 ```json
 {
-  "label": "HICP - monthly data (index) (1996-2025)",
-  "dimension": { "time": { "category": { "index": { "2025-10": 0, "2025-11": 1, "2025-12": 2 } } } },
-  "value": { "0": 132.91, "1": 133.49, "2": 133.47 }
+  "label": "Harmonised index of consumer prices (HICP) - ECOICOP ver.2 - indices and rates of change, monthly data",
+  "dimension": { "time": { "category": { "index": { "2026-07": 0, "2026-08": 1, "2026-09": 2 } } } },
+  "value": { "0": 99.8, "1": 98.04 }
 }
 ```
 
-The index uses 2015 as 100, so pet-related prices in Belgium were about 33% higher in December 2025.
+The index uses 2025 as 100. The latest month appears in the time dimension before Eurostat publishes its value, as September 2026 does here.
+
+### Things to know
+
+- The values are numbered in one sequence across all the dimensions. Petclinic filters every dimension except time to one value, so each number is a position in time.
+- A filter value the dataset does not know, such as the country code `XX`, comes back with status `200` and an empty dimension.
+- The contributions to the inflation of the euro area (`prc_hicp_ctr`) exist for the euro area only, and the pet categories round to 0.0 percentage points.
+
+### In the schema
+
+Each field costs one call and returns an `EurostatSeries` for one category (`PETS_AND_PET_PRODUCTS` by default) and one country (`BE` by default). Without `from` and `to`, a monthly series covers the latest 12 months and a yearly one the latest 5 years.
+
+| Root field | Dataset and unit |
+| --- | --- |
+| `eurostatPetPriceIndex` | `prc_hicp_minr`, index with 2025 as 100 |
+| `eurostatPetPriceMonthlyChange` | `prc_hicp_minr`, change from the month before |
+| `eurostatPetPriceAnnualChange` | `prc_hicp_minr`, change from the same month a year before |
+| `eurostatPetPriceMovingAverageChange` | `prc_hicp_minr`, change of the 12-month average |
+| `eurostatPetPriceIndexAtConstantTaxRates` | `prc_hicp_ct`, index with 2025 as 100 at constant tax rates |
+| `eurostatPetPriceContributionToEuroAreaInflation` | `prc_hicp_ctr`, percentage points of the euro area's inflation |
+| `eurostatPetPriceAnnualAverageIndex` | `prc_hicp_ainr`, yearly average index |
+| `eurostatPetPriceAnnualAverageChange` | `prc_hicp_ainr`, change of the yearly average |
+| `eurostatPetSpendingWeight` | `prc_hicp_iw`, share of household spending in parts per thousand |
+
+## GBIF
+
+GBIF, the Global Biodiversity Information Facility, is an international network that governments fund, with its secretariat in Copenhagen. Belgium takes part through the Belgian Biodiversity Platform. The API publishes where species live: the names and the classification of species, more than 3 billion occurrences (records of an organism at a place and a time, such as a sighting of a dog), the datasets they come from, the organizations that publish them, and the scientific collections of museums and herbaria.
+
+- **Endpoint:** `GET https://api.gbif.org/v1/occurrence/search?taxonKey=6164210&country=BE&limit=2`
+- **OpenAPI documents:** [GBIF API Reference](https://techdocs.gbif.org/en/openapi/), five of them: species, occurrence, registry, vocabulary and literature.
+- **Auth:** open for reading. Downloads and the data of a user need a GBIF account.
+- **Language:** English. The common names of species come in many languages.
+
+In the GBIF backbone taxonomy, the dog is `Canis lupus familiaris` with the key `6164210`.
+
+```json
+{
+  "offset": 0, "limit": 2, "endOfRecords": false, "count": 3749,
+  "results": [
+    { "key": 5937753054, "scientificName": "Canis familiaris Linnaeus, 1758", "countryCode": "BE", "eventDate": "2026-01-02" }
+  ]
+}
+```
+
+### Things to know
+
+- The documents describe 282 read operations. 226 of them answer JSON without a login, and each one became a root field. The others answer files such as ZIP and XML, need a GBIF account (`401` or `403`), or have the problems below.
+- The verbatim answers name each Darwin Core term by its full URI, such as the URI of `scientificName` in the namespace `rs.tdwg.org/dwc/terms/`. A URI cannot be a GraphQL name, so the three verbatim operations are left out.
+- The GeoJSON answers carry untyped geometries, so their features would lose their coordinates. Both GeoJSON operations are left out.
+- The possible duplicates of collections and institutions answer hundreds of groups in one piece, 581 KB for the collections. They are tools for GBIF's editors and are left out.
+- The experimental multimedia operations answer `404` for every species, and `listForInstitution` did not answer within 60 seconds.
+- The answers differ from the documents in a few places, which the generator corrects: the tags of an entity come as a list, `term` is a path variable, and the field `term` of a download column is a string.
+- An empty answer comes as `204 No Content`, for example the IUCN category of a taxon that IUCN has not assessed. The citation of a download is plain text under the content type `application/json`.
+- Counts and keys pass the 2,147,483,647 of `Int`: GBIF counts more than 3 billion occurrences.
+- GBIF leaves the email address and the account of whoever suggested a change to a collection empty for anonymous readers.
+
+### In the schema
+
+GBIF adds 226 root fields, 177 types and 37 enums. Every name starts with `gbif` or `Gbif`, and the fields follow the order of the five documents: species, occurrences, registry, vocabularies and literature.
+
+A script generated the fields and their types from the OpenAPI documents, together with `src/main/resources/gbif/operations.json`, which holds one line for each operation: its path, and where each argument goes. With more than 200 operations, one `RestOperationFetcher` serves every field instead of an HTTP interface method for each. It builds the URL from the arguments, calls GBIF, logs the call, and returns the JSON as GBIF sent it:
+
+```
+REST GET https://api.gbif.org/v1/occurrence/search?taxonKey=6164210&country=BE&offset=0&limit=2 returned 2 of 3,749 results (183 ms)
+```
+
+- **Paging:** the fields take `page` and `size`, from 1 to 50, like the rest of the schema, and the fetcher turns them into GBIF's `offset` and `limit`.
+- **Errors:** `404` and `204` become null. A `400` becomes a `BAD_REQUEST` error that repeats GBIF's reason, for example "At least one param to check the same field is required".
+- **Maps:** GBIF answers some counts as an object whose keys are data, such as `countByKingdom`. The schema has a list of entries with a `key` and a `value` for each of them.
+- **Descriptions:** most come from GBIF's documents, in GBIF's wording. Where a document leaves one out or is terse, such as "Name usage key.", the generator writes one, so every root field, argument, type, field and enum has a description.
+- **Size:** the GBIF part is about 93,500 of the schema's 111,000 tokens, counted with OpenAI's `o200k_base` tokenizer. GATool now ranks 2,351 schema coordinates, up from 480. Building its embedding index the first time took about 54 seconds, and a later start, which reads the index from its cache, took 2.9 seconds.
+- **Mock mode:** `mock-upstreams/__files/gbif` holds one recorded answer for each operation, and `mappings/gbif.json` serves it for any arguments. The recordings of GBIF, EMA and RASFF have their personal email addresses and phone numbers replaced, and the contact persons of RASFF notifications as well.
 
 ## Checked and left out
 

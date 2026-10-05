@@ -1,0 +1,152 @@
+{
+ "productCategories": [
+  {
+   "id": 18431,
+   "description": "alcoholic beverages"
+  },
+  {
+   "id": 19025,
+   "description": "animal by-products"
+  },
+  {
+   "id": 18432,
+   "description": "bivalve molluscs and products thereof"
+  },
+  {
+   "id": 18433,
+   "description": "cephalopods and products thereof"
+  },
+  {
+   "id": 18434,
+   "description": "cereals and bakery products"
+  },
+  {
+   "id": 18435,
+   "description": "cocoa and cocoa preparations, coffee and tea"
+  },
+  {
+   "id": 18436,
+   "description": "compound feeds"
+  },
+  {
+   "id": 18437,
+   "description": "confectionery"
+  },
+  {
+   "id": 18438,
+   "description": "crustaceans and products thereof"
+  },
+  {
+   "id": 18439,
+   "description": "dietetic foods, food supplements and fortified foods"
+  },
+  {
+   "id": 18440,
+   "description": "eggs and egg products"
+  },
+  {
+   "id": 18441,
+   "description": "fats and oils"
+  },
+  {
+   "id": 18442,
+   "description": "feed additives"
+  },
+  {
+   "id": 18443,
+   "description": "feed materials"
+  },
+  {
+   "id": 18444,
+   "description": "feed premixtures"
+  },
+  {
+   "id": 18445,
+   "description": "fish and fish products"
+  },
+  {
+   "id": 18446,
+   "description": "food additives and flavourings"
+  },
+  {
+   "id": 18447,
+   "description": "food contact materials"
+  },
+  {
+   "id": 18448,
+   "description": "fruits and vegetables"
+  },
+  {
+   "id": 18449,
+   "description": "gastropods"
+  },
+  {
+   "id": 18450,
+   "description": "herbs and spices"
+  },
+  {
+   "id": 18451,
+   "description": "honey and royal jelly"
+  },
+  {
+   "id": 18452,
+   "description": "ices and desserts"
+  },
+  {
+   "id": 20007,
+   "description": "live animals"
+  },
+  {
+   "id": 18453,
+   "description": "meat and meat products (other than poultry)"
+  },
+  {
+   "id": 18454,
+   "description": "milk and milk products"
+  },
+  {
+   "id": 18455,
+   "description": "natural mineral waters"
+  },
+  {
+   "id": 18426,
+   "description": "non-alcoholic beverages"
+  },
+  {
+   "id": 18427,
+   "description": "nuts, nut products and seeds"
+  },
+  {
+   "id": 18428,
+   "description": "other food product / mixed"
+  },
+  {
+   "id": 18429,
+   "description": "pet food"
+  },
+  {
+   "id": 27284,
+   "description": "plant protection products"
+  },
+  {
+   "id": 18430,
+   "description": "poultry meat and poultry meat products"
+  },
+  {
+   "id": 18456,
+   "description": "prepared dishes and snacks"
+  },
+  {
+   "id": 18457,
+   "description": "soups, broths, sauces and condiments"
+  },
+  {
+   "id": 18458,
+   "description": "water for human consumption (other)"
+  },
+  {
+   "id": 18459,
+   "description": "wine"
+  }
+ ]
+}

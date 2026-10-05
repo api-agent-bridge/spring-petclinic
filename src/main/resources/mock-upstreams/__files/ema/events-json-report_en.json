@@ -1,0 +1,1008 @@
+{
+ "meta": {
+  "total_records": 2501,
+  "timestamp": "2026-10-04T18:00:33Z"
+ },
+ "data": [
+  {
+   "title": "Regulatory sandboxes: Joint European Commission (EC) / European Medicines Agency (EMA) multi-stakeholder workshop",
+   "date_start_end_dates": "Mon, Sep 21 2026, 1:30 - 5pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/07/2026",
+   "last_updated_date": "02/10/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/regulatory-sandboxes-joint-european-commission-ec-european-medicines-agency-ema-multi-stakeholder-workshop"
+  },
+  {
+   "title": "Committee for Herbal Medicinal Products (HMPC): 6-8 July 2026",
+   "date_start_end_dates": "Mon, Jul 6 - Wed, Jul 8 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "01/06/2021",
+   "last_updated_date": "02/10/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-herbal-medicinal-products-hmpc-6-8-july-2026"
+  },
+  {
+   "title": "Good manufacturing practice: Multistakeholder workshop on expert contributions to artificial intelligence guidance development (Annex 22)",
+   "date_start_end_dates": "Tue, Jun 30 2026, 9am - 6pm, Wed, Jul 1 2026, 12 - 5pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "08/05/2026",
+   "last_updated_date": "02/10/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/good-manufacturing-practice-multistakeholder-workshop-expert-contributions-artificial-intelligence-guidance-development-annex-22"
+  },
+  {
+   "title": "Meeting of the Medicine Shortages Single Point of Contact (SPOC) Working Party",
+   "date_start_end_dates": "Wed, Jul 15 2026, 9:30am - 1:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "20/01/2025",
+   "last_updated_date": "01/10/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/meeting-medicine-shortages-single-point-contact-spoc-working-party-43"
+  },
+  {
+   "title": "European Medicines Agency  workshop on bacteriophage therapy",
+   "date_start_end_dates": "Fri, Oct 30 2026, 9am - 6pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "01/10/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/european-medicines-agency-workshop-bacteriophage-therapy"
+  },
+  {
+   "title": "Seventeenth meeting of the industry stakeholder platform on the operation of the centralised procedure for human medicines",
+   "date_start_end_dates": "Fri, Nov 20 2026, 9am - 1pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "01/10/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/seventeenth-meeting-industry-stakeholder-platform-operation-centralised-procedure-human-medicines"
+  },
+  {
+   "title": "ACT EU workshop on multiplicity in confirmatory clinical trials: From two-arm to platform trials",
+   "date_start_end_dates": "Fri, Nov 27 2026, 9am - 3pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "25/09/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/act-eu-workshop-multiplicity-confirmatory-clinical-trials-two-arm-platform-trials"
+  },
+  {
+   "title": "18th Industry Standing Group (ISG) meeting",
+   "date_start_end_dates": "Mon, Sep 21 2026, 9am - 12:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "31/07/2026",
+   "last_updated_date": "24/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/18th-industry-standing-group-isg-meeting"
+  },
+  {
+   "title": "Regulatory perspectives on herbal medicinal / botanical drug product development: Joint FDA / EMA workshop",
+   "date_start_end_dates": "Fri, Sep 25 2026, 10am - 1pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "12/06/2026",
+   "last_updated_date": "24/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/regulatory-perspectives-herbal-medicinal-botanical-drug-product-development-joint-fda-ema-workshop"
+  },
+  {
+   "title": "Real-world data collection in Duchenne muscular dystrophy: Joint Heads of Medicines Agencies (HMA) / European Medicines Agency (EMA) multistakeholder workshop",
+   "date_start_end_dates": "Fri, Sep 25 2026, 9am - 5:30pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "29/05/2026",
+   "last_updated_date": "23/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/real-world-data-collection-duchenne-muscular-dystrophy-joint-heads-medicines-agencies-hma-european-medicines-agency-ema-multistakeholder-workshop"
+  },
+  {
+   "title": "First European Medicines Agency (EMA) and Active Pharmaceutical Ingredients Committee (APIC) bilateral meeting",
+   "date_start_end_dates": "Wed, Sep 2 2026, 3:30 - 5:30pm",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "31/07/2026",
+   "last_updated_date": "23/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/first-european-medicines-agency-ema-active-pharmaceutical-ingredients-committee-apic-bilateral-meeting"
+  },
+  {
+   "title": "Managing product data quality in PMS: processes, known issues, current status and best practices",
+   "date_start_end_dates": "Tue, Jul 21 2026, 2 - 3:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "10/06/2026",
+   "last_updated_date": "23/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/managing-product-data-quality-pms-processes-known-issues-current-status-best-practices"
+  },
+  {
+   "title": "Meeting of the Executive Steering Group on Shortages and Safety of Medicinal Products (MSSG) - September 2026",
+   "date_start_end_dates": "Wed, Sep 23 2026, 10am - 12pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "06/01/2026",
+   "last_updated_date": "23/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/meeting-executive-steering-group-shortages-safety-medicinal-products-mssg-september-2026"
+  },
+  {
+   "title": "SME info day - navigating EMA support: From innovation to marketing authorisation",
+   "date_start_end_dates": "Fri, Nov 6 2026, 9:15am - 4pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "29/05/2026",
+   "last_updated_date": "22/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/sme-info-day-navigating-ema-support-innovation-marketing-authorisation"
+  },
+  {
+   "title": "Sixth veterinary big data stakeholder forum",
+   "date_start_end_dates": "Tue, Nov 10 2026, 9am - 5:30pm",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "22/09/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/sixth-veterinary-big-data-stakeholder-forum"
+  },
+  {
+   "title": "Quarterly System Demo - Q3 2026",
+   "date_start_end_dates": "Thu, Sep 17 2026, 9 - 11:30am",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "27/01/2026",
+   "last_updated_date": "18/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/quarterly-system-demo-q3-2026"
+  },
+  {
+   "title": "EMA annual call with General Practitioner Organisations' representatives",
+   "date_start_end_dates": "Fri, Nov 20 2026, 1 - 3pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "18/09/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/ema-annual-call-general-practitioner-organisations-representatives"
+  },
+  {
+   "title": "Workshop on advancing proof-of-concept data in paediatric oncology drug development",
+   "date_start_end_dates": "Mon, Sep 21 2026, 1 - 4pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "25/06/2026",
+   "last_updated_date": "18/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/workshop-advancing-proof-concept-data-paediatric-oncology-drug-development"
+  },
+  {
+   "title": "Meeting of the Medicine Shortages Single Point of Contact (SPOC) Working Party",
+   "date_start_end_dates": "Tue, Sep 15 2026, 9:30am - 1:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "20/01/2025",
+   "last_updated_date": "15/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/meeting-medicine-shortages-single-point-contact-spoc-working-party-45"
+  },
+  {
+   "title": "Committee for Medicinal Products for Human Use (CHMP): 14-17 September 2026",
+   "date_start_end_dates": "Mon, Sep 14 - Thu, Sep 17 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "10/03/2023",
+   "last_updated_date": "14/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-medicinal-products-human-use-chmp-14-17-september-2026"
+  },
+  {
+   "title": "HMA / EMA multistakeholder AI and Data forum: Build trustworthy AI on strong data foundations",
+   "date_start_end_dates": "Thu, Nov 12 - Fri, Nov 13 2026, All day",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "25/06/2026",
+   "last_updated_date": "10/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/hma-ema-multistakeholder-ai-data-forum-build-trustworthy-ai-strong-data-foundations"
+  },
+  {
+   "title": "First European Medicines Agency (EMA) - International Society for Cell and Gene Therapy (ISCT) bilateral meeting",
+   "date_start_end_dates": "Mon, Oct 5 2026, 3:30 - 5:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "10/09/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/first-european-medicines-agency-ema-international-society-cell-gene-therapy-isct-bilateral-meeting"
+  },
+  {
+   "title": "Fifth European Medicines Agency (EMA) - Vaccines Europe bilateral meeting",
+   "date_start_end_dates": "Mon, Oct 26 2026, 2 - 4pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "10/09/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/fifth-european-medicines-agency-ema-vaccines-europe-bilateral-meeting"
+  },
+  {
+   "title": "Product Management Service (PMS) public API beta release - Technical overview and live demo",
+   "date_start_end_dates": "Mon, Jul 13 2026, 2 - 3:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "12/06/2026",
+   "last_updated_date": "10/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/product-management-service-pms-public-api-beta-release-technical-overview-live-demo"
+  },
+  {
+   "title": "EMA Biotech Hub and Technology Transfer Offices (TTOs) engagement workshop",
+   "date_start_end_dates": "Wed, Sep 16 2026, 9:30am - 4:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "09/09/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/ema-biotech-hub-technology-transfer-offices-ttos-engagement-workshop"
+  },
+  {
+   "title": "2026 annual open meeting of the European Network of Paediatric Research at EMA (EnprEMA)",
+   "date_start_end_dates": "Thu, Nov 5 2026, 9am - 4:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "09/09/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/2026-annual-open-meeting-european-network-paediatric-research-ema-enprema"
+  },
+  {
+   "title": "Committee for Advanced Therapies (CAT): 9-11 September 2026",
+   "date_start_end_dates": "Wed, Sep 9 - Fri, Sep 11 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "08/03/2023",
+   "last_updated_date": "09/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-advanced-therapies-cat-9-11-september-2026"
+  },
+  {
+   "title": "Committee for Medicinal Products for Veterinary Use (CVMP): 8-10 September 2026",
+   "date_start_end_dates": "Tue, Sep 8 - Thu, Sep 10 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "23/02/2023",
+   "last_updated_date": "08/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-medicinal-products-veterinary-use-cvmp-8-10-september-2026"
+  },
+  {
+   "title": "EMA/FVE information session for veterinary students: the importance of pharmacovigilance",
+   "date_start_end_dates": "Tue, Oct 13 2026, 4 - 5:15pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "07/09/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/ema-fve-information-session-veterinary-students-importance-pharmacovigilance"
+  },
+  {
+   "title": "Paediatric Committee (PDCO): 8-11 September 2026",
+   "date_start_end_dates": "Tue, Sep 8 - Fri, Sep 11 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "13/03/2023",
+   "last_updated_date": "07/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/paediatric-committee-pdco-8-11-september-2026"
+  },
+  {
+   "title": "EMA Methodology Working Party interested parties meeting 2026",
+   "date_start_end_dates": "Wed, Nov 4 2026, 1 - 4pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "07/09/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/ema-methodology-working-party-interested-parties-meeting-2026"
+  },
+  {
+   "title": "20th anniversary of European Medicines Agency's Patients' and Consumers' Working Party (PCWP)",
+   "date_start_end_dates": "Tue, Jun 30 2026, 1:30 - 5:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "25/03/2026",
+   "last_updated_date": "01/09/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/20th-anniversary-european-medicines-agencys-patients-consumers-working-party-pcwp"
+  },
+  {
+   "title": "Paediatric Committee (PDCO): 23-26 June 2026",
+   "date_start_end_dates": "Tue, Jun 23 - Fri, Jun 26 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "13/03/2023",
+   "last_updated_date": "27/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/paediatric-committee-pdco-23-26-june-2026"
+  },
+  {
+   "title": "Committee for Medicinal Products for Human Use (CHMP): 23-26 February 2026",
+   "date_start_end_dates": "Mon, Feb 23 - Thu, Feb 26 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "10/03/2023",
+   "last_updated_date": "27/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-medicinal-products-human-use-chmp-23-26-february-2026"
+  },
+  {
+   "title": "Committee for Advanced Therapies (CAT): 17-19 June 2026",
+   "date_start_end_dates": "Wed, Jun 17 - Fri, Jun 19 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "08/03/2023",
+   "last_updated_date": "26/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-advanced-therapies-cat-17-19-june-2026"
+  },
+  {
+   "title": "Committee for Advanced Therapies (CAT): 11-13 May 2026",
+   "date_start_end_dates": "Mon, May 11 - Wed, May 13 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "08/03/2023",
+   "last_updated_date": "26/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-advanced-therapies-cat-11-13-may-2026"
+  },
+  {
+   "title": "Webinar on the use of platform approaches in the non-clinical and clinical domains",
+   "date_start_end_dates": "Mon, Mar 2 2026, 9:25am - 12:30pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "15/01/2026",
+   "last_updated_date": "25/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/webinar-use-platform-approaches-non-clinical-clinical-domains"
+  },
+  {
+   "title": "EMA risk management information day",
+   "date_start_end_dates": "Tue, Sep 8 2026, 9am - 5pm",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "18/05/2026",
+   "last_updated_date": "21/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/ema-risk-management-information-day"
+  },
+  {
+   "title": "EMA multi-stakeholder workshop on supporting innovation in cardiovascular medicines and medical devices in the EU",
+   "date_start_end_dates": "Wed, Jul 1 2026, 1 - 7pm, Thu, Jul 2 2026, 9am - 4pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "12/12/2025",
+   "last_updated_date": "19/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/ema-multi-stakeholder-workshop-supporting-innovation-cardiovascular-medicines-medical-devices-eu"
+  },
+  {
+   "title": "Webinar on new approach methodologies (NAMs) in ecotoxicology: QSARs to predict aquatic toxicity",
+   "date_start_end_dates": "Thu, Sep 17 2026, 2 - 3:30pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "18/08/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/webinar-new-approach-methodologies-nams-ecotoxicology-qsars-predict-aquatic-toxicity"
+  },
+  {
+   "title": "Shortage prevention plan (SPP) workshop",
+   "date_start_end_dates": "Mon, Jun 22 2026, 10:30am - 12:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "11/06/2026",
+   "last_updated_date": "17/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/shortage-prevention-plan-spp-workshop"
+  },
+  {
+   "title": "Digitalisation and artificial Intelligence in pharmaceutical manufacturing: Quality Innovation Group (QIG) - Follow-up roundtable meeting",
+   "date_start_end_dates": "Wed, Nov 18 2026, 9:30am - 5:30pm, Thu, Nov 19 2026, 9:30am - 5:30pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "07/04/2025",
+   "last_updated_date": "13/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/digitalisation-artificial-intelligence-pharmaceutical-manufacturing-quality-innovation-group-qig-follow-roundtable-meeting"
+  },
+  {
+   "title": "Industry webinar on new electronic application form (eAF) version",
+   "date_start_end_dates": "Wed, Jul 22 2026, 2 - 4pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "14/07/2026",
+   "last_updated_date": "13/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/industry-webinar-new-electronic-application-form-eaf-version"
+  },
+  {
+   "title": "European Medicines Agency (EMA) Patients' and Consumers' (PCWP) and Healthcare Professionals' (HCPWP) Working Parties meeting with all eligible organisations",
+   "date_start_end_dates": "Tue, Oct 20 2026, 9am - 5:30pm, Wed, Oct 21 2026, 9am - 4:15pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "12/08/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/european-medicines-agency-ema-patients-consumers-pcwp-healthcare-professionals-hcpwp-working-parties-meeting-all-eligible-organisations"
+  },
+  {
+   "title": "3Rs Working Party (3RsWP) stakeholder meeting - Public session on the 2026-2028 work plan",
+   "date_start_end_dates": "Tue, Mar 31 2026, 9:30 - 10:30am",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "02/03/2026",
+   "last_updated_date": "12/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/3rs-working-party-3rswp-stakeholder-meeting-public-session-2026-2028-work-plan"
+  },
+  {
+   "title": "Clinical Trials Information System (CTIS): Walk-in clinic October 2026",
+   "date_start_end_dates": "Wed, Oct 7 2026, 4 - 5pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "11/08/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/clinical-trials-information-system-ctis-walk-clinic-october-2026"
+  },
+  {
+   "title": "Clinical Trials Information System (CTIS) bitesize talk: Annual safety report (ASR) new safety module",
+   "date_start_end_dates": "Thu, Jul 23 2026, 1 - 2:30pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "12/06/2026",
+   "last_updated_date": "07/08/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/clinical-trials-information-system-ctis-bitesize-talk-annual-safety-report-asr-new-safety-module"
+  },
+  {
+   "title": "Enpr-EMA Coordinating Group meeting June 2026",
+   "date_start_end_dates": "Wed, Jun 17 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/08/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/enpr-ema-coordinating-group-meeting-june-2026"
+  },
+  {
+   "title": "European platform for regulatory science research meeting: October 2026",
+   "date_start_end_dates": "Thu, Oct 22 2026, 9am - 5pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/08/2026",
+   "last_updated_date": "13/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/european-platform-regulatory-science-research-meeting-october-2026"
+  },
+  {
+   "title": "Fifth European Medicines Agency (EMA) and Affordable Medicines Europe bilateral meeting",
+   "date_start_end_dates": "Fri, Sep 11 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/08/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/fifth-european-medicines-agency-ema-affordable-medicines-europe-bilateral-meeting"
+  },
+  {
+   "title": "Ninth European Medicines Agency (EMA) and EFPIA bilateral meeting",
+   "date_start_end_dates": "Wed, Sep 16 2026, 10:30am - 12:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/08/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/ninth-european-medicines-agency-ema-efpia-bilateral-meeting"
+  },
+  {
+   "title": "Fifth European Medicines Agency and Nuclear Medicines Europe bilateral meeting",
+   "date_start_end_dates": "Fri, Jul 10 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "22/06/2026",
+   "last_updated_date": "31/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/fifth-european-medicines-agency-nuclear-medicines-europe-bilateral-meeting"
+  },
+  {
+   "title": "SPOR and XEVMPD status update webinar - Q3 2026",
+   "date_start_end_dates": "Wed, Jul 8 2026, 10am - 12:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "02/12/2025",
+   "last_updated_date": "24/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/spor-xevmpd-status-update-webinar-q3-2026"
+  },
+  {
+   "title": "Network Data Steering Group and industry stakeholders annual meeting",
+   "date_start_end_dates": "Tue, Jul 14 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "24/07/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/network-data-steering-group-industry-stakeholders-annual-meeting"
+  },
+  {
+   "title": "Meeting of the Executive Steering Group on Shortages and Safety of Medicinal Products (MSSG) – June 2026",
+   "date_start_end_dates": "Fri, Jun 12 2026, 4:30 - 5:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "12/06/2026",
+   "last_updated_date": "24/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/meeting-executive-steering-group-shortages-safety-medicinal-products-mssg-june-2026-0"
+  },
+  {
+   "title": "Paediatric Committee (PDCO): 19-22 May 2026",
+   "date_start_end_dates": "Tue, May 19 - Fri, May 22 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "13/03/2023",
+   "last_updated_date": "20/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/paediatric-committee-pdco-19-22-may-2026"
+  },
+  {
+   "title": "Committee for Medicinal Products for Human Use (CHMP): 20-23 July 2026",
+   "date_start_end_dates": "Mon, Jul 20 - Thu, Jul 23 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "10/03/2023",
+   "last_updated_date": "20/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-medicinal-products-human-use-chmp-20-23-july-2026"
+  },
+  {
+   "title": "Cancer Medicines Forum: June 2026",
+   "date_start_end_dates": "Tue, Jun 23 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "20/07/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/cancer-medicines-forum-june-2026"
+  },
+  {
+   "title": "Meeting of the Executive Steering Group on Shortages and Safety of Medicinal Products (MSSG) - July 2026",
+   "date_start_end_dates": "Fri, Jul 17 2026, 10 - 11:30am",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "06/01/2026",
+   "last_updated_date": "17/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/meeting-executive-steering-group-shortages-safety-medicinal-products-mssg-july-2026"
+  },
+  {
+   "title": "European platform for regulatory science research meeting: June 2026",
+   "date_start_end_dates": "Tue, Jun 16 2026, 2 - 6pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "02/06/2026",
+   "last_updated_date": "13/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/european-platform-regulatory-science-research-meeting-june-2026"
+  },
+  {
+   "title": "Enpr-EMA Coordinating Group meeting April 2026",
+   "date_start_end_dates": "Wed, Apr 8 2026, 2 - 3pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "10/07/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/enpr-ema-coordinating-group-meeting-april-2026"
+  },
+  {
+   "title": "Sixteenth meeting of the industry stakeholder platform on the operation of the centralised procedure for human medicines",
+   "date_start_end_dates": "Mon, Jun 15 2026, 1 - 6pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "20/10/2025",
+   "last_updated_date": "09/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/sixteenth-meeting-industry-stakeholder-platform-operation-centralised-procedure-human-medicines"
+  },
+  {
+   "title": "Sixteenth industry stakeholder platform on research and development support",
+   "date_start_end_dates": "Thu, Jul 2 2026, 12:30 - 5:30pm",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "09/06/2026",
+   "last_updated_date": "09/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/sixteenth-industry-stakeholder-platform-research-development-support"
+  },
+  {
+   "title": "eXtended EudraVigilance Medicinal Product Dictionary (XEVMPD) training course (Bucharest) - October 2026",
+   "date_start_end_dates": "Thu, Oct 29 2026, 8am - 12pm, Fri, Oct 30 2026, 8am - 12pm",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "Hotel Capital Plaza Bucharest",
+   "first_published_date": "08/07/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/extended-eudravigilance-medicinal-product-dictionary-xevmpd-training-course-bucharest-october-2026"
+  },
+  {
+   "title": "EMA workshop on the challenges in drug development, regulation and clinical practice in immune thrombocytopenia",
+   "date_start_end_dates": "Tue, Jun 30 2026, 2 - 6pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "20/03/2026",
+   "last_updated_date": "07/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/ema-workshop-challenges-drug-development-regulation-clinical-practice-immune-thrombocytopenia"
+  },
+  {
+   "title": "PCWP/HCPWP joint meeting",
+   "date_start_end_dates": "Tue, Jun 30 2026, 9:15am - 12:20pm, Wed, Jul 1 2026, 9am - 12pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "09/03/2026",
+   "last_updated_date": "07/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/pcwp-hcpwp-joint-meeting"
+  },
+  {
+   "title": "Mandatory use of ISO/ICH E2B(R3) Individual Case Safety Reporting in the EU: Hands-on training course using the EudraVigilance system",
+   "date_start_end_dates": "Mon, Oct 26 - Wed, Oct 28 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "Bucharest, Romania",
+   "first_published_date": "07/07/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/mandatory-use-iso-ich-e2br3-individual-case-safety-reporting-eu-hands-training-course-using-eudravigilance-system-59"
+  },
+  {
+   "title": "17th Industry Standing Group (ISG) meeting",
+   "date_start_end_dates": "Mon, Jun 29 2026, 9:30am - 1:10pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "12/02/2026",
+   "last_updated_date": "06/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/17th-industry-standing-group-isg-meeting"
+  },
+  {
+   "title": "Workshop on the use of external controls for evidence generation in regulatory decision-making",
+   "date_start_end_dates": "Mon, Nov 3 2025, 10am - 5:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "22/07/2025",
+   "last_updated_date": "03/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/workshop-use-external-controls-evidence-generation-regulatory-decision-making"
+  },
+  {
+   "title": "Meeting of the HMA-EMA group focused on AI with industry stakeholders - June 2026",
+   "date_start_end_dates": "Tue, Jun 2 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/07/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/meeting-hma-ema-group-focused-ai-industry-stakeholders-june-2026"
+  },
+  {
+   "title": "Clinical Trials Information System (CTIS): Information day",
+   "date_start_end_dates": "Wed, Jun 17 2026, 12:30 - 5:30pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "07/05/2026",
+   "last_updated_date": "03/07/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/clinical-trials-information-system-ctis-information-day-2"
+  },
+  {
+   "title": "Pharmacovigilance Risk Assessment Committee (PRAC): 4 - 7 May 2026",
+   "date_start_end_dates": "Mon, May 4 - Thu, May 7 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "24/10/2024",
+   "last_updated_date": "30/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/pharmacovigilance-risk-assessment-committee-prac-4-7-may-2026"
+  },
+  {
+   "title": "Q&A clinic on Substance, Organisation, Referentials Management Services - April 2026",
+   "date_start_end_dates": "Tue, Apr 14 2026, 11am - 12pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "02/12/2025",
+   "last_updated_date": "30/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/qa-clinic-substance-organisation-referentials-management-services-april-2026"
+  },
+  {
+   "title": "Q&A clinic on eXtended EudraVigilance Medicinal Product Dictionary (XEVMPD) service - April 2026",
+   "date_start_end_dates": "Thu, Apr 16 2026, 3 - 4pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/12/2025",
+   "last_updated_date": "30/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/qa-clinic-extended-eudravigilance-medicinal-product-dictionary-xevmpd-service-april-2026"
+  },
+  {
+   "title": "Q&A clinic on Substance, Organisation, Referentials Management Services - May 2026",
+   "date_start_end_dates": "Tue, May 12 2026, 11am - 12pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "02/12/2025",
+   "last_updated_date": "30/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/qa-clinic-substance-organisation-referentials-management-services-may-2026"
+  },
+  {
+   "title": "Q&A clinic on Product Management Service (PMS) Product User Interface (PUI) and Application Programming Interface (API) - May 2026",
+   "date_start_end_dates": "Tue, May 12 2026, 3 - 4pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/12/2025",
+   "last_updated_date": "30/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/qa-clinic-product-management-service-pms-product-user-interface-pui-application-programming-interface-api-may-2026"
+  },
+  {
+   "title": "Q&A clinic on eXtended EudraVigilance Medicinal Product Dictionary (XEVMPD) service - May 2026",
+   "date_start_end_dates": "Wed, May 13 2026, 3 - 4pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/12/2025",
+   "last_updated_date": "30/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/qa-clinic-extended-eudravigilance-medicinal-product-dictionary-xevmpd-service-may-2026"
+  },
+  {
+   "title": "Product Management Service (PMS) information day 2026",
+   "date_start_end_dates": "Tue, Jun 9 2026, 8:45am - 5pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "12/01/2026",
+   "last_updated_date": "30/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/product-management-service-pms-information-day-2026"
+  },
+  {
+   "title": "Multistakeholder workshop on women’s health",
+   "date_start_end_dates": "Mon, Sep 28 2026, 9:30am - 5:30pm, Tue, Sep 29 2026, 9am - 6:10pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "30/06/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/multistakeholder-workshop-womens-health"
+  },
+  {
+   "title": "Quarterly System Demo - Q2 2026",
+   "date_start_end_dates": "Thu, Jun 25 2026, 9am - 12:40pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "27/01/2026",
+   "last_updated_date": "29/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/quarterly-system-demo-q2-2026"
+  },
+  {
+   "title": "Management Board meeting:  11-12 June 2025",
+   "date_start_end_dates": "Wed, Jun 11 - Thu, Jun 12 2025, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "19/07/2024",
+   "last_updated_date": "29/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/management-board-meeting-11-12-june-2025"
+  },
+  {
+   "title": "Meeting of the Medicine Shortages Single Point of Contact (SPOC) Working Party",
+   "date_start_end_dates": "Tue, May 12 2026, 9:30am - 1:30pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "20/01/2025",
+   "last_updated_date": "29/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/meeting-medicine-shortages-single-point-contact-spoc-working-party-41"
+  },
+  {
+   "title": "Committee for Medicinal Products for Veterinary Use (CVMP): 14-16 April 2026",
+   "date_start_end_dates": "Tue, Apr 14 - Thu, Apr 16 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "23/02/2023",
+   "last_updated_date": "29/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-medicinal-products-veterinary-use-cvmp-14-16-april-2026"
+  },
+  {
+   "title": "Committee for Medicinal Products for Veterinary Use (CVMP): 19-21 May 2026",
+   "date_start_end_dates": "Tue, May 19 - Thu, May 21 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "23/02/2023",
+   "last_updated_date": "29/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-medicinal-products-veterinary-use-cvmp-19-21-may-2026"
+  },
+  {
+   "title": "Updates to industry contact management for authorisation products (IRIS)",
+   "date_start_end_dates": "Thu, Jun 11 2026, 11am - 12:15pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "03/06/2026",
+   "last_updated_date": "26/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/updates-industry-contact-management-authorisation-products-iris"
+  },
+  {
+   "title": "European Medicines Regulatory Network (EMRN) workshop on geographic atrophy endpoints",
+   "date_start_end_dates": "Wed, Apr 29 2026, All day",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "04/02/2026",
+   "last_updated_date": "25/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/european-medicines-regulatory-network-emrn-workshop-geographic-atrophy-endpoints"
+  },
+  {
+   "title": "Management Board meeting: 10-11 June 2026",
+   "date_start_end_dates": "Wed, Jun 10 - Thu, Jun 11 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "20/06/2025",
+   "last_updated_date": "24/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/management-board-meeting-10-11-june-2026"
+  },
+  {
+   "title": "Breakthrough medical devices: information session",
+   "date_start_end_dates": "Fri, Apr 24 2026, 3 - 5pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "01/04/2026",
+   "last_updated_date": "24/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/breakthrough-medical-devices-information-session"
+  },
+  {
+   "title": "ETF-stakeholders meeting on biodistribution of mRNA vaccines",
+   "date_start_end_dates": "Fri, Jun 26 2026, 2 - 5pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "22/06/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/etf-stakeholders-meeting-biodistribution-mrna-vaccines"
+  },
+  {
+   "title": "Committee for Medicinal Products for Human Use (CHMP): 22-25 June 2026",
+   "date_start_end_dates": "Mon, Jun 22 - Thu, Jun 25 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "10/03/2023",
+   "last_updated_date": "22/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-medicinal-products-human-use-chmp-22-25-june-2026"
+  },
+  {
+   "title": "Meeting of the Executive Steering Group on Shortages and Safety of Medicinal Products (MSSG) - May 2026",
+   "date_start_end_dates": "Wed, May 20 2026, 10am - 12pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "06/01/2026",
+   "last_updated_date": "16/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/meeting-executive-steering-group-shortages-safety-medicinal-products-mssg-may-2026"
+  },
+  {
+   "title": "Meeting of the Medicine Shortages Single Point of Contact (SPOC) Working Party",
+   "date_start_end_dates": "Tue, Jun 16 2026, 10am - 6pm, Wed, Jun 17 2026, 9am - 4pm",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "20/01/2025",
+   "last_updated_date": "16/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/meeting-medicine-shortages-single-point-contact-spoc-working-party-42"
+  },
+  {
+   "title": "First Advisory group on vaccine confidence meeting",
+   "date_start_end_dates": "Wed, Apr 29 2026, 4:30 - 6pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "16/06/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/first-advisory-group-vaccine-confidence-meeting"
+  },
+  {
+   "title": "Second Advisory group on vaccine confidence meeting",
+   "date_start_end_dates": "Tue, Jul 21 2026, 4 - 6pm",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "",
+   "first_published_date": "16/06/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/second-advisory-group-vaccine-confidence-meeting"
+  },
+  {
+   "title": "Committee for Medicinal Products for Veterinary Use (CVMP): 16-18 June 2026",
+   "date_start_end_dates": "Tue, Jun 16 - Thu, Jun 18 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "23/02/2023",
+   "last_updated_date": "16/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-medicinal-products-veterinary-use-cvmp-16-18-june-2026"
+  },
+  {
+   "title": "Joint Heads of Medicines Agencies (HMA)/European Medicines Agency (EMA) multistakeholder workshop on Patient Registries for Alzheimer's disease",
+   "date_start_end_dates": "Mon, Dec 15 2025, 9am - 12:20pm, Mon, Dec 15 2025, 1:10 - 5:30pm",
+   "live_broadcast": "Yes",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "14/07/2025",
+   "last_updated_date": "16/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/joint-heads-medicines-agencies-hma-european-medicines-agency-ema-multistakeholder-workshop-patient-registries-alzheimers-disease"
+  },
+  {
+   "title": "Committee for Orphan Medicinal Products (COMP): 16-18 June 2026",
+   "date_start_end_dates": "Tue, Jun 16 - Thu, Jun 18 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "22/02/2023",
+   "last_updated_date": "15/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-orphan-medicinal-products-comp-16-18-june-2026"
+  },
+  {
+   "title": "Committee for Medicinal Products for Veterinary Use (CVMP): 10-12 March 2026",
+   "date_start_end_dates": "Tue, Mar 10 - Thu, Mar 12 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "23/02/2023",
+   "last_updated_date": "15/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-medicinal-products-veterinary-use-cvmp-10-12-march-2026"
+  },
+  {
+   "title": "Committee for Advanced Therapies (CAT): 15-17 April 2026",
+   "date_start_end_dates": "Wed, Apr 15 - Fri, Apr 17 2026, All day",
+   "live_broadcast": "No",
+   "online": "No",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "08/03/2023",
+   "last_updated_date": "10/06/2026",
+   "event_url": "https://www.ema.europa.eu/en/events/committee-advanced-therapies-cat-15-17-april-2026"
+  },
+  {
+   "title": "Cancer Medicines Forum: March 2026",
+   "date_start_end_dates": "Mon, Mar 2 2026, All day",
+   "live_broadcast": "No",
+   "online": "Yes",
+   "location": "European Medicines Agency, Amsterdam, the Netherlands",
+   "first_published_date": "10/06/2026",
+   "last_updated_date": "",
+   "event_url": "https://www.ema.europa.eu/en/events/cancer-medicines-forum-march-2026"
+  }
+ ]
+}

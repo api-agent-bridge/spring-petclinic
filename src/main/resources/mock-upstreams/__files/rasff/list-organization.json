@@ -1,0 +1,442 @@
+{
+ "organizations": [
+  {
+   "id": 5,
+   "description": "Austria",
+   "alpha2Code": "AT",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 5
+  },
+  {
+   "id": 7,
+   "description": "Belgium",
+   "alpha2Code": "BE",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 7
+  },
+  {
+   "id": 10,
+   "description": "Bulgaria",
+   "alpha2Code": "BG",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 10
+  },
+  {
+   "id": 36,
+   "description": "Croatia",
+   "alpha2Code": "HR",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 36
+  },
+  {
+   "id": 12,
+   "description": "Cyprus",
+   "alpha2Code": "CY",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 12
+  },
+  {
+   "id": 37,
+   "description": "Czechia",
+   "alpha2Code": "CZ",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 37
+  },
+  {
+   "id": 53,
+   "description": "Denmark",
+   "alpha2Code": "DK",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 53
+  },
+  {
+   "id": 17777,
+   "description": "ECDC",
+   "alpha2Code": "ECDC",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 16441
+  },
+  {
+   "id": 526,
+   "description": "EFSA Member",
+   "alpha2Code": "FF",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 526
+  },
+  {
+   "id": 29,
+   "description": "EFTA Surveillance Authority",
+   "alpha2Code": "FT",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 29
+  },
+  {
+   "id": 58,
+   "description": "Estonia",
+   "alpha2Code": "EE",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 58
+  },
+  {
+   "id": 1,
+   "description": "European Commission",
+   "alpha2Code": "EU",
+   "organizationId": 1
+  },
+  {
+   "id": 17164,
+   "description": "Europol",
+   "alpha2Code": "EUROPOL",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 16141
+  },
+  {
+   "id": 21,
+   "description": "Finland",
+   "alpha2Code": "FI",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 21
+  },
+  {
+   "id": 14,
+   "description": "France",
+   "alpha2Code": "FR",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 14
+  },
+  {
+   "id": 3,
+   "description": "Germany",
+   "alpha2Code": "DE",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 3
+  },
+  {
+   "id": 55,
+   "description": "Greece",
+   "alpha2Code": "GR",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 55
+  },
+  {
+   "id": 52,
+   "description": "Hungary",
+   "alpha2Code": "HU",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 52
+  },
+  {
+   "id": 56,
+   "description": "Iceland",
+   "alpha2Code": "IS",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 56
+  },
+  {
+   "id": 57,
+   "description": "Ireland",
+   "alpha2Code": "IE",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 57
+  },
+  {
+   "id": 9,
+   "description": "Italy",
+   "alpha2Code": "IT",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 9
+  },
+  {
+   "id": 24,
+   "description": "Latvia",
+   "alpha2Code": "LV",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 24
+  },
+  {
+   "id": 60,
+   "description": "Liechtenstein",
+   "alpha2Code": "LI",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 60
+  },
+  {
+   "id": 61,
+   "description": "Lithuania",
+   "alpha2Code": "LT",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 61
+  },
+  {
+   "id": 18,
+   "description": "Luxembourg",
+   "alpha2Code": "LU",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 18
+  },
+  {
+   "id": 19,
+   "description": "Malta",
+   "alpha2Code": "MT",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 19
+  },
+  {
+   "id": 38,
+   "description": "Netherlands",
+   "alpha2Code": "NL",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 38
+  },
+  {
+   "id": 4,
+   "description": "Norway",
+   "alpha2Code": "NO",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 4
+  },
+  {
+   "id": 17775,
+   "description": "OLAF",
+   "alpha2Code": "OLAF",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 16442
+  },
+  {
+   "id": 31,
+   "description": "Poland",
+   "alpha2Code": "PL",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 31
+  },
+  {
+   "id": 27,
+   "description": "Portugal",
+   "alpha2Code": "PT",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 27
+  },
+  {
+   "id": 42,
+   "description": "Romania",
+   "alpha2Code": "RO",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 42
+  },
+  {
+   "id": 54,
+   "description": "Slovakia",
+   "alpha2Code": "SK",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 54
+  },
+  {
+   "id": 59,
+   "description": "Slovenia",
+   "alpha2Code": "SI",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 59
+  },
+  {
+   "id": 2,
+   "description": "Spain",
+   "alpha2Code": "ES",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 2
+  },
+  {
+   "id": 62,
+   "description": "Sweden",
+   "alpha2Code": "SE",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 62
+  },
+  {
+   "id": 63,
+   "description": "Switzerland",
+   "alpha2Code": "CH",
+   "parent": {
+    "id": 1,
+    "description": "European Commission",
+    "alpha2Code": "EU",
+    "organizationId": 1
+   },
+   "organizationId": 63
+  }
+ ]
+}

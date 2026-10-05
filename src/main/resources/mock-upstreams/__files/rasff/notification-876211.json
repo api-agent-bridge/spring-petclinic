@@ -1,0 +1,145 @@
+{
+  "id": 876211,
+  "reference": "2026.8625",
+  "subject": "Foreign body in pet food for cats from Germany ",
+  "ecValidationDate": "29-09-2026 15:32:19",
+  "lastUpdate": "29-09-2026 15:32:19",
+  "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+  },
+  "productType": {
+    "id": 282,
+    "description": "feed"
+  },
+  "notificationBasis": {
+    "id": 18683,
+    "description": "consumer complaint"
+  },
+  "product": {
+    "id": 31071363,
+    "description": "cat food",
+    "productCategory": {
+      "id": 18429,
+      "description": "pet food"
+    },
+    "hazards": [
+      {
+        "id": 31071466,
+        "name": "foreign body  - foreign bodies",
+        "analyticalResult": "0,5-1",
+        "unit": "cm",
+        "samplingDate": "23-09-2026 00:00:00",
+        "hazardCategory": {
+          "description": "foreign bodies"
+        }
+      }
+    ],
+    "productDescriptions": [
+      {
+        "id": 31071373,
+        "productAspect": "canned pet food",
+        "weight": "400.0",
+        "weightUnit": {
+          "id": 18974,
+          "description": "g"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      }
+    ],
+    "distributionStatus": {
+      "id": 222,
+      "description": "no distribution from notifying country"
+    }
+  },
+  "risk": {
+    "id": 142485,
+    "riskDecision": "potential risk"
+  },
+  "organizationFlags": [
+    {
+      "organization": {
+        "id": 3,
+        "description": "Germany",
+        "code": "DE",
+        "countryNetworkOrganizationId": 5007
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 876211,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 876211,
+          "flagType": "ORIGIN"
+        },
+        {
+          "notificationId": 876211,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 52,
+        "description": "Hungary",
+        "code": "HU",
+        "countryNetworkOrganizationId": 5017
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 876211,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 876211,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 876211,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 876211,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 876211,
+          "flagType": "OPERATOR"
+        }
+      ]
+    }
+  ],
+  "notificationStatus": "ec_validated",
+  "additionalInformations": [
+    {
+      "id": 31071364,
+      "organization": "Nébih",
+      "contactPerson": "A contact person of the notifying authority"
+    }
+  ],
+  "localConsumerLinksByCountry": {
+    "5017": [
+      {
+        "id": 20,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://nkfh.gov.hu/"
+      },
+      {
+        "id": 21,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://portal.nebih.gov.hu/termekvisszahivas"
+      }
+    ],
+    "5007": [
+      {
+        "id": 16,
+        "countryNetworkOrganizationId": 5007,
+        "link": "http://www.lebensmittelwarnung.de"
+      }
+    ]
+  }
+}

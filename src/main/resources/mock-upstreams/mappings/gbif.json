@@ -1,0 +1,4064 @@
+{
+  "mappings": [
+    {
+      "name": "GBIF gbifParseName",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/parser/name"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifParseName.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/parser/name, recorded from https://api.gbif.org/v1/parser/name"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsages",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsages.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species, recorded from https://api.gbif.org/v1/species"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsage",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsage.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}, recorded from https://api.gbif.org/v1/species/6164210"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageVernacularNames",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/vernacularNames"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageVernacularNames.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/vernacularNames, recorded from https://api.gbif.org/v1/species/6164210/vernacularNames"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageSynonyms",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/synonyms"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageSynonyms.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/synonyms, recorded from https://api.gbif.org/v1/species/6164210/synonyms"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageSpeciesProfiles",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/speciesProfiles"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageSpeciesProfiles.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/speciesProfiles, recorded from https://api.gbif.org/v1/species/6164210/speciesProfiles"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageRelated",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/related"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageRelated.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/related, recorded from https://api.gbif.org/v1/species/6164210/related"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageReferences",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/references"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageReferences.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/references, recorded from https://api.gbif.org/v1/species/6164210/references"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageParents",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/parents"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageParents.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/parents, recorded from https://api.gbif.org/v1/species/6164210/parents"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageNameParsed",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/name"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageNameParsed.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/name, recorded from https://api.gbif.org/v1/species/6164210/name"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageMetrics",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/metrics"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageMetrics.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/metrics, recorded from https://api.gbif.org/v1/species/6164210/metrics"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageMedia",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/media"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageMedia.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/media, recorded from https://api.gbif.org/v1/species/6164210/media"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageIucnRedListCategory",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/iucnRedListCategory"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageIucnRedListCategory.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/iucnRedListCategory, recorded from https://api.gbif.org/v1/species/5219173/iucnRedListCategory"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageIdentifiers",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/identifier"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageIdentifiers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/identifier, recorded from https://api.gbif.org/v1/species/6164210/identifier"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageDistributions",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/distributions"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageDistributions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/distributions, recorded from https://api.gbif.org/v1/species/6164210/distributions"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageDescriptions",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/descriptions"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageDescriptions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/descriptions, recorded from https://api.gbif.org/v1/species/6164210/descriptions"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageRecombinations",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/combinations"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageRecombinations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/combinations, recorded from https://api.gbif.org/v1/species/6164210/combinations"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageChildren",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/children"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageChildren.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/children, recorded from https://api.gbif.org/v1/species/6164210/children"
+      }
+    },
+    {
+      "name": "GBIF gbifNameUsageChildrenAll",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/[^/]+/childrenAll"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNameUsageChildrenAll.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/{usageKey}/childrenAll, recorded from https://api.gbif.org/v1/species/6164210/childrenAll"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestNames",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestNames.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/suggest, recorded from https://api.gbif.org/v1/species/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifSearchNames",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/search"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSearchNames.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/search, recorded from https://api.gbif.org/v1/species/search"
+      }
+    },
+    {
+      "name": "GBIF gbifChecklistRootUsages",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/species/root/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifChecklistRootUsages.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/species/root/{datasetKey}, recorded from https://api.gbif.org/v1/species/root/9a0b66df-7535-4f28-9f4e-5bc11b8b096c"
+      }
+    },
+    {
+      "name": "GBIF gbifSpeciesMatch",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v2/species/match"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSpeciesMatch.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v2/species/match, recorded from https://api.gbif.org/v2/species/match"
+      }
+    },
+    {
+      "name": "GBIF gbifSpeciesMatchMetadata",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v2/species/match/metadata"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSpeciesMatchMetadata.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v2/species/match/metadata, recorded from https://api.gbif.org/v2/species/match/metadata"
+      }
+    },
+    {
+      "name": "GBIF gbifSpeciesMatchJoins",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v2/species/match/joins/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSpeciesMatchJoins.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v2/species/match/joins/{identifier}, recorded from https://api.gbif.org/v2/species/match/joins/5219173"
+      }
+    },
+    {
+      "name": "GBIF gbifSpeciesMatchById",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v2/species/match/id/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSpeciesMatchById.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v2/species/match/id/{identifier}, recorded from https://api.gbif.org/v2/species/match/id/5219173"
+      }
+    },
+    {
+      "name": "GBIF gbifSpeciesMatchByDatasetId",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v2/species/match/id/[^/]+/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSpeciesMatchByDatasetId.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v2/species/match/id/{datasetId}/{identifier}, recorded from https://api.gbif.org/v2/species/match/id/gbif/5219173"
+      }
+    },
+    {
+      "name": "GBIF gbifSearchOccurrences",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSearchOccurrences.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search, recorded from https://api.gbif.org/v1/occurrence/search"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceSearchAsDownloadPredicate",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/request/predicate"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceSearchAsDownloadPredicate.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/request/predicate, recorded from https://api.gbif.org/v1/occurrence/download/request/predicate"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceById",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceById.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/{gbifId}, recorded from https://api.gbif.org/v1/occurrence/5937753054"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceByDatasetKeyAndOccurrenceId",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/[^/]+/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceByDatasetKeyAndOccurrenceId.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/{datasetKey}/{occurrenceId}, recorded from https://api.gbif.org/v1/occurrence/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/Natuurpunt%3AWaarnemingen%3A383353293"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestCatalogNumbers",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/catalogNumber"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestCatalogNumbers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/catalogNumber, recorded from https://api.gbif.org/v1/occurrence/search/catalogNumber"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestCollectionCodes",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/collectionCode"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestCollectionCodes.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/collectionCode, recorded from https://api.gbif.org/v1/occurrence/search/collectionCode"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestEventIds",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/eventId"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestEventIds.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/eventId, recorded from https://api.gbif.org/v1/occurrence/search/eventId"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestIdentifiedBy",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/identifiedBy"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestIdentifiedBy.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/identifiedBy, recorded from https://api.gbif.org/v1/occurrence/search/identifiedBy"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestInstitutionCodes",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/institutionCode"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestInstitutionCodes.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/institutionCode, recorded from https://api.gbif.org/v1/occurrence/search/institutionCode"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestLocalities",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/locality"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestLocalities.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/locality, recorded from https://api.gbif.org/v1/occurrence/search/locality"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestOccurrenceIds",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/occurrenceId"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestOccurrenceIds.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/occurrenceId, recorded from https://api.gbif.org/v1/occurrence/search/occurrenceId"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestOrganismIds",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/organismId"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestOrganismIds.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/organismId, recorded from https://api.gbif.org/v1/occurrence/search/organismId"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestOtherCatalogNumbers",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/otherCatalogNumbers"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestOtherCatalogNumbers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/otherCatalogNumbers, recorded from https://api.gbif.org/v1/occurrence/search/otherCatalogNumbers"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestParentEventIds",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/parentEventId"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestParentEventIds.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/parentEventId, recorded from https://api.gbif.org/v1/occurrence/search/parentEventId"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestRecordNumbers",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/recordNumber"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestRecordNumbers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/recordNumber, recorded from https://api.gbif.org/v1/occurrence/search/recordNumber"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestRecordedBy",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/recordedBy"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestRecordedBy.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/recordedBy, recorded from https://api.gbif.org/v1/occurrence/search/recordedBy"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestSamplingProtocols",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/samplingProtocol"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestSamplingProtocols.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/samplingProtocol, recorded from https://api.gbif.org/v1/occurrence/search/samplingProtocol"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestStateProvinces",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/stateProvince"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestStateProvinces.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/stateProvince, recorded from https://api.gbif.org/v1/occurrence/search/stateProvince"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestWaterBodies",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/waterBody"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestWaterBodies.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/waterBody, recorded from https://api.gbif.org/v1/occurrence/search/waterBody"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestOccurrenceTermValues",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/search/experimental/term/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestOccurrenceTermValues.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/search/experimental/term/{term}, recorded from https://api.gbif.org/v1/occurrence/search/experimental/term/recordedBy"
+      }
+    },
+    {
+      "name": "GBIF gbifDescribeDwcaDownload",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/describe/dwca"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDescribeDwcaDownload.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/describe/dwca, recorded from https://api.gbif.org/v1/occurrence/download/describe/dwca"
+      }
+    },
+    {
+      "name": "GBIF gbifDescribeSimpleAvroDownload",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/describe/simpleAvro"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDescribeSimpleAvroDownload.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/describe/simpleAvro, recorded from https://api.gbif.org/v1/occurrence/download/describe/simpleAvro"
+      }
+    },
+    {
+      "name": "GBIF gbifDescribeSimpleCsvDownload",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/describe/simpleCsv"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDescribeSimpleCsvDownload.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/describe/simpleCsv, recorded from https://api.gbif.org/v1/occurrence/download/describe/simpleCsv"
+      }
+    },
+    {
+      "name": "GBIF gbifDescribeSimpleParquetDownload",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/describe/simpleParquet"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDescribeSimpleParquetDownload.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/describe/simpleParquet, recorded from https://api.gbif.org/v1/occurrence/download/describe/simpleParquet"
+      }
+    },
+    {
+      "name": "GBIF gbifDescribeSpeciesListDownload",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/describe/speciesList"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDescribeSpeciesListDownload.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/describe/speciesList, recorded from https://api.gbif.org/v1/occurrence/download/describe/speciesList"
+      }
+    },
+    {
+      "name": "GBIF gbifDescribeSqlDownload",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/describe/sql"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDescribeSqlDownload.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/describe/sql, recorded from https://api.gbif.org/v1/occurrence/download/describe/sql"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceTerms",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/term"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceTerms.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/term, recorded from https://api.gbif.org/v1/occurrence/term"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceDownloadByKey",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceDownloadByKey.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/{key}, recorded from https://api.gbif.org/v1/occurrence/download/0001005-130906152512535"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceDownloadByDOI",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/[^/]+/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceDownloadByDOI.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/{prefix}/{suffix}, recorded from https://api.gbif.org/v1/occurrence/download/10.15468/dl.4euxmz"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetUsagesByOccurrenceDownloadDOI",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/[^/]+/[^/]+/datasets"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetUsagesByOccurrenceDownloadDOI.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/{prefix}/{suffix}/datasets, recorded from https://api.gbif.org/v1/occurrence/download/10.15468/dl.4euxmz/datasets"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetUsagesByOccurrenceDownloadKey",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/[^/]+/datasets"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetUsagesByOccurrenceDownloadKey.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/{key}/datasets, recorded from https://api.gbif.org/v1/occurrence/download/0001005-130906152512535/datasets"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceDownloadCitationByKey",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/[^/]+/citation"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceDownloadCitationByKey.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/{key}/citation, recorded from https://api.gbif.org/v1/occurrence/download/0001005-130906152512535/citation"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceDownloadCitationByDOI",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/[^/]+/[^/]+/citation"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceDownloadCitationByDOI.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/{prefix}/{suffix}/citation, recorded from https://api.gbif.org/v1/occurrence/download/10.15468/dl.4euxmz/citation"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceDownloadStatistics",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/statistics"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceDownloadStatistics.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/statistics, recorded from https://api.gbif.org/v1/occurrence/download/statistics"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetDownloadActivity",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/download/dataset/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetDownloadActivity.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/download/dataset/{datasetKey}, recorded from https://api.gbif.org/v1/occurrence/download/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c"
+      }
+    },
+    {
+      "name": "GBIF gbifGadmSubdivisions",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/geocode/gadm/[^/]+/subdivisions"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifGadmSubdivisions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/geocode/gadm/{gid}/subdivisions, recorded from https://api.gbif.org/v1/geocode/gadm/BEL.1_1/subdivisions"
+      }
+    },
+    {
+      "name": "GBIF gbifGadmRegion",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/geocode/gadm/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifGadmRegion.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/geocode/gadm/{gid}, recorded from https://api.gbif.org/v1/geocode/gadm/BEL.1_1"
+      }
+    },
+    {
+      "name": "GBIF gbifGadmRegionSearch",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/geocode/gadm/search"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifGadmRegionSearch.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/geocode/gadm/search, recorded from https://api.gbif.org/v1/geocode/gadm/search"
+      }
+    },
+    {
+      "name": "GBIF gbifGadmRegionBrowseLevel3",
+      "priority": 5,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/geocode/gadm/browse/[^/]+/[^/]+/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifGadmRegionBrowseLevel3.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/geocode/gadm/browse/{level0}/{level1}/{level2}, recorded from https://api.gbif.org/v1/geocode/gadm/browse/BEL/BEL.1_1/BEL.1.1_1"
+      }
+    },
+    {
+      "name": "GBIF gbifGadmRegionBrowseLevel2",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/geocode/gadm/browse/[^/]+/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifGadmRegionBrowseLevel2.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/geocode/gadm/browse/{level0}/{level1}, recorded from https://api.gbif.org/v1/geocode/gadm/browse/BEL/BEL.1_1"
+      }
+    },
+    {
+      "name": "GBIF gbifGadmRegionBrowseLevel1",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/geocode/gadm/browse/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifGadmRegionBrowseLevel1.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/geocode/gadm/browse/{level0}, recorded from https://api.gbif.org/v1/geocode/gadm/browse/BEL"
+      }
+    },
+    {
+      "name": "GBIF gbifGadmRegionBrowseLevel0",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/geocode/gadm/browse"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifGadmRegionBrowseLevel0.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/geocode/gadm/browse, recorded from https://api.gbif.org/v1/geocode/gadm/browse"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceCount",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/count"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceCount.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/count, recorded from https://api.gbif.org/v1/occurrence/count"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceCountSchema",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/count/schema"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceCountSchema.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/count/schema, recorded from https://api.gbif.org/v1/occurrence/count/schema"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceInventoryBasisOfRecord",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/counts/basisOfRecord"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceInventoryBasisOfRecord.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/counts/basisOfRecord, recorded from https://api.gbif.org/v1/occurrence/counts/basisOfRecord"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceInventoryYear",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/counts/year"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceInventoryYear.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/counts/year, recorded from https://api.gbif.org/v1/occurrence/counts/year"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceInventoryDataset",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/counts/datasets"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceInventoryDataset.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/counts/datasets, recorded from https://api.gbif.org/v1/occurrence/counts/datasets"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceInventoryCountry",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/counts/countries"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceInventoryCountry.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/counts/countries, recorded from https://api.gbif.org/v1/occurrence/counts/countries"
+      }
+    },
+    {
+      "name": "GBIF gbifOccurrenceInventoryPublishingCountry",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/occurrence/counts/publishingCountries"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOccurrenceInventoryPublishingCountry.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/occurrence/counts/publishingCountries, recorded from https://api.gbif.org/v1/occurrence/counts/publishingCountries"
+      }
+    },
+    {
+      "name": "GBIF gbifEnumerations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/enumeration/basic"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifEnumerations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/enumeration/basic, recorded from https://api.gbif.org/v1/enumeration/basic"
+      }
+    },
+    {
+      "name": "GBIF gbifCollections",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollections.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection, recorded from https://api.gbif.org/v1/grscicoll/collection"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionsAsLatimerCore",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/latimerCore"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionsAsLatimerCore.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/latimerCore, recorded from https://api.gbif.org/v1/grscicoll/collection/latimerCore"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasets",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset, recorded from https://api.gbif.org/v1/dataset"
+      }
+    },
+    {
+      "name": "GBIF gbifInstallations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstallations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation, recorded from https://api.gbif.org/v1/installation"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutions",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution, recorded from https://api.gbif.org/v1/grscicoll/institution"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionsAsLatimerCore",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/latimerCore"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionsAsLatimerCore.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/latimerCore, recorded from https://api.gbif.org/v1/grscicoll/institution/latimerCore"
+      }
+    },
+    {
+      "name": "GBIF gbifNetworks",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNetworks.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network, recorded from https://api.gbif.org/v1/network"
+      }
+    },
+    {
+      "name": "GBIF gbifNodes",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodes.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node, recorded from https://api.gbif.org/v1/node"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization, recorded from https://api.gbif.org/v1/organization"
+      }
+    },
+    {
+      "name": "GBIF gbifSearchCollectionsInstitutions",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/search"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSearchCollectionsInstitutions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/search, recorded from https://api.gbif.org/v1/grscicoll/search"
+      }
+    },
+    {
+      "name": "GBIF gbifSearchDatasets",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/search"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSearchDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/search, recorded from https://api.gbif.org/v1/dataset/search"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestCollections",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestCollections.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/suggest, recorded from https://api.gbif.org/v1/grscicoll/collection/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestDatasets",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/suggest, recorded from https://api.gbif.org/v1/dataset/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestInstallations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestInstallations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/suggest, recorded from https://api.gbif.org/v1/installation/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestInstitutions",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestInstitutions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/suggest, recorded from https://api.gbif.org/v1/grscicoll/institution/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestNetworks",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestNetworks.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network/suggest, recorded from https://api.gbif.org/v1/network/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestNodes",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestNodes.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/suggest, recorded from https://api.gbif.org/v1/node/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestOrganizations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestOrganizations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/suggest, recorded from https://api.gbif.org/v1/organization/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifDerivedDatasetByDoi",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/derivedDataset/[^/]+/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDerivedDatasetByDoi.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/derivedDataset/{doiPrefix}/{doiSuffix}, recorded from https://api.gbif.org/v1/derivedDataset/10.15468/dd.xescuv"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetsByDoi",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/doi/[^/]+/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetsByDoi.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/doi/{prefix}/{suffix}, recorded from https://api.gbif.org/v1/dataset/doi/10.15468/dl.4euxmz"
+      }
+    },
+    {
+      "name": "GBIF gbifDataset",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDataset.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c"
+      }
+    },
+    {
+      "name": "GBIF gbifDerivedDatasetsOfDataset",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/derivedDataset/dataset/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDerivedDatasetsOfDataset.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/derivedDataset/dataset/{key}, recorded from https://api.gbif.org/v1/derivedDataset/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c"
+      }
+    },
+    {
+      "name": "GBIF gbifSearchInstitutions",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/search"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSearchInstitutions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/search, recorded from https://api.gbif.org/v1/grscicoll/institution/search"
+      }
+    },
+    {
+      "name": "GBIF gbifDerivedDatasetsOfDatasetDoi",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/derivedDataset/dataset/[^/]+/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDerivedDatasetsOfDatasetDoi.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/derivedDataset/dataset/{doiPrefix}/{doiSuffix}, recorded from https://api.gbif.org/v1/derivedDataset/dataset/10.15468/dd.xescuv"
+      }
+    },
+    {
+      "name": "GBIF gbifSearchCollections",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/search"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSearchCollections.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/search, recorded from https://api.gbif.org/v1/grscicoll/collection/search"
+      }
+    },
+    {
+      "name": "GBIF gbifLicenses",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/enumeration/license"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifLicenses.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/enumeration/license, recorded from https://api.gbif.org/v1/enumeration/license"
+      }
+    },
+    {
+      "name": "GBIF gbifCollection",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollection.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{key}, recorded from https://api.gbif.org/v1/grscicoll/collection/e7b54a2a-c0ff-4a74-b249-db653ed70ebe"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionAsLatimerCore",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/latimerCore/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionAsLatimerCore.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/latimerCore/{key}, recorded from https://api.gbif.org/v1/grscicoll/collection/latimerCore/e7b54a2a-c0ff-4a74-b249-db653ed70ebe"
+      }
+    },
+    {
+      "name": "GBIF gbifDerivedDatasetCitation",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/derivedDataset/[^/]+/[^/]+/citation"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDerivedDatasetCitation.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/derivedDataset/{doiPrefix}/{doiSuffix}/citation, recorded from https://api.gbif.org/v1/derivedDataset/10.15468/dd.xescuv/citation"
+      }
+    },
+    {
+      "name": "GBIF gbifInstallation",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstallation.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/{key}, recorded from https://api.gbif.org/v1/installation/9f25fd85-85dc-4dcd-a1b4-b31165442e2b"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitution",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitution.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/{key}, recorded from https://api.gbif.org/v1/grscicoll/institution/6f7571ff-9943-4dee-9707-48743806493e"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionAsLatimerCore",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/latimerCore/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionAsLatimerCore.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/latimerCore/{key}, recorded from https://api.gbif.org/v1/grscicoll/institution/latimerCore/6f7571ff-9943-4dee-9707-48743806493e"
+      }
+    },
+    {
+      "name": "GBIF gbifNetwork",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNetwork.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network/{key}, recorded from https://api.gbif.org/v1/network/5e061a4a-d7d6-472f-95fe-a602b05e464a"
+      }
+    },
+    {
+      "name": "GBIF gbifNode",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNode.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganization",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganization.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac"
+      }
+    },
+    {
+      "name": "GBIF gbifDerivedDatasetRelatedDatasets",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/derivedDataset/[^/]+/[^/]+/datasets"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDerivedDatasetRelatedDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/derivedDataset/{doiPrefix}/{doiSuffix}/datasets, recorded from https://api.gbif.org/v1/derivedDataset/10.15468/dd.xescuv/datasets"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetCrawlAttempts",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/process"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetCrawlAttempts.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/process, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/process"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetCrawlAttempt",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/process/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetCrawlAttempt.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/process/{attempt}, recorded from https://api.gbif.org/v1/dataset/50c9509d-22c7-4a22-a47d-8c48425ef4a7/process/607"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetNetworks",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/networks"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetNetworks.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/networks, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/networks"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetConstituents",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/constituents"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetConstituents.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/constituents, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/constituents"
+      }
+    },
+    {
+      "name": "GBIF gbifNetworkConstituents",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network/[^/]+/constituents"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNetworkConstituents.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network/{key}/constituents, recorded from https://api.gbif.org/v1/network/5e061a4a-d7d6-472f-95fe-a602b05e464a/constituents"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizationPublishedDatasets",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+/publishedDataset"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizationPublishedDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}/publishedDataset, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac/publishedDataset"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizationHostedDatasets",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+/hostedDataset"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizationHostedDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}/hostedDataset, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac/hostedDataset"
+      }
+    },
+    {
+      "name": "GBIF gbifInstallationDatasets",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/[^/]+/dataset"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstallationDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/{key}/dataset, recorded from https://api.gbif.org/v1/installation/9f25fd85-85dc-4dcd-a1b4-b31165442e2b/dataset"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizationInstallations",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+/installation"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizationInstallations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}/installation, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac/installation"
+      }
+    },
+    {
+      "name": "GBIF gbifNodeOrganizations",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+/organization"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodeOrganizations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}/organization, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac/organization"
+      }
+    },
+    {
+      "name": "GBIF gbifNodeByCountry",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/country/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodeByCountry.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/country/{countryCode}, recorded from https://api.gbif.org/v1/node/country/BE"
+      }
+    },
+    {
+      "name": "GBIF gbifMemberCountries",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/country"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifMemberCountries.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/country, recorded from https://api.gbif.org/v1/node/country"
+      }
+    },
+    {
+      "name": "GBIF gbifActiveCountries",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/activeCountries"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifActiveCountries.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/activeCountries, recorded from https://api.gbif.org/v1/node/activeCountries"
+      }
+    },
+    {
+      "name": "GBIF gbifNodeDatasets",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+/dataset"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodeDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}/dataset, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac/dataset"
+      }
+    },
+    {
+      "name": "GBIF gbifNodeInstallations",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+/installation"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodeInstallations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}/installation, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac/installation"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetMetadataDocuments",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/metadata"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetMetadataDocuments.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/metadata, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/metadata"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionDescriptorSuggestion",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/descriptorGroup/suggestion/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionDescriptorSuggestion.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{collectionKey}/descriptorGroup/suggestion/{key}, recorded from https://api.gbif.org/v1/grscicoll/collection/dceb8d52-094c-4c2c-8960-75e0097c6861/descriptorGroup/suggestion/472"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetMetadataDocument",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/metadata/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetMetadataDocument.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/metadata/{metadataKey}, recorded from https://api.gbif.org/v1/dataset/metadata/1297065"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionDescriptorSuggestions",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/descriptorGroup/suggestion"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionDescriptorSuggestions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{collectionKey}/descriptorGroup/suggestion, recorded from https://api.gbif.org/v1/grscicoll/collection/dceb8d52-094c-4c2c-8960-75e0097c6861/descriptorGroup/suggestion"
+      }
+    },
+    {
+      "name": "GBIF gbifAllCollectionDescriptorSuggestions",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/descriptorGroup/suggestion"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifAllCollectionDescriptorSuggestions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/descriptorGroup/suggestion, recorded from https://api.gbif.org/v1/grscicoll/collection/descriptorGroup/suggestion"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizationComments",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+/comment"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizationComments.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}/comment, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac/comment"
+      }
+    },
+    {
+      "name": "GBIF gbifNodeComments",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+/comment"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodeComments.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}/comment, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac/comment"
+      }
+    },
+    {
+      "name": "GBIF gbifNetworkComments",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network/[^/]+/comment"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNetworkComments.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network/{key}/comment, recorded from https://api.gbif.org/v1/network/5e061a4a-d7d6-472f-95fe-a602b05e464a/comment"
+      }
+    },
+    {
+      "name": "GBIF gbifInstallationComments",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/[^/]+/comment"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstallationComments.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/{key}/comment, recorded from https://api.gbif.org/v1/installation/9f25fd85-85dc-4dcd-a1b4-b31165442e2b/comment"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionComments",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/[^/]+/comment"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionComments.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/{key}/comment, recorded from https://api.gbif.org/v1/grscicoll/institution/6f7571ff-9943-4dee-9707-48743806493e/comment"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionComments",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/comment"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionComments.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{key}/comment, recorded from https://api.gbif.org/v1/grscicoll/collection/e7b54a2a-c0ff-4a74-b249-db653ed70ebe/comment"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetComments",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/comment"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetComments.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/comment, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/comment"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizationContacts",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+/contact"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizationContacts.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}/contact, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac/contact"
+      }
+    },
+    {
+      "name": "GBIF gbifNetworkContacts",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network/[^/]+/contact"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNetworkContacts.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network/{key}/contact, recorded from https://api.gbif.org/v1/network/5e061a4a-d7d6-472f-95fe-a602b05e464a/contact"
+      }
+    },
+    {
+      "name": "GBIF gbifInstallationContacts",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/[^/]+/contact"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstallationContacts.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/{key}/contact, recorded from https://api.gbif.org/v1/installation/9f25fd85-85dc-4dcd-a1b4-b31165442e2b/contact"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetContacts",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/contact"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetContacts.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/contact, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/contact"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizationEndpoints",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+/endpoint"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizationEndpoints.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}/endpoint, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac/endpoint"
+      }
+    },
+    {
+      "name": "GBIF gbifNodeEndpoints",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+/endpoint"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodeEndpoints.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}/endpoint, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac/endpoint"
+      }
+    },
+    {
+      "name": "GBIF gbifNetworkEndpoints",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network/[^/]+/endpoint"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNetworkEndpoints.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network/{key}/endpoint, recorded from https://api.gbif.org/v1/network/5e061a4a-d7d6-472f-95fe-a602b05e464a/endpoint"
+      }
+    },
+    {
+      "name": "GBIF gbifInstallationEndpoints",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/[^/]+/endpoint"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstallationEndpoints.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/{key}/endpoint, recorded from https://api.gbif.org/v1/installation/9f25fd85-85dc-4dcd-a1b4-b31165442e2b/endpoint"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetEndpoints",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/endpoint"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetEndpoints.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/endpoint, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/endpoint"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizationIdentifiers",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+/identifier"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizationIdentifiers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}/identifier, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac/identifier"
+      }
+    },
+    {
+      "name": "GBIF gbifNodeIdentifiers",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+/identifier"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodeIdentifiers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}/identifier, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac/identifier"
+      }
+    },
+    {
+      "name": "GBIF gbifNetworkIdentifiers",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network/[^/]+/identifier"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNetworkIdentifiers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network/{key}/identifier, recorded from https://api.gbif.org/v1/network/5e061a4a-d7d6-472f-95fe-a602b05e464a/identifier"
+      }
+    },
+    {
+      "name": "GBIF gbifInstallationIdentifiers",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/[^/]+/identifier"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstallationIdentifiers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/{key}/identifier, recorded from https://api.gbif.org/v1/installation/9f25fd85-85dc-4dcd-a1b4-b31165442e2b/identifier"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionIdentifiers",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/[^/]+/identifier"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionIdentifiers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/{key}/identifier, recorded from https://api.gbif.org/v1/grscicoll/institution/6f7571ff-9943-4dee-9707-48743806493e/identifier"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionIdentifiers",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/identifier"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionIdentifiers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{key}/identifier, recorded from https://api.gbif.org/v1/grscicoll/collection/e7b54a2a-c0ff-4a74-b249-db653ed70ebe/identifier"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetIdentifiers",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/identifier"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetIdentifiers.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/identifier, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/identifier"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizationMachineTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+/machineTag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizationMachineTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}/machineTag, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac/machineTag"
+      }
+    },
+    {
+      "name": "GBIF gbifNodeMachineTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+/machineTag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodeMachineTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}/machineTag, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac/machineTag"
+      }
+    },
+    {
+      "name": "GBIF gbifNetworkMachineTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network/[^/]+/machineTag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNetworkMachineTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network/{key}/machineTag, recorded from https://api.gbif.org/v1/network/5e061a4a-d7d6-472f-95fe-a602b05e464a/machineTag"
+      }
+    },
+    {
+      "name": "GBIF gbifInstallationMachineTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/[^/]+/machineTag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstallationMachineTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/{key}/machineTag, recorded from https://api.gbif.org/v1/installation/9f25fd85-85dc-4dcd-a1b4-b31165442e2b/machineTag"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionMachineTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/[^/]+/machineTag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionMachineTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/{key}/machineTag, recorded from https://api.gbif.org/v1/grscicoll/institution/6f7571ff-9943-4dee-9707-48743806493e/machineTag"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionMachineTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/machineTag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionMachineTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{key}/machineTag, recorded from https://api.gbif.org/v1/grscicoll/collection/e7b54a2a-c0ff-4a74-b249-db653ed70ebe/machineTag"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetMachineTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/machineTag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetMachineTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/machineTag, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/machineTag"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionMasterSourceMetadata",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/[^/]+/masterSourceMetadata"
+      },
+      "response": {
+        "status": 204
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/{key}/masterSourceMetadata, recorded from https://api.gbif.org/v1/grscicoll/institution/6f7571ff-9943-4dee-9707-48743806493e/masterSourceMetadata"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionMasterSourceMetadata",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/masterSourceMetadata"
+      },
+      "response": {
+        "status": 204
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{key}/masterSourceMetadata, recorded from https://api.gbif.org/v1/grscicoll/collection/e7b54a2a-c0ff-4a74-b249-db653ed70ebe/masterSourceMetadata"
+      }
+    },
+    {
+      "name": "GBIF gbifOrganizationTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/[^/]+/tag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifOrganizationTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/{key}/tag, recorded from https://api.gbif.org/v1/organization/4d3ceea8-5699-439d-a899-decac9cbbdac/tag"
+      }
+    },
+    {
+      "name": "GBIF gbifNodeTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+/tag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodeTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}/tag, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac/tag"
+      }
+    },
+    {
+      "name": "GBIF gbifNetworkTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/network/[^/]+/tag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNetworkTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/network/{key}/tag, recorded from https://api.gbif.org/v1/network/5e061a4a-d7d6-472f-95fe-a602b05e464a/tag"
+      }
+    },
+    {
+      "name": "GBIF gbifInstallationTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/[^/]+/tag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstallationTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/{key}/tag, recorded from https://api.gbif.org/v1/installation/9f25fd85-85dc-4dcd-a1b4-b31165442e2b/tag"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/tag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/tag, recorded from https://api.gbif.org/v1/dataset/9a0b66df-7535-4f28-9f4e-5bc11b8b096c/tag"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionOccurrenceMappings",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/[^/]+/occurrenceMapping"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionOccurrenceMappings.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/{key}/occurrenceMapping, recorded from https://api.gbif.org/v1/grscicoll/institution/6f7571ff-9943-4dee-9707-48743806493e/occurrenceMapping"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionOccurrenceMappings",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/occurrenceMapping"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionOccurrenceMappings.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{key}/occurrenceMapping, recorded from https://api.gbif.org/v1/grscicoll/collection/e7b54a2a-c0ff-4a74-b249-db653ed70ebe/occurrenceMapping"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionContactPeople",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/[^/]+/contactPerson"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionContactPeople.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/{key}/contactPerson, recorded from https://api.gbif.org/v1/grscicoll/institution/6f7571ff-9943-4dee-9707-48743806493e/contactPerson"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionContactPeople",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/contactPerson"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionContactPeople.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{key}/contactPerson, recorded from https://api.gbif.org/v1/grscicoll/collection/e7b54a2a-c0ff-4a74-b249-db653ed70ebe/contactPerson"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/[^/]+/tag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/{key}/tag, recorded from https://api.gbif.org/v1/grscicoll/institution/6f7571ff-9943-4dee-9707-48743806493e/tag"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionTags",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/tag"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{key}/tag, recorded from https://api.gbif.org/v1/grscicoll/collection/e7b54a2a-c0ff-4a74-b249-db653ed70ebe/tag"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionChangeSuggestions",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/changeSuggestion"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionChangeSuggestions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/changeSuggestion, recorded from https://api.gbif.org/v1/grscicoll/institution/changeSuggestion"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionChangeSuggestions",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/changeSuggestion"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionChangeSuggestions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/changeSuggestion, recorded from https://api.gbif.org/v1/grscicoll/collection/changeSuggestion"
+      }
+    },
+    {
+      "name": "GBIF gbifInstitutionChangeSuggestion",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/changeSuggestion/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifInstitutionChangeSuggestion.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/changeSuggestion/{key}, recorded from https://api.gbif.org/v1/grscicoll/institution/changeSuggestion/4414"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionChangeSuggestion",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/changeSuggestion/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionChangeSuggestion.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/changeSuggestion/{key}, recorded from https://api.gbif.org/v1/grscicoll/collection/changeSuggestion/4416"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionDescriptorGroup",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/descriptorGroup/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionDescriptorGroup.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{collectionKey}/descriptorGroup/{key}, recorded from https://api.gbif.org/v1/grscicoll/collection/dceb8d52-094c-4c2c-8960-75e0097c6861/descriptorGroup/5214"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionDescriptorGroups",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/descriptorGroup"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionDescriptorGroups.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{collectionKey}/descriptorGroup, recorded from https://api.gbif.org/v1/grscicoll/collection/dceb8d52-094c-4c2c-8960-75e0097c6861/descriptorGroup"
+      }
+    },
+    {
+      "name": "GBIF gbifDeletedInstallations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/deleted"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDeletedInstallations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/deleted, recorded from https://api.gbif.org/v1/installation/deleted"
+      }
+    },
+    {
+      "name": "GBIF gbifDeletedOrganizations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/deleted"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDeletedOrganizations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/deleted, recorded from https://api.gbif.org/v1/organization/deleted"
+      }
+    },
+    {
+      "name": "GBIF gbifDeletedInstitutions",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/institution/deleted"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDeletedInstitutions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/institution/deleted, recorded from https://api.gbif.org/v1/grscicoll/institution/deleted"
+      }
+    },
+    {
+      "name": "GBIF gbifDeletedCollections",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/deleted"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDeletedCollections.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/deleted, recorded from https://api.gbif.org/v1/grscicoll/collection/deleted"
+      }
+    },
+    {
+      "name": "GBIF gbifDeletedDatasets",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/deleted"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDeletedDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/deleted, recorded from https://api.gbif.org/v1/dataset/deleted"
+      }
+    },
+    {
+      "name": "GBIF gbifDuplicateDatasets",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/duplicate"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDuplicateDatasets.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/duplicate, recorded from https://api.gbif.org/v1/dataset/duplicate"
+      }
+    },
+    {
+      "name": "GBIF gbifNodePendingOrganizations",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/node/[^/]+/pendingEndorsement"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNodePendingOrganizations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/node/{key}/pendingEndorsement, recorded from https://api.gbif.org/v1/node/fb11cfe1-ebc3-45af-9159-17d9fddbcdac/pendingEndorsement"
+      }
+    },
+    {
+      "name": "GBIF gbifPendingOrganizations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/pending"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifPendingOrganizations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/pending, recorded from https://api.gbif.org/v1/organization/pending"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetsWithoutEndpoint",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/withNoEndpoint"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetsWithoutEndpoint.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/withNoEndpoint, recorded from https://api.gbif.org/v1/dataset/withNoEndpoint"
+      }
+    },
+    {
+      "name": "GBIF gbifNonPublishingInstallations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/installation/nonPublishing"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNonPublishingInstallations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/installation/nonPublishing, recorded from https://api.gbif.org/v1/installation/nonPublishing"
+      }
+    },
+    {
+      "name": "GBIF gbifNonPublishingOrganizations",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/organization/nonPublishing"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifNonPublishingOrganizations.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/organization/nonPublishing, recorded from https://api.gbif.org/v1/organization/nonPublishing"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionDescriptors",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/descriptorGroup/[^/]+/descriptor"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionDescriptors.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{collectionKey}/descriptorGroup/{key}/descriptor, recorded from https://api.gbif.org/v1/grscicoll/collection/dceb8d52-094c-4c2c-8960-75e0097c6861/descriptorGroup/5214/descriptor"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionDescriptor",
+      "priority": 5,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/collection/[^/]+/descriptorGroup/[^/]+/descriptor/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionDescriptor.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/collection/{collectionKey}/descriptorGroup/{descriptorGroupKey}/descriptor/{key}, recorded from https://api.gbif.org/v1/grscicoll/collection/dceb8d52-094c-4c2c-8960-75e0097c6861/descriptorGroup/5214/descriptor/38940"
+      }
+    },
+    {
+      "name": "GBIF gbifCollectionsInstitutionsLookup",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/grscicoll/lookup"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifCollectionsInstitutionsLookup.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/grscicoll/lookup, recorded from https://api.gbif.org/v1/grscicoll/lookup"
+      }
+    },
+    {
+      "name": "GBIF gbifDatasetMetrics",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/dataset/[^/]+/metrics"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifDatasetMetrics.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/dataset/{key}/metrics, recorded from https://api.gbif.org/v1/dataset/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c/metrics"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularyConcepts",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularyConcepts.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularyLanguages",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularyLanguage"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularyLanguages.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularyLanguage, recorded from https://api.gbif.org/v1/vocabularyLanguage"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularyTags",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularyTags"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularyTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularyTags, recorded from https://api.gbif.org/v1/vocabularyTags"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularies",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularies.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies, recorded from https://api.gbif.org/v1/vocabularies"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularyConcept",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularyConcept.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/{name}, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/Adult"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularyTag",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularyTags/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularyTag.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularyTags/{name}, recorded from https://api.gbif.org/v1/vocabularyTags/endAge%3A%200"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabulary",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabulary.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{name}, recorded from https://api.gbif.org/v1/vocabularies/LifeStage"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestVocabularyConcepts",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestVocabularyConcepts.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/suggest, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestVocabularies",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestVocabularies.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/suggest, recorded from https://api.gbif.org/v1/vocabularies/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptDefinitions",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/[^/]+/definition"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptDefinitions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/{name}/definition, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/Adult/definition"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularyReleases",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/releases"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularyReleases.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{name}/releases, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/releases"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularyRelease",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/releases/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularyRelease.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{name}/releases/{version}, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/releases/1.0.4"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptTags",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/[^/]+/tags"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptTags.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/{name}/tags, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/Adult/tags"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularyDefinitions",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/definition"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularyDefinitions.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{name}/definition, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/definition"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptLabels",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/[^/]+/label"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptLabels.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/{name}/label, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/Adult/label"
+      }
+    },
+    {
+      "name": "GBIF gbifVocabularyLabels",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/label"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifVocabularyLabels.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{name}/label, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/label"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptAlternativeLabels",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/[^/]+/alternativeLabels"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptAlternativeLabels.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/{name}/alternativeLabels, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/Adult/alternativeLabels"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptHiddenLabels",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/[^/]+/hiddenLabels"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptHiddenLabels.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/{name}/hiddenLabels, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/Adult/hiddenLabels"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptsFromLatestRelease",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/latestRelease"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptsFromLatestRelease.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/latestRelease, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/latestRelease"
+      }
+    },
+    {
+      "name": "GBIF gbifSuggestConceptsFromLatestRelease",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/latestRelease/suggest"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSuggestConceptsFromLatestRelease.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/latestRelease/suggest, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/latestRelease/suggest"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptFromLatestRelease",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/latestRelease/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptFromLatestRelease.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/latestRelease/{name}, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/latestRelease/Adult"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptDefinitionsFromLatestRelease",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/latestRelease/[^/]+/definition"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptDefinitionsFromLatestRelease.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/latestRelease/{name}/definition, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/latestRelease/Adult/definition"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptLabelsFromLatestRelease",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/latestRelease/[^/]+/label"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptLabelsFromLatestRelease.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/latestRelease/{name}/label, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/latestRelease/Adult/label"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptAlternativeLabelsFromLatestRelease",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/latestRelease/[^/]+/alternativeLabels"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptAlternativeLabelsFromLatestRelease.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/latestRelease/{name}/alternativeLabels, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/latestRelease/Adult/alternativeLabels"
+      }
+    },
+    {
+      "name": "GBIF gbifConceptHiddenLabelsFromLatestRelease",
+      "priority": 4,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/latestRelease/[^/]+/hiddenLabels"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifConceptHiddenLabelsFromLatestRelease.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/latestRelease/{name}/hiddenLabels, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/latestRelease/Adult/hiddenLabels"
+      }
+    },
+    {
+      "name": "GBIF gbifLookupVocabularyConcepts",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/lookup"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifLookupVocabularyConcepts.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/lookup, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/lookup"
+      }
+    },
+    {
+      "name": "GBIF gbifLookupVocabularyConceptsInLatestRelease",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/vocabularies/[^/]+/concepts/latestRelease/lookup"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifLookupVocabularyConceptsInLatestRelease.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/vocabularies/{vocabularyName}/concepts/latestRelease/lookup, recorded from https://api.gbif.org/v1/vocabularies/LifeStage/concepts/latestRelease/lookup"
+      }
+    },
+    {
+      "name": "GBIF gbifLiterature",
+      "priority": 3,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/literature/[^/]+"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifLiterature.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/literature/{uuid}, recorded from https://api.gbif.org/v1/literature/f3a1cacc-d4d8-3b6f-98ee-043cadcb44f5"
+      }
+    },
+    {
+      "name": "GBIF gbifSearchLiterature",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPathPattern": "/gbif/v1/literature/search"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "gbif/gbifSearchLiterature.json"
+      },
+      "metadata": {
+        "description": "The answer of GET /v1/literature/search, recorded from https://api.gbif.org/v1/literature/search"
+      }
+    }
+  ]
+}

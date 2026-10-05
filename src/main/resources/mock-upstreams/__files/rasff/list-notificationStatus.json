@@ -1,0 +1,12 @@
+{
+ "response": [
+  {
+   "id": 1,
+   "description": "EC Validated"
+  },
+  {
+   "id": 2,
+   "description": "EC Withdrawn"
+  }
+ ]
+}

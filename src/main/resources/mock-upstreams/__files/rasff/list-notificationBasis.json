@@ -1,0 +1,52 @@
+{
+ "notificationBasis": [
+  {
+   "id": 18420,
+   "description": "border control - consignment detained"
+  },
+  {
+   "id": 18421,
+   "description": "border control - consignment released"
+  },
+  {
+   "id": 18422,
+   "description": "border control - consignment under customs"
+  },
+  {
+   "id": 18951,
+   "description": "border control - forwarded to destination"
+  },
+  {
+   "id": 18423,
+   "description": "company's own check"
+  },
+  {
+   "id": 18683,
+   "description": "consumer complaint"
+  },
+  {
+   "id": 18424,
+   "description": "food poisoning"
+  },
+  {
+   "id": 18682,
+   "description": "monitoring of media"
+  },
+  {
+   "id": 18685,
+   "description": "official control in non-member country"
+  },
+  {
+   "id": 18684,
+   "description": "official control on the market"
+  },
+  {
+   "id": 18949,
+   "description": "surveillance programme / monitoring sample"
+  },
+  {
+   "id": 18948,
+   "description": "whistleblower information"
+  }
+ ]
+}

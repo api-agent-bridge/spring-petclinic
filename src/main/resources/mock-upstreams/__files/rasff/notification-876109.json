@@ -1,0 +1,152 @@
+{
+  "id": 876109,
+  "reference": "2026.8624",
+  "subject": "Pet food supplements skipped veterinary checks at BCP",
+  "ecValidationDate": "29-09-2026 15:24:08",
+  "lastUpdate": "29-09-2026 15:24:08",
+  "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+  },
+  "productType": {
+    "id": 282,
+    "description": "feed"
+  },
+  "notificationBasis": {
+    "id": 18421,
+    "description": "border control - consignment released"
+  },
+  "product": {
+    "id": 31070226,
+    "description": "pet food supplements",
+    "productCategory": {
+      "id": 18429,
+      "description": "pet food"
+    },
+    "productDescriptions": [
+      {
+        "id": 31070292,
+        "productAspect": "sofches, tablest or capsules in bottles, see attached packing list",
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      }
+    ],
+    "measures": [
+      {
+        "id": 31070424,
+        "takenBy": {
+          "id": 5026,
+          "organizationName": "Netherlands",
+          "isoCode": "NL"
+        },
+        "actionTaken": {
+          "id": 18383,
+          "description": "informing recipient(s)"
+        }
+      }
+    ],
+    "distributionStatus": {
+      "id": 219,
+      "description": "distribution to other member countries"
+    }
+  },
+  "risk": {
+    "id": 142460,
+    "riskDecision": "not serious"
+  },
+  "organizationFlags": [
+    {
+      "organization": {
+        "id": 38,
+        "description": "Netherlands",
+        "code": "NL",
+        "countryNetworkOrganizationId": 5026
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 876109,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 876109,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 876109,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 42,
+        "description": "Romania",
+        "code": "RO",
+        "countryNetworkOrganizationId": 5030
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 876109,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 876109,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 876109,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 10225,
+        "description": "United States",
+        "code": "US",
+        "countryNetworkOrganizationId": 5230
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 876109,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 876109,
+          "flagType": "ORIGIN"
+        },
+        {
+          "notificationId": 876109,
+          "flagType": "OPERATOR"
+        }
+      ]
+    }
+  ],
+  "notificationStatus": "ec_validated",
+  "additionalInformations": [
+    {
+      "id": 31070227,
+      "organization": "Netherlands Food and Consumer Product Safety, BCP Rotterdam",
+      "contactPerson": "A contact person of the notifying authority"
+    }
+  ],
+  "localConsumerLinksByCountry": {
+    "5026": [
+      {
+        "id": 30,
+        "countryNetworkOrganizationId": 5026,
+        "link": "https://www.nvwa.nl/onderwerpen/voedselveiligheid/veiligheidswaarschuwingen/overzicht-veiligheidswaarschuwingen"
+      }
+    ],
+    "5030": [
+      {
+        "id": 33,
+        "countryNetworkOrganizationId": 5030,
+        "link": "https://www.ansvsa.ro/informatii-pentru-public/produse-rechemateretrase/"
+      }
+    ],
+    "5230": []
+  }
+}

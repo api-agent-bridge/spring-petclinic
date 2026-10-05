@@ -1,0 +1,27 @@
+{
+  "mappings": [
+    {
+      "name": "FAMHP reference data in English",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/famhp/api/resources",
+        "headers": {
+          "Accept-Language": {
+            "equalTo": "en"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "famhp/resources-en.json"
+      },
+      "metadata": {
+        "description": "Every entry of the reference data, with English labels"
+      }
+    }
+  ]
+}

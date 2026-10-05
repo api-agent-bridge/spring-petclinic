@@ -1,0 +1,378 @@
+{
+  "id": 871861,
+  "reference": "2026.7973",
+  "subject": "Excessive levels of vitamin A, vitamin D, and selenium, and the unauthorized feed additive sodium saccharin (E954) in dietary supplements for piglets from Germany",
+  "ecValidationDate": "09-09-2026 16:00:38",
+  "lastUpdate": "29-09-2026 10:19:10",
+  "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+  },
+  "productType": {
+    "id": 282,
+    "description": "feed"
+  },
+  "notificationBasis": {
+    "id": 18684,
+    "description": "official control on the market"
+  },
+  "product": {
+    "id": 31013100,
+    "description": "dietary supplements for piglets",
+    "productCategory": {
+      "id": 18429,
+      "description": "pet food"
+    },
+    "productDescriptions": [
+      {
+        "id": 31013109,
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 31013121,
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 31013122,
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      }
+    ],
+    "measures": [
+      {
+        "id": 31013129,
+        "takenBy": {
+          "id": 5007,
+          "organizationName": "Germany",
+          "isoCode": "DE"
+        },
+        "actionTaken": {
+          "id": 18837,
+          "description": "withdrawal from the market"
+        }
+      }
+    ],
+    "distributionStatus": {
+      "id": 219,
+      "description": "distribution to other member countries"
+    }
+  },
+  "risk": {
+    "id": 141369,
+    "riskDecision": "potentially serious"
+  },
+  "organizationFlags": [
+    {
+      "organization": {
+        "id": 5,
+        "description": "Austria",
+        "code": "AT",
+        "countryNetworkOrganizationId": 5001
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 871861,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "DISTRIBUTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 7,
+        "description": "Belgium",
+        "code": "BE",
+        "countryNetworkOrganizationId": 5002
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 871861,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "DISTRIBUTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 3,
+        "description": "Germany",
+        "code": "DE",
+        "countryNetworkOrganizationId": 5007
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 871861,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 873655,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 873655,
+          "flagType": "FOR_ATTENTION"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "ORIGIN"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 24,
+        "description": "Latvia",
+        "code": "LV",
+        "countryNetworkOrganizationId": 5024
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 871861,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "DISTRIBUTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 38,
+        "description": "Netherlands",
+        "code": "NL",
+        "countryNetworkOrganizationId": 5026
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 871861,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "DISTRIBUTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 31,
+        "description": "Poland",
+        "code": "PL",
+        "countryNetworkOrganizationId": 5028
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 871861,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "DISTRIBUTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 54,
+        "description": "Slovakia",
+        "code": "SK",
+        "countryNetworkOrganizationId": 5033
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 871861,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "DISTRIBUTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 59,
+        "description": "Slovenia",
+        "code": "SI",
+        "countryNetworkOrganizationId": 5032
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 871861,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 871861,
+          "flagType": "DISTRIBUTION"
+        }
+      ]
+    }
+  ],
+  "followups": [
+    {
+      "fupNumber": 1,
+      "fupId": 872545,
+      "networkOrganizationId": 59,
+      "organizationDescription": "Slovenia",
+      "organizationCode": "SI",
+      "fupDate": "11-09-2026 15:15:16",
+      "fupType": {
+        "id": 27674,
+        "description": "outcome of investigations"
+      },
+      "additionalInfoId": 31022480
+    },
+    {
+      "fupNumber": 2,
+      "fupId": 873277,
+      "networkOrganizationId": 24,
+      "organizationDescription": "Latvia",
+      "organizationCode": "LV",
+      "fupDate": "16-09-2026 10:15:22",
+      "fupType": {
+        "id": 27659,
+        "description": "outcome of investigations and measures taken"
+      },
+      "additionalInfoId": 31032255
+    },
+    {
+      "fupNumber": 3,
+      "fupId": 873655,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "17-09-2026 11:51:29",
+      "fupType": {
+        "id": 27665,
+        "description": "request"
+      },
+      "additionalInfoId": 31037193
+    },
+    {
+      "fupNumber": 4,
+      "fupId": 875972,
+      "networkOrganizationId": 11568,
+      "organizationDescription": "02 WIW WROCŁAW",
+      "organizationCode": "PL",
+      "fupDate": "29-09-2026 10:19:10",
+      "fupType": {
+        "id": 27674,
+        "description": "outcome of investigations"
+      },
+      "additionalInfoId": 31068747
+    }
+  ],
+  "notificationStatus": "ec_validated",
+  "additionalInformations": [
+    {
+      "id": 31068747,
+      "organization": "WIW Wrocław",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31032255,
+      "organization": "Food and veterinary Service (FVS) of Latvia",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31013101,
+      "organization": "Bundesamt für Verbraucherschutz und Lebensmittelsicherheit, Gerichtstr. 49, 13347 Berlin",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31022480,
+      "organization": "AFSVSPP",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31037193,
+      "organization": "European Commission"
+    }
+  ],
+  "localConsumerLinksByCountry": {
+    "5024": [],
+    "5026": [
+      {
+        "id": 30,
+        "countryNetworkOrganizationId": 5026,
+        "link": "https://www.nvwa.nl/onderwerpen/voedselveiligheid/veiligheidswaarschuwingen/overzicht-veiligheidswaarschuwingen"
+      }
+    ],
+    "5028": [
+      {
+        "id": 32,
+        "countryNetworkOrganizationId": 5028,
+        "link": "https://www.gov.pl/web/gis/glowny-inspektorat-sanitarny"
+      }
+    ],
+    "5032": [
+      {
+        "id": 34,
+        "countryNetworkOrganizationId": 5032,
+        "link": "https://www.gov.si/podrocja/podjetnistvo-in-gospodarstvo/varstvo-potrosnikov-in-konkurence/nevarni-in-neskladni-izdelki/"
+      }
+    ],
+    "5033": [],
+    "5001": [
+      {
+        "id": 1,
+        "countryNetworkOrganizationId": 5001,
+        "link": "http://www.ages.at/ages/produktwarnungen/"
+      }
+    ],
+    "5002": [
+      {
+        "id": 2,
+        "countryNetworkOrganizationId": 5002,
+        "link": "https://favv-afsca.be/nl/producten"
+      },
+      {
+        "id": 3,
+        "countryNetworkOrganizationId": 5002,
+        "link": "https://favv-afsca.be/fr/produits"
+      }
+    ],
+    "5007": [
+      {
+        "id": 16,
+        "countryNetworkOrganizationId": 5007,
+        "link": "http://www.lebensmittelwarnung.de"
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+ "actionsTaken": [
+  {
+   "id": 18850,
+   "description": "(requested) removal of online offer"
+  },
+  {
+   "id": 18703,
+   "description": "Entry refusal"
+  },
+  {
+   "id": 18701,
+   "description": "Special treatment"
+  },
+  {
+   "id": 18847,
+   "description": "chemical treatment"
+  },
+  {
+   "id": 18956,
+   "description": "destination of the product changed"
+  },
+  {
+   "id": 18955,
+   "description": "destination of the product identified"
+  },
+  {
+   "id": 18700,
+   "description": "destruction"
+  },
+  {
+   "id": 18822,
+   "description": "detained by operator"
+  },
+  {
+   "id": 18380,
+   "description": "informing authorities"
+  },
+  {
+   "id": 18826,
+   "description": "informing consignor"
+  },
+  {
+   "id": 18383,
+   "description": "informing recipient(s)"
+  },
+  {
+   "id": 18846,
+   "description": "monitoring of the recall/withdrawal"
+  },
+  {
+   "id": 18827,
+   "description": "no action taken"
+  },
+  {
+   "id": 18843,
+   "description": "no stock left"
+  },
+  {
+   "id": 18839,
+   "description": "official detention"
+  },
+  {
+   "id": 18828,
+   "description": "physical treatment"
+  },
+  {
+   "id": 18833,
+   "description": "physical treatment - acid treatment"
+  },
+  {
+   "id": 18829,
+   "description": "physical treatment - blanching"
+  },
+  {
+   "id": 18830,
+   "description": "physical treatment - freezing"
+  },
+  {
+   "id": 18831,
+   "description": "physical treatment - heat treatment"
+  },
+  {
+   "id": 18832,
+   "description": "physical treatment - sorting"
+  },
+  {
+   "id": 18954,
+   "description": "product (to be) redispatched or destroyed"
+  },
+  {
+   "id": 18841,
+   "description": "product under custom seals"
+  },
+  {
+   "id": 18953,
+   "description": "prohibition to trade - sales ban"
+  },
+  {
+   "id": 18952,
+   "description": "prohibition to use"
+  },
+  {
+   "id": 18838,
+   "description": "public warning - press release"
+  },
+  {
+   "id": 18702,
+   "description": "re-dispatch"
+  },
+  {
+   "id": 18836,
+   "description": "recall from consumer"
+  },
+  {
+   "id": 18842,
+   "description": "reinforced checking"
+  },
+  {
+   "id": 19086,
+   "description": "relabelled"
+  },
+  {
+   "id": 18834,
+   "description": "relabelling"
+  },
+  {
+   "id": 18845,
+   "description": "release to the market"
+  },
+  {
+   "id": 18848,
+   "description": "request for reinforced checks through TRACES"
+  },
+  {
+   "id": 18835,
+   "description": "return to consignor"
+  },
+  {
+   "id": 18840,
+   "description": "seizure"
+  },
+  {
+   "id": 18849,
+   "description": "transformation"
+  },
+  {
+   "id": 18824,
+   "description": "use for other purpose than food/feed"
+  },
+  {
+   "id": 18823,
+   "description": "use in feed"
+  },
+  {
+   "id": 18844,
+   "description": "withdrawal from recipient(s)"
+  },
+  {
+   "id": 18837,
+   "description": "withdrawal from the market"
+  }
+ ]
+}

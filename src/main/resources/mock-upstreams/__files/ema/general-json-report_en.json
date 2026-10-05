@@ -1,0 +1,808 @@
+{
+ "meta": {
+  "total_records": 1065,
+  "timestamp": "2026-10-04T18:00:39Z"
+ },
+ "data": [
+  {
+   "title": "Procedural timetables",
+   "summary": "This page lists the timetables for the submission, start and finish dates of procedures, as well as other interim dates and milestones that occur during the various procedures.",
+   "categories": "Human",
+   "first_published_date": "11/07/2011",
+   "last_updated_date": "02/10/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/marketing-authorisation/submission-dates/procedural-timetables"
+  },
+  {
+   "title": "External whistleblowing policy",
+   "summary": "The European Medicines Agency (EMA) has put in place a policy for handling alledged breaches within its remit received from external persons, also known as whistleblowers. Such breaches may include allegations of non-compliance with standards of good practices that could have an impact on the evaluation and supervision of human and veterinary medicines. This policy enables EMA to protect the confidentiality of whistleblowers.",
+   "categories": "Corporate",
+   "first_published_date": "10/04/2017",
+   "last_updated_date": "02/10/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/how-we-work/external-whistleblowing-policy"
+  },
+  {
+   "title": "African Medicines Agency (African Union)",
+   "summary": "The African Medicines Agency is a specialised agency of the African Union and its 55 Member States. It will work to improve governmental collaboration across Africa and help patients access medicines. The European Medicines Agency (EMA) and the European medicines regulatory network provide guidance, technical expertise and financial support to the African Union in setting up the agency.",
+   "categories": "Corporate",
+   "first_published_date": "13/12/2023",
+   "last_updated_date": "01/10/2026",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/international-activities/multilateral-coalitions-initiatives/african-medicines-agency-african-union"
+  },
+  {
+   "title": "International Coalition of Medicines Regulatory Authorities (ICMRA)",
+   "summary": "The European Medicines Agency (EMA) is a member of the International Coalition of Medicines Regulatory Authorities (ICMRA). ICMRA is a voluntary, executive-level entity of worldwide medicines regulatory authorities set up to provide strategic coordination, advocacy and leadership.",
+   "categories": "Human",
+   "first_published_date": "20/11/2014",
+   "last_updated_date": "01/10/2026",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/international-activities/multilateral-coalitions-initiatives/international-coalition-medicines-regulatory-authorities-icmra"
+  },
+  {
+   "title": "EudraVigilance: electronic reporting",
+   "summary": "Marketing authorisation holders and sponsors of clinical trials must report and evaluate suspected adverse drug reactions both during development and after a medicine is authorised in the EEA and also submit the data of their authorised or investigational products to the Extended EudraVigilance Medicinal Product Dictionary (XEVMPD). National competent authorities must report reactions they receive from patients or healthcare professionals to the EV system.",
+   "categories": "Human",
+   "first_published_date": "17/06/2016",
+   "last_updated_date": "01/10/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/pharmacovigilance-research-development/eudravigilance/eudravigilance-electronic-reporting"
+  },
+  {
+   "title": "Executive Director",
+   "summary": "The European Medicines Agency's (EMA) Executive Director is Ms Emer Cooke.",
+   "categories": "Corporate",
+   "first_published_date": "31/12/2009",
+   "last_updated_date": "01/10/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/who-we-are/executive-director"
+  },
+  {
+   "title": "List of medicines under additional monitoring",
+   "summary": "The list of medicines under additional monitoring includes medicines authorised in the European Union (EU) that are being monitored particularly closely by regulatory authorities. Medicines under additional monitoring have a black inverted triangle displayed in their package leaflet and summary of product characteristics, together with a short sentence explaining what the triangle means.",
+   "categories": "Human",
+   "first_published_date": "25/04/2013",
+   "last_updated_date": "30/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/medicines-under-additional-monitoring/list-medicines-under-additional-monitoring"
+  },
+  {
+   "title": "Certification procedures for advanced therapies under development by micro-, small- and medium-sized enterprises (SMEs)",
+   "summary": "The European Medicines Agency's Committee for Advanced Therapies (CAT) provides a certification procedure for advanced therapy medicinal products (ATMPs) under development by micro-, small- and medium-sized enterprises (SMEs). This is an opportunity for SMEs to get an assessment of the data they have generated and check that they are on the right track for successful development.",
+   "categories": "Human",
+   "first_published_date": "29/01/2010",
+   "last_updated_date": "29/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/advanced-therapy-medicinal-products-overview/certification-procedures-advanced-therapies-under-development-micro-small-medium-sized-enterprises-smes"
+  },
+  {
+   "title": "Medicine shortages and availability issues",
+   "summary": "Improving the availability of medicines authorised in the European Union (EU) is a key priority for the European Medicines Agency (EMA) and the European medicines regulatory network. Shortages or other problems with the availability of medicines create challenges for the medicine supply chain, potentially seriously impacting human and animal health. ",
+   "categories": "Human;Veterinary",
+   "first_published_date": "04/11/2013",
+   "last_updated_date": "29/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/medicine-shortages-availability-issues"
+  },
+  {
+   "title": "Outcomes of imposed non-interventional post-authorisation safety studies",
+   "summary": "",
+   "categories": "Human",
+   "first_published_date": "23/02/2017",
+   "last_updated_date": "29/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/post-authorisation-safety-studies-pass/outcomes-imposed-non-interventional-post-authorisation-safety-studies"
+  },
+  {
+   "title": "Website outages and upgrades",
+   "summary": "The European Medicines Agency (EMA) makes upgrades to this website from time to time, to improve user experience. During these upgrades, the website is unavailable for a short period of time, outside of EMA working hours. This page lists when we are planning the next outage and the main improvements made.",
+   "categories": "Corporate",
+   "first_published_date": "15/06/2021",
+   "last_updated_date": "29/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/about-website/website-outages-upgrades"
+  },
+  {
+   "title": "Scientific guidelines",
+   "summary": "The European Medicines Agency (EMA) publishes scientific guidelines for human and veterinary medicines, as well as for herbal medicinal products. Scientific guidelines reflect a harmonised approach of the EU Member States and EMA on how to interpret and apply EU requirements for quality, safety and efficacy. Guidelines also help prepare marketing authorisation applications.",
+   "categories": "Human;Veterinary;Herbal",
+   "first_published_date": "29/09/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/scientific-guidelines"
+  },
+  {
+   "title": "Scientific guidelines for veterinary medicines",
+   "summary": "The European Medicines Agency's Committee for Medicinal Products for Veterinary Use prepares scientific guidelines in consultation with regulatory authorities in the European Union (EU) Member States, to help applicants prepare marketing authorisation applications for veterinary medicines. Guidelines reflect a harmonised approach of the EU Member States and the Agency on how to interpret and apply the requirements for the demonstration of quality, safety and efficacy set out in the Community directives.",
+   "categories": "Veterinary",
+   "first_published_date": "29/09/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/research-development-veterinary-medicines/scientific-guidelines-veterinary-medicines"
+  },
+  {
+   "title": "Reform of the EU pharmaceutical legislation",
+   "summary": "Information on the upcoming changes introduced by the European Union's (EU) comprehensive overhaul of its pharmaceutical legislation.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "15/01/2025",
+   "last_updated_date": "28/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/what-we-do/reform-eu-pharmaceutical-legislation"
+  },
+  {
+   "title": "PRAC recommendations on safety signals",
+   "summary": "Each month, the European Medicines Agency publishes an overview listing all safety signals discussed during the latest Pharmacovigilance Risk Assessment Committee (PRAC) meeting and the recommendations given for each of them. The overview includes PRAC recommendations for centrally and nationally authorised medicines.",
+   "categories": "Human",
+   "first_published_date": "04/10/2013",
+   "last_updated_date": "28/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/signal-management/prac-recommendations-safety-signals"
+  },
+  {
+   "title": "Questions and answers for biological medicinal products",
+   "summary": "",
+   "categories": "Human",
+   "first_published_date": "18/09/2023",
+   "last_updated_date": "25/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-and-development/scientific-guidelines/biological-guidelines/questions-answers-biological-medicinal-products"
+  },
+  {
+   "title": "Data in regulation: Big data and other sources",
+   "summary": "The European Medicines Agency (EMA) bases its regulatory decisions on different types of data. These include ‘big data’ sources like real-world evidence obtained from electronic health records and patient registries. EMA uses rigorous and transparent analytics, such as advanced artificial intelligence-driven methods, to generate insights and evidence that support decisions on the safety, efficacy, and quality of medicines.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "15/02/2019",
+   "last_updated_date": "25/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources"
+  },
+  {
+   "title": "Enpr-EMA priority activities",
+   "summary": "The aim of the European Network of Paediatric Research at the European Medicines Agency (Enpr-EMA) is to facilitate studies in order to increase the availability of medicines for children. It works by holding annual workshops to define priority tasks and setting up working groups to carry out specific activities.",
+   "categories": "Human",
+   "first_published_date": "25/07/2019",
+   "last_updated_date": "24/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/networks/european-network-paediatric-research-european-medicines-agency-enpr-ema/enpr-ema-priority-activities"
+  },
+  {
+   "title": "CHMP opinions on consultation procedures on ancillary substances incorporated in a medical device",
+   "summary": "The European Medicines Agency (EMA) publishes a consultation procedure public assessment report (CPAR) on the opinions prepared by its Committee for Medicinal Products for Human Use (CHMP) following a consultation procedure with EMA on the quality, safety, benefits and risks of ancillary substances incorporated in a medical device.",
+   "categories": "Human",
+   "first_published_date": "31/12/2009",
+   "last_updated_date": "22/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/medical-devices/consultation-procedure-ancillary-medicinal-substances-medical-devices/chmp-opinions-consultation-procedures-ancillary-substances-incorporated-medical-device"
+  },
+  {
+   "title": "Assessment templates and guidance",
+   "summary": "The European Medicine Agency (EMA)'s Committee for Medicinal Products for Human Use (CHMP) and Committee on Advanced Therapies (CAT) should use the assessment report templates and documents listed on this page for the assessment of any new application in the centralised procedure.",
+   "categories": "Human",
+   "first_published_date": "12/10/2011",
+   "last_updated_date": "22/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/marketing-authorisation/assessment-templates-guidance"
+  },
+  {
+   "title": "Data Analysis and Real World Interrogation Network (DARWIN EU)",
+   "summary": "The Data Analysis and Real World Interrogation Network (DARWIN EU®) provides timely and reliable evidence on the use, safety and effectiveness of medicines for human use.",
+   "categories": "Human",
+   "first_published_date": "04/06/2021",
+   "last_updated_date": "21/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/real-world-evidence/data-analysis-real-world-interrogation-network-darwin-eu"
+  },
+  {
+   "title": "Veterinary good pharmacovigilance practices (VGVP)",
+   "summary": "Veterinary good pharmacovigilance practices (VGVP) are a set of measures to facilitate pharmacovigilance for veterinary medicines in the European Union (EU) / European Economic Area (EEA). They apply to marketing-authorisation holders, the European Medicines Agency (EMA) and medicines regulatory authorities in EU Member States.",
+   "categories": "Veterinary",
+   "first_published_date": "31/12/2009",
+   "last_updated_date": "18/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/post-authorisation-veterinary-medicines/pharmacovigilance-veterinary-medicines/veterinary-good-pharmacovigilance-practices-vgvp"
+  },
+  {
+   "title": "Quality: post approval change management protocols",
+   "summary": "",
+   "categories": "Veterinary",
+   "first_published_date": "13/04/2012",
+   "last_updated_date": "18/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/research-development-veterinary-medicines/scientific-guidelines-veterinary-medicines/quality-guidelines/quality-post-approval-change-management-protocols"
+  },
+  {
+   "title": "Electronic product information (ePI)",
+   "summary": "The European Medicines Agency (EMA) and its European medicines regulatory network partners are working to enable the use of electronic product information (ePI) for human medicines in the European Union (EU).",
+   "categories": "Human",
+   "first_published_date": "30/05/2023",
+   "last_updated_date": "16/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/marketing-authorisation/product-information-requirements/electronic-product-information-epi"
+  },
+  {
+   "title": "Scientific publications",
+   "summary": "The staff and experts of the European Medicines Agency (EMA) publish articles on the Agency's scientific activities in scientific publications, such as journals or textbooks.",
+   "categories": "Corporate",
+   "first_published_date": "28/01/2015",
+   "last_updated_date": "16/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/news-and-events/publications/scientific-publications"
+  },
+  {
+   "title": "International collaboration on GMP inspections",
+   "summary": "The European Medicines Agency (EMA) participates in initiatives with partner organisations outside the European Union (EU) on good manufacturing practice (GMP) inspections.",
+   "categories": "Human",
+   "first_published_date": "28/09/2017",
+   "last_updated_date": "14/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/compliance-research-development/good-manufacturing-practice/international-collaboration-gmp-inspections"
+  },
+  {
+   "title": "Expert panel support for orphan medical devices",
+   "summary": "Manufacturers of orphan medical devices and notified bodies can apply for the European Medicines Agency's (EMA) established process to support orphan medical devices.",
+   "categories": "Human",
+   "first_published_date": "28/11/2018",
+   "last_updated_date": "09/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/medical-devices/expert-panel-support-orphan-medical-devices"
+  },
+  {
+   "title": "Scientific advice for high-risk medical devices",
+   "summary": "Guidance for manufacturers on requesting clinical advice from the European Medicines Agency (EMA) through expert panels for high-risk medical devices.",
+   "categories": "Human",
+   "first_published_date": "28/11/2018",
+   "last_updated_date": "09/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/medical-devices/high-risk-medical-devices/scientific-advice-high-risk-medical-devices"
+  },
+  {
+   "title": "Good pharmacovigilance practices (GVP)",
+   "summary": "Good pharmacovigilance practices (GVP) are a set of measures drawn up to facilitate the performance of pharmacovigilance in the European Union (EU). GVP apply to marketing-authorisation holders, the European Medicines Agency (EMA) and medicines regulatory authorities in EU Member States. They cover medicines authorised centrally via the Agency as well as medicines authorised at national level.",
+   "categories": "Human",
+   "first_published_date": "22/02/2012",
+   "last_updated_date": "09/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/good-pharmacovigilance-practices-gvp"
+  },
+  {
+   "title": "QRD guidance on the use of adopted abbreviations and pictograms on the packaging of veterinary medicinal products authorised via the centralised (CP), mutual recognition (MRP), decentralised (DCP), subsequent recognition (SRP) and national procedures",
+   "summary": "",
+   "categories": "Veterinary",
+   "first_published_date": "25/11/2016",
+   "last_updated_date": "07/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/qrd-guidance-use-adopted-abbreviations-pictograms-packaging-veterinary-medicinal-products-authorised-centralised-cp-mutual-recognition-mrp-decentralised-dcp-subsequent-recognition-srp-national"
+  },
+  {
+   "title": "Signal management (veterinary medicines)",
+   "summary": "The European Medicines Agency (EMA), regulatory authorities in the Member States and marketing authorisation holders are responsible for detecting and managing safety signals associated with veterinary medicines on the European market. This involves collecting and analysing safety data to identify and evaluate potential safety issues, so regulatory actions can be taken if needed to protect animal and human health.",
+   "categories": "Veterinary",
+   "first_published_date": "31/12/2009",
+   "last_updated_date": "04/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/post-authorisation-veterinary-medicines/pharmacovigilance-veterinary-medicines/signal-management-veterinary-medicines"
+  },
+  {
+   "title": "Pharmacogenomics",
+   "summary": "Information on pharmacogenomics, including pharmacogenomic information in centrally authorised medicines and scientific guidelines for medicine developers.",
+   "categories": "",
+   "first_published_date": "04/09/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacogenomics"
+  },
+  {
+   "title": "Union Product Database: release notes",
+   "summary": "",
+   "categories": "Veterinary",
+   "first_published_date": "21/10/2020",
+   "last_updated_date": "04/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/veterinary-medicinal-products-regulation/union-product-database/union-product-database-release-notes"
+  },
+  {
+   "title": "COVID-19 medicines",
+   "summary": "The European Medicines Agency (EMA) evaluates and recommends the authorisation of medicines marketed in the European Union (EU). This includes COVID-19 vaccines and treatments. Although COVID-19 in no longer defined as a public health emergency of international concern, EMA continues to monitor the safety of COVID-19 medicines.",
+   "categories": "Human",
+   "first_published_date": "06/06/2023",
+   "last_updated_date": "04/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/public-health-threats/coronavirus-disease-covid-19/covid-19-medicines"
+  },
+  {
+   "title": "Scientific advice and protocol assistance",
+   "summary": "The European Medicines Agency (EMA) can advise medicine developers on the most appropriate way to generate robust evidence on a medicine's benefits and risks. EMA provides scientific advice to support the timely and sound development of high-quality, effective and safe medicines. This benefits patients.",
+   "categories": "Human",
+   "first_published_date": "01/01/2016",
+   "last_updated_date": "04/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-advice-protocol-assistance"
+  },
+  {
+   "title": "Framework for interaction with pharmaceutical industry stakeholders",
+   "summary": "The framework for interaction with industry stakeholders formalises and structures interactions with pharmaceutical industry associations active in the human and veterinary medicines.",
+   "categories": "Corporate",
+   "first_published_date": "31/12/2009",
+   "last_updated_date": "04/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/pharmaceutical-industry/framework-interaction-pharmaceutical-industry-stakeholders"
+  },
+  {
+   "title": "Pharmaceutical industry: Getting involved in EMA activities",
+   "summary": "Information on the criteria that not-for-profit industry organisations must meet to be eligible for involvement in EMA activities, how to apply, and the list of eligible organisations",
+   "categories": "Corporate",
+   "first_published_date": "04/09/2026",
+   "last_updated_date": "04/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/pharmaceutical-industry/pharmaceutical-industry-getting-involved-ema-activities"
+  },
+  {
+   "title": "Women's health",
+   "summary": "The European Medicines Agency (EMA) works to ensure that the needs of women are considered throughout the development, evaluation and use of medicines in the European Union (EU). This includes promoting appropriate representation in clinical research, providing guidance to medicine developers, improving knowledge on medicine use during pregnancy and breastfeeding, and generating real world evidence on women's health.",
+   "categories": "Human",
+   "first_published_date": "02/09/2026",
+   "last_updated_date": "04/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/womens-health"
+  },
+  {
+   "title": "Scientific and technical recommendations: Veterinary Medicines Regulation",
+   "summary": "The European Medicines Agency (EMA) prepared scientific and technical recommendations to feed into delegated and implementing acts as part of the implementation of the Veterinary Medicines Regulation (Regulation (EU) 2019/6). EMA provided these recommendations at the request of the European Commission.",
+   "categories": "Veterinary",
+   "first_published_date": "23/09/2019",
+   "last_updated_date": "04/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/veterinary-medicinal-products-regulation/scientific-technical-recommendations-veterinary-medicines-regulation"
+  },
+  {
+   "title": "Support to SMEs",
+   "summary": "The European Medicines Agency (EMA) provides incentives and support for micro, small and medium-sized enterprises (SMEs) that are developing medicines for human or veterinary use, in order to promote innovation and the development of new medicines.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "01/01/2016",
+   "last_updated_date": "03/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/support-smes"
+  },
+  {
+   "title": "Podcast: Inside EMA",
+   "summary": "Discover the science and the people behind medicines regulation",
+   "categories": "Human;Veterinary",
+   "first_published_date": "18/11/2025",
+   "last_updated_date": "03/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/news-events/podcast-inside-ema"
+  },
+  {
+   "title": "Plasma master file certificates",
+   "summary": "Following the positive evaluation of a plasma master file (PMF)  under the PMF certification scheme, the European Medicines Agency (EMA) issues a certificate of compliance with European legislation which is valid throughout the European Union. EMA publishes the list of all the issued PMF certificates.",
+   "categories": "Human",
+   "first_published_date": "31/12/2009",
+   "last_updated_date": "02/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/plasma-master-file-pmf-certification/plasma-master-file-certificates"
+  },
+  {
+   "title": "Pre-authorisation guidance",
+   "summary": "These questions and answers (Q&As) provide an overview of the European Medicines Agency's (EMA) advice on issues that are typically addressed in discussions or meetings with marketing authorisation holders in the application phase.",
+   "categories": "Human",
+   "first_published_date": "03/05/2016",
+   "last_updated_date": "02/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/marketing-authorisation/pre-authorisation-guidance"
+  },
+  {
+   "title": "Pre-submission interactions model pilot",
+   "summary": "The European Medicines Agency (EMA) is running a voluntary pilot assessing a revised model for pre-submission interactions for initial marketing authorisation applications.",
+   "categories": "Human",
+   "first_published_date": "02/09/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/marketing-authorisation/pre-authorisation-guidance/pre-submission-interactions-model-pilot"
+  },
+  {
+   "title": "Assessment templates and guidance (veterinary medicines)",
+   "summary": "The rapporteurs of the Committee for Veterinary Medicinal Products (CVMP) should use the templates and documents provided on this page for the assessment of any new marketing authorisation application for a veterinary medicine under the centralised procedure. For initial marketing authorisation applications, this includes a version of the list of questions and the scientific overview.",
+   "categories": "Veterinary",
+   "first_published_date": "10/03/2022",
+   "last_updated_date": "02/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/marketing-authorisation-veterinary-medicines/assessment-templates-guidance-veterinary-medicines"
+  },
+  {
+   "title": "Portfolio and technology meetings",
+   "summary": "Pharmaceutical companies with large portfolios can attend free, virtual meetings with European Medicines Agency (EMA). These meetings address development issues and anticipate future scientific and regulatory needs. They aim to support successful product portfolio development.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "18/03/2025",
+   "last_updated_date": "01/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/portfolio-technology-meetings"
+  },
+  {
+   "title": "Regulatory acceptance of new approach methodologies (NAMs) to reduce animal use testing",
+   "summary": "New approach methodologies (NAMs) are innovative methods or testing approaches aimed to progressively replace, reduce and refine ('3Rs' principles) traditional animal studies. The European Medicines Agency (EMA) supports the regulatory acceptance of NAMs across the European Union (EU). This ensures NAMs are scientifically sound and can be used in regulatory decision-making.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "02/05/2025",
+   "last_updated_date": "01/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/ethical-use-animals-medicine-testing/regulatory-acceptance-new-approach-methodologies-nams-reduce-animal-use-testing"
+  },
+  {
+   "title": "New approach methodologies to replace and reduce animal testing: Voluntary data submission pilot",
+   "summary": "The European Medicines Agency (EMA) is running a pilot to facilitate sharing data generated via so-called new approach methodologies aimed at replacing, reducing and refining traditional animal testing in the non-clinical development of medicines.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "01/09/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/ethical-use-animals-medicine-testing/regulatory-acceptance-new-approach-methodologies-nams-reduce-animal-use-testing/new-approach-methodologies-replace-reduce-animal-testing-voluntary-data-submission-pilot"
+  },
+  {
+   "title": "Task Forces",
+   "summary": "The European Medicines Agency (EMA) has three mission-critical task forces which support its human and veterinary medicines divisions, bringing together expertise to drive transformational change in high-priority areas of the Agency's work.",
+   "categories": "Corporate",
+   "first_published_date": "02/03/2020",
+   "last_updated_date": "01/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/who-we-are/task-forces"
+  },
+  {
+   "title": "Veterinary Medicines",
+   "summary": "The European Medicines Agency's (EMA) Veterinary Medicines Division oversees veterinary medicines throughout their lifecycle. This includes the provision of guidance and advice during medicine development, the marketing authorisation process and the safety monitoring of medicines on the market. It also works to facilitate access to and the optimal use of veterinary medicines, for the benefit of animal welfare, animal health and public health in the European Union.",
+   "categories": "Veterinary;Corporate",
+   "first_published_date": "29/02/2012",
+   "last_updated_date": "01/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/who-we-are/veterinary-medicines"
+  },
+  {
+   "title": "Expert panel support for breakthrough medical devices: pilot programme",
+   "summary": "The European Medicines Agency (EMA)'s pilot programme on breakthrough medical devices (BtX) is designed to establish a long-term process for manufacturers and notified bodies to request support from the medical device expert panels.",
+   "categories": "Human",
+   "first_published_date": "28/11/2018",
+   "last_updated_date": "01/09/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/medical-devices/expert-panel-support-breakthrough-medical-devices-pilot-programme"
+  },
+  {
+   "title": "How to pay",
+   "summary": "The European Medicines Agency (EMA) provides guidance to marketing authorisation holders and applicants on how to pay fees levied by EMA.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "02/05/2016",
+   "last_updated_date": "28/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/fees-payable-european-medicines-agency/how-pay"
+  },
+  {
+   "title": "Tackling antimicrobial resistance: Information for animal health practitioners",
+   "summary": "Information for veterinarians on tackling antimicrobial resistance, including restrictions on the use of certain antimicrobials in animals in the EU",
+   "categories": "Veterinary",
+   "first_published_date": "08/04/2025",
+   "last_updated_date": "27/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/animal-health-professionals/tackling-antimicrobial-resistance-information-animal-health-practitioners"
+  },
+  {
+   "title": "Medicines for human use under evaluation",
+   "summary": "Each month, the European Medicines Agency's (EMA) publishes an updated list of medicines for human use currently under evaluation by EMA’s Committee for Medicinal Products for Human Use (CHMP) to obtain a marketing authorisation in the European Union (EU).",
+   "categories": "Human",
+   "first_published_date": "01/03/2012",
+   "last_updated_date": "26/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/medicines/medicines-human-use-under-evaluation"
+  },
+  {
+   "title": "Pre-authorisation guidance under the Veterinary Medicinal Products Regulation (Regulation (EU) 2019/6)",
+   "summary": "Pre-authorisation procedural guidance is available from the European Medicines Agency (EMA) on initial marketing authorisation procedures for centrally authorised veterinary medicines under the Veterinary Medicinal Products Regulation (Regulation (EU) 2019/6).",
+   "categories": "Veterinary",
+   "first_published_date": "27/07/2021",
+   "last_updated_date": "19/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/marketing-authorisation-veterinary-medicines/pre-authorisation-guidance-under-veterinary-medicinal-products-regulation-regulation-eu-2019-6"
+  },
+  {
+   "title": "Marketing authorisation (veterinary medicines)",
+   "summary": "The European Medicines Agency (EMA) is responsible for the scientific evaluation of centralised marketing authorisation applications (MAA). Once granted by the European Commission, the centralised marketing authorisation is valid in all European Union (EU) Member States, Iceland, Norway and Liechtenstein.",
+   "categories": "Veterinary",
+   "first_published_date": "20/12/2016",
+   "last_updated_date": "19/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/marketing-authorisation-veterinary-medicines"
+  },
+  {
+   "title": "Accessibility",
+   "summary": "The European Medicines Agency (EMA) is committed to ensuring accessibility of its website to all people, including those with cognitive or physical impairments.",
+   "categories": "Corporate",
+   "first_published_date": "30/06/2025",
+   "last_updated_date": "18/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/about-website/accessibility"
+  },
+  {
+   "title": "Artificial intelligence",
+   "summary": "The European medicines regulatory network aims to enable regulatory systems in the European Union (EU) to use the capabilities of artificial intelligence (AI) while managing its risks. Capabilities include personal productivity, process automation, better insights into data and decision-making support for the benefit of public and animal health.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "24/07/2024",
+   "last_updated_date": "14/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/how-we-work/data-regulation-big-data-other-sources/artificial-intelligence"
+  },
+  {
+   "title": "Reliance for post-authorisation changes pilots",
+   "summary": "EMA is testing a global model for post-authorisation changes with national regulatory authorities outside the EU, the World Health Organization (WHO) and the pharmaceutical industry. The programme enables authorities to use EMA's assessments to inform national decision-making and facilitate patient access to quality-assured medicines. This approach is based on the principle of reliance.",
+   "categories": "Corporate",
+   "first_published_date": "28/02/2025",
+   "last_updated_date": "13/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/international-activities/multilateral-coalitions-initiatives/reliance-applied-post-autorisation-changes-pilots-pharmaceutical-industry"
+  },
+  {
+   "title": "Reliance for post-authorisation changes: guidance for the pharmaceutical industry",
+   "summary": "EMA makes available guidance on how pharmaceutical companies can apply to a pilot programme that enables them to use reliance to submit post-authorisation changes simultaneously to multiple countries outside the European Union.",
+   "categories": "Human",
+   "first_published_date": "13/08/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/international-activities/multilateral-coalitions-initiatives/reliance-post-authorisation-changes-guidance-pharmaceutical-industry"
+  },
+  {
+   "title": "What we publish on medicines and when",
+   "summary": "The European Medicines Agency (EMA) publishes information on human medicines at various stages of their life cycle",
+   "categories": "Human;Veterinary;Herbal",
+   "first_published_date": "10/06/2020",
+   "last_updated_date": "12/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/medicines/what-we-publish-medicines-when"
+  },
+  {
+   "title": "Vaccines: concerns, questions and false claims",
+   "summary": "Information from the European Medicines Agency (EMA) addressing concerns, questions and false claims about vaccines.",
+   "categories": "Human",
+   "first_published_date": "21/11/2025",
+   "last_updated_date": "12/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/public-health-threats/vaccine-preventable-diseases-key-facts/vaccines-concerns-questions-false-claims"
+  },
+  {
+   "title": "Opinions and letters of support on the qualification of novel methodologies for medicine development",
+   "summary": "The European Medicines Agency (EMA) publishes opinions on the qualification of innovative development methods and letters of support for novel methodologies that have been shown to be promising in the context of research and development into pharmaceuticals. ",
+   "categories": "Human",
+   "first_published_date": "07/01/2011",
+   "last_updated_date": "12/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-advice-protocol-assistance/opinions-letters-support-qualification-novel-methodologies-medicine-development"
+  },
+  {
+   "title": "Fees for veterinary medicines",
+   "summary": "Guidance in a question-and-answer format on the European Medicines Agency’s fees for the assessment of and services relating to veterinary medicines, in line with Regulation (EU) 2024/568 (the New Fee Regulation)",
+   "categories": "Human;Veterinary;Corporate",
+   "first_published_date": "15/04/2025",
+   "last_updated_date": "11/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/fees-payable-european-medicines-agency/fees-veterinary-medicines"
+  },
+  {
+   "title": "Fees for human medicines",
+   "summary": "Guidance in a question-and-answer format on the European Medicines Agency’s fees for the assessment of and services relating to human medicines, in line with Regulation (EU) 2024/568 (the New Fee Regulation)",
+   "categories": "Human;Corporate",
+   "first_published_date": "15/04/2025",
+   "last_updated_date": "11/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/fees-payable-european-medicines-agency/fees-human-medicines"
+  },
+  {
+   "title": "Vaccine Monitoring Platform",
+   "summary": "The Vaccine Monitoring Platform (VMP) is a collaboration between the European Medicines Agency (EMA) and the European Centre for Disease Prevention and Control (ECDC) aiming to generate real-word evidence (RWE) on the safety, effectiveness and use of vaccines in the European Union (EU) and the European Economic Area (EEA).",
+   "categories": "Human",
+   "first_published_date": "27/09/2023",
+   "last_updated_date": "10/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/what-we-do/crisis-preparedness-management/vaccine-monitoring-platform"
+  },
+  {
+   "title": "PRIME: priority medicines",
+   "summary": "PRIME is a scheme run by the European Medicines Agency (EMA) to enhance support for the development of medicines targeting unmet medical needs. It is based on early dialogue with companies to optimise development plans and speed up evaluation.",
+   "categories": "Human",
+   "first_published_date": "26/10/2015",
+   "last_updated_date": "10/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/prime-priority-medicines"
+  },
+  {
+   "title": "Reporting adverse events for veterinary medicines",
+   "summary": "Information on reporting adverse events related to veterinary medicines in the European Union (EU)",
+   "categories": "Veterinary",
+   "first_published_date": "08/04/2025",
+   "last_updated_date": "08/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/animal-health-professionals/reporting-adverse-events-veterinary-medicines"
+  },
+  {
+   "title": "Medicine shortages and availability issues: guidance for companies",
+   "summary": "Guidance to pharmaceutical industry actors on maintaining a continuous supply of their medicines in the European Union (EU).",
+   "categories": "Human;Veterinary",
+   "first_published_date": "07/11/2023",
+   "last_updated_date": "07/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/medicine-shortages-availability-issues/medicine-shortages-availability-issues-guidance-companies"
+  },
+  {
+   "title": "Fees payable to the European Medicines Agency: Guidance for all applicants",
+   "summary": "General guidance in a question-and-answer format on the European Medicines Agency’s fees for the assessment of and services, in line with Regulation (EU) 2024/568 (the New Fee Regulation)",
+   "categories": "Human;Veterinary;Corporate",
+   "first_published_date": "15/04/2025",
+   "last_updated_date": "06/08/2026",
+   "general_url": "https://www.ema.europa.eu/en/about-us/fees-payable-european-medicines-agency/fees-payable-european-medicines-agency-guidance-all-applicants"
+  },
+  {
+   "title": "United for health at WorldPride 2026",
+   "summary": "The European Medicines Agency (EMA) celebrated diversity, equality and inclusion in public health during Amsterdam's World Pride Canal Parade.",
+   "categories": "Corporate",
+   "first_published_date": "04/08/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/news-events/ema-campaigns/united-health-worldpride-2026"
+  },
+  {
+   "title": "Healthcare Professionals' Working Party",
+   "summary": "The Healthcare Professionals' Working Party (HCPWP) provides a platform for exchange of information and discussion of issues of common interest between the European Medicines Agency and healthcare professionals.",
+   "categories": "Human",
+   "first_published_date": "15/02/2016",
+   "last_updated_date": "24/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/committees/working-parties-other-groups/chmp-working-parties-other-groups/healthcare-professionals-working-party"
+  },
+  {
+   "title": "Academia",
+   "summary": "The European Medicines Agency (EMA) partners with academia to adapt to advances in science and technology. Areas of collaboration include regulatory science research, clinical trials and oncology.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "03/04/2017",
+   "last_updated_date": "22/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/academia"
+  },
+  {
+   "title": "Horizon scanning: Identifying emerging trends",
+   "summary": "The EU Innovation Network (EU IN) of the European medicines regulatory network is conducting horizon scanning to identify emerging science, technologies and trends that may shape the future of human medicines.",
+   "categories": "Human",
+   "first_published_date": "17/07/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/committees/working-parties-other-groups/eu-innovation-network-eu/horizon-scanning-identifying-emerging-trends"
+  },
+  {
+   "title": "CVMP: meeting archive 2019-2020",
+   "summary": "This is an archive of the meeting highlights and monthly reports from the European Medicines Agency's Committee for Veterinary Medicinal Products (CVMP) in 2019 to 2020.",
+   "categories": "Veterinary",
+   "first_published_date": "16/07/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/cvmp-meeting-archive-2019-2020"
+  },
+  {
+   "title": "PRAC: meeting archive 2018-2020",
+   "summary": "This is an archive of the meeting highlights, agendas and minutes from the European Medicines Agency's Pharmacovigilance Risk Assessment Committee (PRAC) in 2018 to 2020.",
+   "categories": "Human",
+   "first_published_date": "16/07/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/prac-meeting-archive-2018-2020"
+  },
+  {
+   "title": "Questions and answers: Article 13 referral procedures",
+   "summary": "This page lists questions that stakeholders, particularly marketing authorisation holders (MAHs)/applicants, may have on Article 13 referral procedures.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "06/07/2016",
+   "last_updated_date": "16/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/referral-procedures-human-medicines/questions-answers-article-13-referral-procedures"
+  },
+  {
+   "title": "Questions and answers: Article 29(4) referral procedures",
+   "summary": "This page lists questions that stakeholders, particularly marketing authorisation holders (MAHs)/applicants, may have on Article 29(4) referral procedures.",
+   "categories": "Human",
+   "first_published_date": "06/07/2016",
+   "last_updated_date": "16/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/referral-procedures-human-medicines/questions-answers-article-294-referral-procedures"
+  },
+  {
+   "title": "CHMP: meeting archive 2019-2020",
+   "summary": "This is an archive of the meeting highlights, agendas and minutes from the Committee for Medicinal Products for Human Use (CHMP) in 2019 to 2020.",
+   "categories": "Human",
+   "first_published_date": "16/07/2026",
+   "last_updated_date": "",
+   "general_url": "https://www.ema.europa.eu/en/chmp-meeting-archive-2019-2020"
+  },
+  {
+   "title": "Questions and answers: Article 30 referral procedures",
+   "summary": "This page lists questions that stakeholders, particularly marketing authorisation holders (MAHs), may have on Article 30 referral procedures.",
+   "categories": "Human",
+   "first_published_date": "06/07/2016",
+   "last_updated_date": "15/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/referral-procedures-human-medicines/questions-answers-article-30-referral-procedures"
+  },
+  {
+   "title": "Questions and answers: Article 31 non-pharmacovigilance referrals",
+   "summary": "This page lists questions that stakeholders, particularly marketing authorisation holders (MAHs)/applicants, may have on an Article 31 non-pharmacovigilance referral procedure.",
+   "categories": "Human",
+   "first_published_date": "06/07/2016",
+   "last_updated_date": "15/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/referral-procedures-human-medicines/questions-answers-article-31-non-pharmacovigilance-referrals"
+  },
+  {
+   "title": "Quality Working Party",
+   "summary": "The Quality Working Party (QWP) is a joint working party of the Committee for Medicinal Products for Human Use (CHMP) and the Committee for Medicinal Veterinary Medicinal Products (CVMP). The QWP provides recommendations to the European Medicines Agency's (EMA) scientific committees on all matters related to quality aspects of medicines with chemical active substances.",
+   "categories": "Human;Veterinary",
+   "first_published_date": "03/10/2023",
+   "last_updated_date": "15/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/committees/working-parties-other-groups/chmp/quality-working-party"
+  },
+  {
+   "title": "EU Innovation Network (EU-IN)",
+   "summary": "The EU Innovation Network (EU-IN) working group supports the European medicines regulatory network in facilitating the development of innovative medicines and associated technologies in the European Union (EU).",
+   "categories": "Human;Veterinary",
+   "first_published_date": "08/09/2023",
+   "last_updated_date": "15/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/committees/working-parties-other-groups/eu-innovation-network-eu"
+  },
+  {
+   "title": "Changing the labelling and package leaflet (Article 61(3) notifications)",
+   "summary": "This page addresses common questions from marketing-authorisation holders (MAHs) about Article-61(3) notifications. It outlines the European Medicines Agency's (EMA) position on issues typically discussed with MAHs during the post-authorisation phase.",
+   "categories": "Human",
+   "first_published_date": "01/01/2000",
+   "last_updated_date": "14/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/changing-labelling-package-leaflet-article-613-notifications"
+  },
+  {
+   "title": "Open letters",
+   "summary": "",
+   "categories": "Corporate",
+   "first_published_date": "15/07/2016",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/news-and-events/publications/open-letters"
+  },
+  {
+   "title": "Remote connection to EMA IT Systems",
+   "summary": "The European Medicines Agency (EMA) provides instructions to staff members unable to connect to its networks while teleworking.",
+   "categories": "Corporate",
+   "first_published_date": "24/09/2018",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/remote-connection-ema-it-systems"
+  },
+  {
+   "title": "Grouping of variations: questions and answers",
+   "summary": "This page lists questions that marketing-authorisation holders (MAHs) may have on grouping of variations.",
+   "categories": "Human",
+   "first_published_date": "11/05/2010",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/variations-including-extensions-marketing-authorisations/grouping-variations-questions-answers"
+  },
+  {
+   "title": "Transfer of marketing authorisation: questions and answers",
+   "summary": "This page addresses questions from marketing-authorisation holders (MAHs) on transferring marketing authorisations. It also outlines European Medicine Agency’s (EMA) position on issues often discussed post-authorisation.",
+   "categories": "Human",
+   "first_published_date": "01/01/2000",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/transfer-marketing-authorisation-questions-answers"
+  },
+  {
+   "title": "Guidance on good manufacturing practice and good distribution practice: Questions and answers",
+   "summary": "",
+   "categories": "Human;Veterinary",
+   "first_published_date": "31/12/2009",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/compliance-research-development/good-manufacturing-practice/guidance-good-manufacturing-practice-good-distribution-practice-questions-answers"
+  },
+  {
+   "title": "Post-authorisation safety studies (PASS)",
+   "summary": "A post-authorisation safety study (PASS) is a study that is carried out after a medicine has been authorised to obtain further information on a medicine's safety, or to measure the effectiveness of risk-management measures. The European Medicines Agency's Pharmacovigilance Risk Assessment Committee (PRAC) is responsible for assessing the protocols of imposed PASSs and for assessing their results.",
+   "categories": "Human",
+   "first_published_date": "01/01/2015",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/post-authorisation-safety-studies-pass"
+  },
+  {
+   "title": "Extensions of marketing authorisations: questions and answers",
+   "summary": "This page lists questions that marketing-authorisation holders (MAHs) may have on type-II-variation and extension applications.",
+   "categories": "Human",
+   "first_published_date": "01/01/2010",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/variations-including-extensions-marketing-authorisations/extensions-marketing-authorisations-questions-answers"
+  },
+  {
+   "title": "Worksharing: questions and answers",
+   "summary": "This page lists questions that marketing-authorisation holders (MAHs) may have on worksharing.",
+   "categories": "Human",
+   "first_published_date": "11/05/2010",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/variations-including-extensions-marketing-authorisations/worksharing-questions-answers"
+  },
+  {
+   "title": "Type-IB variations: questions and answers",
+   "summary": "This page lists questions that marketing-authorisation holders (MAHs) may have on type-IB variations.",
+   "categories": "Human",
+   "first_published_date": "10/05/2010",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/variations-including-extensions-marketing-authorisations/type-ib-variations-questions-answers"
+  },
+  {
+   "title": "Type-II variations: questions and answers",
+   "summary": "This page lists questions that marketing-authorisation holders (MAHs) may have on type-II variations.",
+   "categories": "Human",
+   "first_published_date": "12/05/2010",
+   "last_updated_date": "13/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/variations-including-extensions-marketing-authorisations/type-ii-variations-questions-answers"
+  },
+  {
+   "title": "Antimicrobial resistance in veterinary medicine",
+   "summary": "Combatting the threat of antimicrobial resistance, particularly resistance to antibiotics, is a high priority for the European Medicines Agency (EMA) and the European medicines regulatory network. In veterinary medicine, EMA is promoting prudent use of antimicrobials in animals, collecting data on the use of veterinary antimicrobials in the European Union (EU), and providing scientific recommendations on the use of specific antimicrobials in animals.",
+   "categories": "Veterinary",
+   "first_published_date": "30/06/2016",
+   "last_updated_date": "10/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/antimicrobial-resistance-veterinary-medicine"
+  },
+  {
+   "title": "International arrangements",
+   "summary": "The European Medicines Agency (EMA) cooperates with a number of countries and organisations outside the European Union (EU) based on specific types of arrangements. These arrangements enable the signatories to share information or facilitate market access and achieve greater international harmonisation while protecting consumer safety.",
+   "categories": "",
+   "first_published_date": "28/09/2017",
+   "last_updated_date": "08/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/international-activities/international-arrangements"
+  },
+  {
+   "title": "New Zealand",
+   "summary": "The European Commission's Directorate-General for Health and Food Safety (DG-SANTE) and EMA have in place a working arrangement with the New Zealand Ministry of Health  since 2026. The Ministry of Health incorporates the New Zealand Medicines and Medical Devices Safety Authority, Medsafe.",
+   "categories": "Corporate",
+   "first_published_date": "28/09/2017",
+   "last_updated_date": "08/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/partners-networks/international-activities/bilateral-interactions-non-eu-regulators/new-zealand"
+  },
+  {
+   "title": "Qualification of novel methodologies for medicine development",
+   "summary": "The European Medicines Agency (EMA) offers scientific advice to support the qualification of innovative development methods for a specific intended use in the context of research and development into pharmaceuticals.",
+   "categories": "Human",
+   "first_published_date": "27/05/2020",
+   "last_updated_date": "07/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-advice-protocol-assistance/qualification-novel-methodologies-medicine-development"
+  },
+  {
+   "title": "Variations requiring assessment (veterinary medicines)",
+   "summary": "This page provides guidance on how to apply for a variation on centrally authorised veterinary medicines requiring assessment under the Veterinary Medicinal Products Regulation (Regulation (EU) 2019/6). This includes information on the documents that marketing authorisation holders will need to submit as part of the variation procedure.",
+   "categories": "Veterinary",
+   "first_published_date": "20/12/2016",
+   "last_updated_date": "03/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/veterinary-regulatory-overview/post-authorisation-veterinary-medicines/variations-requiring-assessment-veterinary-medicines"
+  },
+  {
+   "title": "Combination Products Operational Group: agendas and highlight reports",
+   "summary": "On this page you can find the agendas and highlight reports of the Combination Products Operational Group (COMBO).",
+   "categories": "Human",
+   "first_published_date": "04/11/2025",
+   "last_updated_date": "03/07/2026",
+   "general_url": "https://www.ema.europa.eu/en/human-regulatory-overview/medical-devices/combination-products-operational-group/combination-products-operational-group-agendas-highlight-reports"
+  }
+ ]
+}

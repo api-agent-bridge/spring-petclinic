@@ -1,0 +1,333 @@
+{
+  "id": 869131,
+  "reference": "2026.7749",
+  "subject": "CBD in animal feed from the UK",
+  "ecValidationDate": "02-09-2026 12:36:30",
+  "lastUpdate": "10-09-2026 12:05:26",
+  "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+  },
+  "productType": {
+    "id": 282,
+    "description": "feed"
+  },
+  "notificationBasis": {
+    "id": 18682,
+    "description": "monitoring of media"
+  },
+  "product": {
+    "id": 30976682,
+    "description": "CBD oil",
+    "productCategory": {
+      "id": 18429,
+      "description": "pet food"
+    },
+    "productDescriptions": [
+      {
+        "id": 30976748,
+        "productAspect": "300 mg/10 ml 3%",
+        "weight": "10.0",
+        "weightUnit": {
+          "id": 18971,
+          "description": "ml"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 30976787,
+        "productAspect": "10 mg CBD/chew\r\napprox. 30 chews",
+        "weight": "90.0",
+        "weightUnit": {
+          "id": 18974,
+          "description": "g"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 30976818,
+        "productAspect": "10 mg CBD/stick\r\n30 sticks",
+        "weight": "450.0",
+        "weightUnit": {
+          "id": 18974,
+          "description": "g"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 30976966,
+        "productAspect": "250 mg/10 ml 2,5%",
+        "weight": "10.0",
+        "weightUnit": {
+          "id": 18971,
+          "description": "ml"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 30977007,
+        "productAspect": "4000 mg/10 ml 40%",
+        "weight": "10.0",
+        "weightUnit": {
+          "id": 18971,
+          "description": "ml"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      }
+    ],
+    "distributionStatus": {
+      "id": 228,
+      "description": "product traded online"
+    }
+  },
+  "risk": {
+    "id": 140707,
+    "riskDecision": "potential risk",
+    "hazardObserved": "Unauthorised CBD in feed"
+  },
+  "organizationFlags": [
+    {
+      "organization": {
+        "id": 52,
+        "description": "Hungary",
+        "code": "HU",
+        "countryNetworkOrganizationId": 5017
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 869131,
+          "flagType": "NOTIFYING"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 10340,
+        "description": "INFOSAN",
+        "code": "INFO",
+        "countryNetworkOrganizationId": 5680
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 869131,
+          "flagType": "FOR_ATTENTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 38,
+        "description": "Netherlands",
+        "code": "NL",
+        "countryNetworkOrganizationId": 5026
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 871470,
+          "flagType": "FOR_ATTENTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 17,
+        "description": "United Kingdom",
+        "code": "GB",
+        "countryNetworkOrganizationId": 5014
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 872118,
+          "flagType": "FOR_ATTENTION"
+        },
+        {
+          "notificationId": 871470,
+          "flagType": "FOR_ATTENTION"
+        },
+        {
+          "notificationId": 872011,
+          "flagType": "FOR_ATTENTION"
+        },
+        {
+          "notificationId": 869131,
+          "flagType": "ORIGIN"
+        },
+        {
+          "notificationId": 869131,
+          "flagType": "OPERATOR"
+        }
+      ]
+    }
+  ],
+  "followups": [
+    {
+      "fupNumber": 1,
+      "fupId": 870629,
+      "networkOrganizationId": 2,
+      "organizationDescription": "Spain",
+      "organizationCode": "ES",
+      "fupDate": "03-09-2026 11:47:42",
+      "fupType": {
+        "id": 27665,
+        "description": "request"
+      },
+      "additionalInfoId": 30997144
+    },
+    {
+      "fupNumber": 2,
+      "fupId": 870812,
+      "networkOrganizationId": 27,
+      "organizationDescription": "Portugal",
+      "organizationCode": "PT",
+      "fupDate": "03-09-2026 16:24:29",
+      "fupType": {
+        "id": 27658,
+        "description": "additional information"
+      },
+      "additionalInfoId": 30999355
+    },
+    {
+      "fupNumber": 3,
+      "fupId": 870881,
+      "networkOrganizationId": 62,
+      "organizationDescription": "Sweden",
+      "organizationCode": "SE",
+      "fupDate": "04-09-2026 08:59:17",
+      "fupType": {
+        "id": 27658,
+        "description": "additional information"
+      },
+      "additionalInfoId": 30999986
+    },
+    {
+      "fupNumber": 4,
+      "fupId": 871470,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "07-09-2026 17:52:41",
+      "fupType": {
+        "id": 27671,
+        "description": "follow-up from non-member country"
+      },
+      "additionalInfoId": 31007849
+    },
+    {
+      "fupNumber": 5,
+      "fupId": 871663,
+      "networkOrganizationId": 4,
+      "organizationDescription": "Norway",
+      "organizationCode": "NO",
+      "fupDate": "08-09-2026 13:48:03",
+      "fupType": {
+        "id": 27674,
+        "description": "outcome of investigations"
+      },
+      "additionalInfoId": 31010516
+    },
+    {
+      "fupNumber": 6,
+      "fupId": 872011,
+      "networkOrganizationId": 59,
+      "organizationDescription": "Slovenia",
+      "organizationCode": "SI",
+      "fupDate": "10-09-2026 09:30:40",
+      "fupType": {
+        "id": 27674,
+        "description": "outcome of investigations"
+      },
+      "additionalInfoId": 31015190
+    },
+    {
+      "fupNumber": 7,
+      "fupId": 872118,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "10-09-2026 12:05:26",
+      "fupType": {
+        "id": 27665,
+        "description": "request"
+      },
+      "additionalInfoId": 31016433
+    }
+  ],
+  "notificationStatus": "ec_validated",
+  "additionalInformations": [
+    {
+      "id": 31007849,
+      "organization": "European Commission on behalf of the Untied Kingdom"
+    },
+    {
+      "id": 31010516,
+      "organization": "Norwegian Food Safety Authority",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 30976683,
+      "organization": "Nébih",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 30997144,
+      "organization": "Ministry of agriculture of Spain",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 30999355,
+      "organization": "ASAE"
+    },
+    {
+      "id": 30999986,
+      "organization": "Swedish Food Agency ",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31015190,
+      "organization": "AFSVSPP",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31016433,
+      "organization": "European Commission"
+    }
+  ],
+  "localConsumerLinksByCountry": {
+    "5680": [],
+    "5026": [
+      {
+        "id": 30,
+        "countryNetworkOrganizationId": 5026,
+        "link": "https://www.nvwa.nl/onderwerpen/voedselveiligheid/veiligheidswaarschuwingen/overzicht-veiligheidswaarschuwingen"
+      }
+    ],
+    "5014": [],
+    "5017": [
+      {
+        "id": 20,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://nkfh.gov.hu/"
+      },
+      {
+        "id": 21,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://portal.nebih.gov.hu/termekvisszahivas"
+      }
+    ]
+  }
+}

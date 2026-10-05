@@ -1,0 +1,336 @@
+{
+ "notifications": [
+  {
+   "notifId": 877368,
+   "ecValidationDate": "02-10-2026 17:12:30",
+   "reference": "2026.8760",
+   "notifyingCountry": {
+    "organizationName": "France",
+    "isoCode": "FR"
+   },
+   "subject": "Presence of aluminium particles in powdered sugar.",
+   "productCategory": {
+    "id": 18457,
+    "description": "soups, broths, sauces and condiments"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 306,
+    "description": "alert notification"
+   },
+   "riskDecision": {
+    "id": 20060,
+    "description": "potentially serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "France",
+     "isoCode": "FR"
+    }
+   ]
+  },
+  {
+   "notifId": 877309,
+   "ecValidationDate": "02-10-2026 17:09:58",
+   "reference": "2026.8759",
+   "notifyingCountry": {
+    "organizationName": "Italy",
+    "isoCode": "IT"
+   },
+   "subject": "High content of mercury in swordfish fillet from Spain",
+   "productCategory": {
+    "id": 18445,
+    "description": "fish and fish products"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 306,
+    "description": "alert notification"
+   },
+   "riskDecision": {
+    "id": 18761,
+    "description": "serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Spain",
+     "isoCode": "ES"
+    }
+   ]
+  },
+  {
+   "notifId": 877298,
+   "ecValidationDate": "02-10-2026 15:19:39",
+   "reference": "2026.8756",
+   "notifyingCountry": {
+    "organizationName": "Italy",
+    "isoCode": "IT"
+   },
+   "subject": "salmonella in kebab from Poland",
+   "productCategory": {
+    "id": 18430,
+    "description": "poultry meat and poultry meat products"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 306,
+    "description": "alert notification"
+   },
+   "riskDecision": {
+    "id": 18761,
+    "description": "serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Poland",
+     "isoCode": "PL"
+    }
+   ]
+  },
+  {
+   "notifId": 876031,
+   "ecValidationDate": "02-10-2026 15:07:18",
+   "reference": "2026.8755",
+   "notifyingCountry": {
+    "organizationName": "Belgium",
+    "isoCode": "BE"
+   },
+   "subject": "Nitrates in fresh spinach from Spain",
+   "productCategory": {
+    "id": 18448,
+    "description": "fruits and vegetables"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+   },
+   "riskDecision": {
+    "id": 20042,
+    "description": "potential risk"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Spain",
+     "isoCode": "ES"
+    }
+   ]
+  },
+  {
+   "notifId": 876267,
+   "ecValidationDate": "02-10-2026 15:04:33",
+   "reference": "2026.8754",
+   "notifyingCountry": {
+    "organizationName": "Malta",
+    "isoCode": "MT"
+   },
+   "subject": "Salmonella detected in Pure Sesame Tahini from Egypt via Italy",
+   "productCategory": {
+    "id": 18427,
+    "description": "nuts, nut products and seeds"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 306,
+    "description": "alert notification"
+   },
+   "riskDecision": {
+    "id": 18761,
+    "description": "serious"
+   },
+   "published": true,
+   "originCountries": [
+    {
+     "organizationName": "Egypt",
+     "isoCode": "EG"
+    }
+   ]
+  },
+  {
+   "notifId": 876284,
+   "ecValidationDate": "02-10-2026 15:03:07",
+   "reference": "2026.8753",
+   "notifyingCountry": {
+    "organizationName": "Netherlands",
+    "isoCode": "NL"
+   },
+   "subject": "Aflatoxin B1 in groundnuts from Argentina",
+   "productCategory": {
+    "id": 18427,
+    "description": "nuts, nut products and seeds"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+   },
+   "riskDecision": {
+    "id": 18761,
+    "description": "serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Argentina",
+     "isoCode": "AR"
+    }
+   ]
+  },
+  {
+   "notifId": 876749,
+   "ecValidationDate": "02-10-2026 15:02:38",
+   "reference": "2026.8752",
+   "notifyingCountry": {
+    "organizationName": "Sweden",
+    "isoCode": "SE"
+   },
+   "subject": "Suspected Salmonella Napoli in arugula",
+   "productCategory": {
+    "id": 18448,
+    "description": "fruits and vegetables"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+   },
+   "riskDecision": {
+    "id": 20060,
+    "description": "potentially serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Italy",
+     "isoCode": "IT"
+    }
+   ]
+  },
+  {
+   "notifId": 876800,
+   "ecValidationDate": "02-10-2026 15:00:50",
+   "reference": "2026.8751",
+   "notifyingCountry": {
+    "organizationName": "Netherlands",
+    "isoCode": "NL"
+   },
+   "subject": "Aflatoxin B1 in groundnuts from Argentina",
+   "productCategory": {
+    "id": 18427,
+    "description": "nuts, nut products and seeds"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+   },
+   "riskDecision": {
+    "id": 18761,
+    "description": "serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Argentina",
+     "isoCode": "AR"
+    }
+   ]
+  },
+  {
+   "notifId": 876861,
+   "ecValidationDate": "02-10-2026 14:58:42",
+   "reference": "2026.8750",
+   "notifyingCountry": {
+    "organizationName": "Italy",
+    "isoCode": "IT"
+   },
+   "subject": "presenza di istamina oltre il valore soglia in trancio decongelato di tonno pinne gialle///// histamine in thawed yellowfin tuna steak",
+   "productCategory": {
+    "id": 18445,
+    "description": "fish and fish products"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+   },
+   "riskDecision": {
+    "id": 18761,
+    "description": "serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "France",
+     "isoCode": "FR"
+    }
+   ]
+  },
+  {
+   "notifId": 876997,
+   "ecValidationDate": "02-10-2026 14:57:20",
+   "reference": "2026.8749",
+   "notifyingCountry": {
+    "organizationName": "Italy",
+    "isoCode": "IT"
+   },
+   "subject": "Pesticides above legal limits in fresh chili peppers from Perù",
+   "productCategory": {
+    "id": 18448,
+    "description": "fruits and vegetables"
+   },
+   "productType": {
+    "id": 283,
+    "description": "food"
+   },
+   "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+   },
+   "riskDecision": {
+    "id": 18761,
+    "description": "serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Peru",
+     "isoCode": "PE"
+    }
+   ]
+  }
+ ],
+ "totalPages": 3281,
+ "totalElements": 32805
+}

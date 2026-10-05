@@ -30,3 +30,15 @@ To connect MCPJam, in the server's settings:
 3. Set the Client ID to `mcp-inspector`, leave the Client Secret empty, and connect.
 
 Keycloak reads `keycloak/petclinic-realm.json` at the first start only. After a change to that file, recreate the container with `docker compose -f keycloak/compose.yaml down` and start it again.
+
+8.1 Interesting questions
+    What is the share of household spending that goes to pets in Belgium
+
+    #it can get super complicated with complex inputs, filtering and especially comparisons:
+
+    Did veterinary care get more expensive in Belgium over the past year?
+        - Result: up 7.4% in August 2026. September 2026 is listed but has no value yet.
+
+    Are pet products getting cheaper in Belgium or in the Netherlands in 2026?
+        Result: in August 2026, prices were down 1.8% in Belgium and 0.5% in the Netherlands.
+

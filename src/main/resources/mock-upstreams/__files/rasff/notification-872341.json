@@ -1,0 +1,198 @@
+{
+  "id": 872341,
+  "reference": "2026.8038",
+  "subject": "Consignment of petfood skipped veterinary controls in Border Control Post",
+  "ecValidationDate": "11-09-2026 10:57:09",
+  "lastUpdate": "29-09-2026 16:23:07",
+  "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+  },
+  "productType": {
+    "id": 282,
+    "description": "feed"
+  },
+  "notificationBasis": {
+    "id": 18684,
+    "description": "official control on the market"
+  },
+  "product": {
+    "id": 31019446,
+    "description": "Pet food",
+    "productCategory": {
+      "id": 18429,
+      "description": "pet food"
+    },
+    "productDescriptions": [
+      {
+        "id": 31019524
+      }
+    ],
+    "measures": [
+      {
+        "id": 31019702,
+        "takenBy": {
+          "id": 5032,
+          "organizationName": "Slovenia",
+          "isoCode": "SI"
+        },
+        "actionTaken": {
+          "id": 18839,
+          "description": "official detention"
+        }
+      }
+    ],
+    "distributionStatus": {
+      "id": 224,
+      "description": "product not (yet) placed on the market"
+    }
+  },
+  "risk": {
+    "id": 141470,
+    "riskDecision": "potential risk"
+  },
+  "organizationFlags": [
+    {
+      "organization": {
+        "id": 10340,
+        "description": "INFOSAN",
+        "code": "INFO",
+        "countryNetworkOrganizationId": 5680
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 872401,
+          "flagType": "FOR_ATTENTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 59,
+        "description": "Slovenia",
+        "code": "SI",
+        "countryNetworkOrganizationId": 5032
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 872341,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 872341,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 872341,
+          "flagType": "DISTRIBUTION"
+        },
+        {
+          "notificationId": 872341,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 872341,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 17,
+        "description": "United Kingdom",
+        "code": "GB",
+        "countryNetworkOrganizationId": 5014
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 876360,
+          "flagType": "FOR_ATTENTION"
+        },
+        {
+          "notificationId": 873693,
+          "flagType": "FOR_ATTENTION"
+        },
+        {
+          "notificationId": 872341,
+          "flagType": "ORIGIN"
+        },
+        {
+          "notificationId": 872341,
+          "flagType": "OPERATOR"
+        }
+      ]
+    }
+  ],
+  "followups": [
+    {
+      "fupNumber": 1,
+      "fupId": 872401,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "11-09-2026 11:03:46",
+      "fupType": {
+        "id": 27670,
+        "description": "notification reclassification"
+      },
+      "additionalInfoId": 31020460
+    },
+    {
+      "fupNumber": 2,
+      "fupId": 873693,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "17-09-2026 12:48:02",
+      "fupType": {
+        "id": 27665,
+        "description": "request"
+      },
+      "additionalInfoId": 31037633
+    },
+    {
+      "fupNumber": 3,
+      "fupId": 876360,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "29-09-2026 16:23:07",
+      "fupType": {
+        "id": 27671,
+        "description": "follow-up from non-member country"
+      },
+      "additionalInfoId": 31073625
+    }
+  ],
+  "notificationStatus": "ec_validated",
+  "additionalInformations": [
+    {
+      "id": 31019447,
+      "organization": "AFSVSPP",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31020460,
+      "organization": "European Commission"
+    },
+    {
+      "id": 31037633,
+      "organization": "European Commission"
+    },
+    {
+      "id": 31073625,
+      "organization": "European Commission on behalf of the United Kingdom"
+    }
+  ],
+  "localConsumerLinksByCountry": {
+    "5680": [],
+    "5014": [],
+    "5032": [
+      {
+        "id": 34,
+        "countryNetworkOrganizationId": 5032,
+        "link": "https://www.gov.si/podrocja/podjetnistvo-in-gospodarstvo/varstvo-potrosnikov-in-konkurence/nevarni-in-neskladni-izdelki/"
+      }
+    ]
+  }
+}

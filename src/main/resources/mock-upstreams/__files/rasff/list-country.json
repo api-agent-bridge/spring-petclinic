@@ -1,0 +1,1284 @@
+{
+ "countries": [
+  {
+   "id": 5035,
+   "englishShortName": "Afghanistan",
+   "alpha2Code": "AF"
+  },
+  {
+   "id": 5036,
+   "englishShortName": "Albania",
+   "alpha2Code": "AL"
+  },
+  {
+   "id": 5037,
+   "englishShortName": "Algeria",
+   "alpha2Code": "DZ"
+  },
+  {
+   "id": 5038,
+   "englishShortName": "American Samoa",
+   "alpha2Code": "AS"
+  },
+  {
+   "id": 5039,
+   "englishShortName": "Andorra",
+   "alpha2Code": "AD"
+  },
+  {
+   "id": 5040,
+   "englishShortName": "Angola",
+   "alpha2Code": "AO"
+  },
+  {
+   "id": 5041,
+   "englishShortName": "Anguilla",
+   "alpha2Code": "AI"
+  },
+  {
+   "id": 5042,
+   "englishShortName": "Antarctica",
+   "alpha2Code": "AQ"
+  },
+  {
+   "id": 5043,
+   "englishShortName": "Antigua and Barbuda",
+   "alpha2Code": "AG"
+  },
+  {
+   "id": 5044,
+   "englishShortName": "Argentina",
+   "alpha2Code": "AR"
+  },
+  {
+   "id": 5045,
+   "englishShortName": "Armenia",
+   "alpha2Code": "AM"
+  },
+  {
+   "id": 5046,
+   "englishShortName": "Aruba",
+   "alpha2Code": "AW"
+  },
+  {
+   "id": 5047,
+   "englishShortName": "Australia",
+   "alpha2Code": "AU"
+  },
+  {
+   "id": 5001,
+   "englishShortName": "Austria",
+   "alpha2Code": "AT"
+  },
+  {
+   "id": 5048,
+   "englishShortName": "Azerbaijan",
+   "alpha2Code": "AZ"
+  },
+  {
+   "id": 5049,
+   "englishShortName": "Bahamas",
+   "alpha2Code": "BS"
+  },
+  {
+   "id": 5050,
+   "englishShortName": "Bahrain",
+   "alpha2Code": "BH"
+  },
+  {
+   "id": 5051,
+   "englishShortName": "Bangladesh",
+   "alpha2Code": "BD"
+  },
+  {
+   "id": 5052,
+   "englishShortName": "Barbados",
+   "alpha2Code": "BB"
+  },
+  {
+   "id": 5053,
+   "englishShortName": "Belarus",
+   "alpha2Code": "BY"
+  },
+  {
+   "id": 5002,
+   "englishShortName": "Belgium",
+   "alpha2Code": "BE"
+  },
+  {
+   "id": 5054,
+   "englishShortName": "Belize",
+   "alpha2Code": "BZ"
+  },
+  {
+   "id": 5055,
+   "englishShortName": "Benin",
+   "alpha2Code": "BJ"
+  },
+  {
+   "id": 5056,
+   "englishShortName": "Bermuda",
+   "alpha2Code": "BM"
+  },
+  {
+   "id": 5057,
+   "englishShortName": "Bhutan",
+   "alpha2Code": "BT"
+  },
+  {
+   "id": 5058,
+   "englishShortName": "Bolivia",
+   "alpha2Code": "BO"
+  },
+  {
+   "id": 5164,
+   "englishShortName": "Bonaire, Sint Eustatius and Saba",
+   "alpha2Code": "AN"
+  },
+  {
+   "id": 5059,
+   "englishShortName": "Bosnia and Herzegovina",
+   "alpha2Code": "BA"
+  },
+  {
+   "id": 5060,
+   "englishShortName": "Botswana",
+   "alpha2Code": "BW"
+  },
+  {
+   "id": 5061,
+   "englishShortName": "Bouvet Island",
+   "alpha2Code": "BV"
+  },
+  {
+   "id": 5062,
+   "englishShortName": "Brazil",
+   "alpha2Code": "BR"
+  },
+  {
+   "id": 5063,
+   "englishShortName": "British Indian Ocean Territory",
+   "alpha2Code": "IO"
+  },
+  {
+   "id": 5238,
+   "englishShortName": "British Virgin Islands",
+   "alpha2Code": "VG"
+  },
+  {
+   "id": 5064,
+   "englishShortName": "Brunei",
+   "alpha2Code": "BN"
+  },
+  {
+   "id": 5003,
+   "englishShortName": "Bulgaria",
+   "alpha2Code": "BG"
+  },
+  {
+   "id": 5065,
+   "englishShortName": "Burkina Faso",
+   "alpha2Code": "BF"
+  },
+  {
+   "id": 5066,
+   "englishShortName": "Burundi",
+   "alpha2Code": "BI"
+  },
+  {
+   "id": 5070,
+   "englishShortName": "Cabo Verde",
+   "alpha2Code": "CV"
+  },
+  {
+   "id": 5067,
+   "englishShortName": "Cambodia",
+   "alpha2Code": "KH"
+  },
+  {
+   "id": 5068,
+   "englishShortName": "Cameroon",
+   "alpha2Code": "CM"
+  },
+  {
+   "id": 5069,
+   "englishShortName": "Canada",
+   "alpha2Code": "CA"
+  },
+  {
+   "id": 5071,
+   "englishShortName": "Cayman Islands",
+   "alpha2Code": "KY"
+  },
+  {
+   "id": 5072,
+   "englishShortName": "Central African Republic",
+   "alpha2Code": "CF"
+  },
+  {
+   "id": 5073,
+   "englishShortName": "Chad",
+   "alpha2Code": "TD"
+  },
+  {
+   "id": 5074,
+   "englishShortName": "Chile",
+   "alpha2Code": "CL"
+  },
+  {
+   "id": 5075,
+   "englishShortName": "China",
+   "alpha2Code": "CN"
+  },
+  {
+   "id": 5076,
+   "englishShortName": "Christmas Island",
+   "alpha2Code": "CX"
+  },
+  {
+   "id": 5077,
+   "englishShortName": "Cocos (Keeling) Islands",
+   "alpha2Code": "CC"
+  },
+  {
+   "id": 5078,
+   "englishShortName": "Colombia",
+   "alpha2Code": "CO"
+  },
+  {
+   "id": 5079,
+   "englishShortName": "Comoros",
+   "alpha2Code": "KM"
+  },
+  {
+   "id": 5080,
+   "englishShortName": "Congo",
+   "alpha2Code": "CG"
+  },
+  {
+   "id": 5082,
+   "englishShortName": "Cook Islands",
+   "alpha2Code": "CK"
+  },
+  {
+   "id": 5083,
+   "englishShortName": "Costa Rica",
+   "alpha2Code": "CR"
+  },
+  {
+   "id": 5016,
+   "englishShortName": "Croatia",
+   "alpha2Code": "HR"
+  },
+  {
+   "id": 5085,
+   "englishShortName": "Cuba",
+   "alpha2Code": "CU"
+  },
+  {
+   "id": 5254,
+   "englishShortName": "Curaçao",
+   "alpha2Code": "CW"
+  },
+  {
+   "id": 5005,
+   "englishShortName": "Cyprus",
+   "alpha2Code": "CY"
+  },
+  {
+   "id": 5006,
+   "englishShortName": "Czechia",
+   "alpha2Code": "CZ"
+  },
+  {
+   "id": 5084,
+   "englishShortName": "Côte d'Ivoire",
+   "alpha2Code": "CI"
+  },
+  {
+   "id": 5081,
+   "englishShortName": "Democratic Republic of the Congo",
+   "alpha2Code": "CD"
+  },
+  {
+   "id": 5008,
+   "englishShortName": "Denmark",
+   "alpha2Code": "DK"
+  },
+  {
+   "id": 5086,
+   "englishShortName": "Djibouti",
+   "alpha2Code": "DJ"
+  },
+  {
+   "id": 5087,
+   "englishShortName": "Dominica",
+   "alpha2Code": "DM"
+  },
+  {
+   "id": 5088,
+   "englishShortName": "Dominican Republic",
+   "alpha2Code": "DO"
+  },
+  {
+   "id": 17776,
+   "englishShortName": "ECDC",
+   "alpha2Code": "ECDC"
+  },
+  {
+   "id": 5256,
+   "englishShortName": "EFSA Member",
+   "alpha2Code": "FF"
+  },
+  {
+   "id": 5089,
+   "englishShortName": "Ecuador",
+   "alpha2Code": "EC"
+  },
+  {
+   "id": 5090,
+   "englishShortName": "Egypt",
+   "alpha2Code": "EG"
+  },
+  {
+   "id": 5091,
+   "englishShortName": "El Salvador",
+   "alpha2Code": "SV"
+  },
+  {
+   "id": 5092,
+   "englishShortName": "Equatorial Guinea",
+   "alpha2Code": "GQ"
+  },
+  {
+   "id": 5093,
+   "englishShortName": "Eritrea",
+   "alpha2Code": "ER"
+  },
+  {
+   "id": 5009,
+   "englishShortName": "Estonia",
+   "alpha2Code": "EE"
+  },
+  {
+   "id": 5211,
+   "englishShortName": "Eswatini",
+   "alpha2Code": "SZ"
+  },
+  {
+   "id": 5094,
+   "englishShortName": "Ethiopia",
+   "alpha2Code": "ET"
+  },
+  {
+   "id": 17163,
+   "englishShortName": "Europol",
+   "alpha2Code": "EUROPOL"
+  },
+  {
+   "id": 5095,
+   "englishShortName": "Falkland Islands",
+   "alpha2Code": "FK"
+  },
+  {
+   "id": 5096,
+   "englishShortName": "Faroe Islands",
+   "alpha2Code": "FO"
+  },
+  {
+   "id": 5097,
+   "englishShortName": "Fiji",
+   "alpha2Code": "FJ"
+  },
+  {
+   "id": 5012,
+   "englishShortName": "Finland",
+   "alpha2Code": "FI"
+  },
+  {
+   "id": 5013,
+   "englishShortName": "France",
+   "alpha2Code": "FR"
+  },
+  {
+   "id": 5098,
+   "englishShortName": "French Guiana",
+   "alpha2Code": "GF"
+  },
+  {
+   "id": 5099,
+   "englishShortName": "French Polynesia",
+   "alpha2Code": "PF"
+  },
+  {
+   "id": 5100,
+   "englishShortName": "French Southern and Antarctic Lands",
+   "alpha2Code": "TF"
+  },
+  {
+   "id": 5101,
+   "englishShortName": "Gabon",
+   "alpha2Code": "GA"
+  },
+  {
+   "id": 5102,
+   "englishShortName": "Gambia",
+   "alpha2Code": "GM"
+  },
+  {
+   "id": 5103,
+   "englishShortName": "Georgia",
+   "alpha2Code": "GE"
+  },
+  {
+   "id": 5007,
+   "englishShortName": "Germany",
+   "alpha2Code": "DE"
+  },
+  {
+   "id": 5104,
+   "englishShortName": "Ghana",
+   "alpha2Code": "GH"
+  },
+  {
+   "id": 5105,
+   "englishShortName": "Gibraltar",
+   "alpha2Code": "GI"
+  },
+  {
+   "id": 5015,
+   "englishShortName": "Greece",
+   "alpha2Code": "GR"
+  },
+  {
+   "id": 5106,
+   "englishShortName": "Greenland",
+   "alpha2Code": "GL"
+  },
+  {
+   "id": 5107,
+   "englishShortName": "Grenada",
+   "alpha2Code": "GD"
+  },
+  {
+   "id": 5108,
+   "englishShortName": "Guadeloupe",
+   "alpha2Code": "GP"
+  },
+  {
+   "id": 5109,
+   "englishShortName": "Guam",
+   "alpha2Code": "GU"
+  },
+  {
+   "id": 5110,
+   "englishShortName": "Guatemala",
+   "alpha2Code": "GT"
+  },
+  {
+   "id": 5247,
+   "englishShortName": "Guernsey",
+   "alpha2Code": "GG"
+  },
+  {
+   "id": 5111,
+   "englishShortName": "Guinea",
+   "alpha2Code": "GN"
+  },
+  {
+   "id": 5112,
+   "englishShortName": "Guinea-Bissau",
+   "alpha2Code": "GW"
+  },
+  {
+   "id": 5113,
+   "englishShortName": "Guyana",
+   "alpha2Code": "GY"
+  },
+  {
+   "id": 5114,
+   "englishShortName": "Haiti",
+   "alpha2Code": "HT"
+  },
+  {
+   "id": 5115,
+   "englishShortName": "Heard Island and McDonald Islands",
+   "alpha2Code": "HM"
+  },
+  {
+   "id": 5116,
+   "englishShortName": "Honduras",
+   "alpha2Code": "HN"
+  },
+  {
+   "id": 5117,
+   "englishShortName": "Hong Kong",
+   "alpha2Code": "HK"
+  },
+  {
+   "id": 5017,
+   "englishShortName": "Hungary",
+   "alpha2Code": "HU"
+  },
+  {
+   "id": 5019,
+   "englishShortName": "Iceland",
+   "alpha2Code": "IS"
+  },
+  {
+   "id": 5118,
+   "englishShortName": "India",
+   "alpha2Code": "IN"
+  },
+  {
+   "id": 5119,
+   "englishShortName": "Indonesia",
+   "alpha2Code": "ID"
+  },
+  {
+   "id": 5120,
+   "englishShortName": "Iran",
+   "alpha2Code": "IR"
+  },
+  {
+   "id": 5121,
+   "englishShortName": "Iraq",
+   "alpha2Code": "IQ"
+  },
+  {
+   "id": 5018,
+   "englishShortName": "Ireland",
+   "alpha2Code": "IE"
+  },
+  {
+   "id": 5123,
+   "englishShortName": "Isle of Man",
+   "alpha2Code": "IM"
+  },
+  {
+   "id": 5122,
+   "englishShortName": "Israel",
+   "alpha2Code": "IL"
+  },
+  {
+   "id": 5020,
+   "englishShortName": "Italy",
+   "alpha2Code": "IT"
+  },
+  {
+   "id": 5124,
+   "englishShortName": "Jamaica",
+   "alpha2Code": "JM"
+  },
+  {
+   "id": 5125,
+   "englishShortName": "Japan",
+   "alpha2Code": "JP"
+  },
+  {
+   "id": 5251,
+   "englishShortName": "Jersey",
+   "alpha2Code": "JE"
+  },
+  {
+   "id": 5126,
+   "englishShortName": "Jordan",
+   "alpha2Code": "JO"
+  },
+  {
+   "id": 5127,
+   "englishShortName": "Kazakhstan",
+   "alpha2Code": "KZ"
+  },
+  {
+   "id": 5128,
+   "englishShortName": "Kenya",
+   "alpha2Code": "KE"
+  },
+  {
+   "id": 5129,
+   "englishShortName": "Kiribati",
+   "alpha2Code": "KI"
+  },
+  {
+   "id": 5250,
+   "englishShortName": "Kosovo",
+   "alpha2Code": "XK"
+  },
+  {
+   "id": 5132,
+   "englishShortName": "Kuwait",
+   "alpha2Code": "KW"
+  },
+  {
+   "id": 5133,
+   "englishShortName": "Kyrgyzstan",
+   "alpha2Code": "KG"
+  },
+  {
+   "id": 5134,
+   "englishShortName": "Laos",
+   "alpha2Code": "LA"
+  },
+  {
+   "id": 5024,
+   "englishShortName": "Latvia",
+   "alpha2Code": "LV"
+  },
+  {
+   "id": 5135,
+   "englishShortName": "Lebanon",
+   "alpha2Code": "LB"
+  },
+  {
+   "id": 5136,
+   "englishShortName": "Lesotho",
+   "alpha2Code": "LS"
+  },
+  {
+   "id": 5137,
+   "englishShortName": "Liberia",
+   "alpha2Code": "LR"
+  },
+  {
+   "id": 5138,
+   "englishShortName": "Libya",
+   "alpha2Code": "LY"
+  },
+  {
+   "id": 5021,
+   "englishShortName": "Liechtenstein",
+   "alpha2Code": "LI"
+  },
+  {
+   "id": 5022,
+   "englishShortName": "Lithuania",
+   "alpha2Code": "LT"
+  },
+  {
+   "id": 5023,
+   "englishShortName": "Luxembourg",
+   "alpha2Code": "LU"
+  },
+  {
+   "id": 5139,
+   "englishShortName": "Macao",
+   "alpha2Code": "MO"
+  },
+  {
+   "id": 5141,
+   "englishShortName": "Madagascar",
+   "alpha2Code": "MG"
+  },
+  {
+   "id": 5142,
+   "englishShortName": "Malawi",
+   "alpha2Code": "MW"
+  },
+  {
+   "id": 5143,
+   "englishShortName": "Malaysia",
+   "alpha2Code": "MY"
+  },
+  {
+   "id": 5144,
+   "englishShortName": "Maldives",
+   "alpha2Code": "MV"
+  },
+  {
+   "id": 5145,
+   "englishShortName": "Mali",
+   "alpha2Code": "ML"
+  },
+  {
+   "id": 5025,
+   "englishShortName": "Malta",
+   "alpha2Code": "MT"
+  },
+  {
+   "id": 5146,
+   "englishShortName": "Marshall Islands",
+   "alpha2Code": "MH"
+  },
+  {
+   "id": 5147,
+   "englishShortName": "Martinique",
+   "alpha2Code": "MQ"
+  },
+  {
+   "id": 5148,
+   "englishShortName": "Mauritania",
+   "alpha2Code": "MR"
+  },
+  {
+   "id": 5149,
+   "englishShortName": "Mauritius",
+   "alpha2Code": "MU"
+  },
+  {
+   "id": 5150,
+   "englishShortName": "Mayotte",
+   "alpha2Code": "YT"
+  },
+  {
+   "id": 5151,
+   "englishShortName": "Mexico",
+   "alpha2Code": "MX"
+  },
+  {
+   "id": 5152,
+   "englishShortName": "Micronesia",
+   "alpha2Code": "FM"
+  },
+  {
+   "id": 5153,
+   "englishShortName": "Moldova",
+   "alpha2Code": "MD"
+  },
+  {
+   "id": 5154,
+   "englishShortName": "Monaco",
+   "alpha2Code": "MC"
+  },
+  {
+   "id": 5155,
+   "englishShortName": "Mongolia",
+   "alpha2Code": "MN"
+  },
+  {
+   "id": 5156,
+   "englishShortName": "Montenegro",
+   "alpha2Code": "ME"
+  },
+  {
+   "id": 5157,
+   "englishShortName": "Montserrat",
+   "alpha2Code": "MS"
+  },
+  {
+   "id": 5158,
+   "englishShortName": "Morocco",
+   "alpha2Code": "MA"
+  },
+  {
+   "id": 5159,
+   "englishShortName": "Mozambique",
+   "alpha2Code": "MZ"
+  },
+  {
+   "id": 5160,
+   "englishShortName": "Myanmar",
+   "alpha2Code": "MM"
+  },
+  {
+   "id": 5161,
+   "englishShortName": "Namibia",
+   "alpha2Code": "NA"
+  },
+  {
+   "id": 5162,
+   "englishShortName": "Nauru",
+   "alpha2Code": "NR"
+  },
+  {
+   "id": 5163,
+   "englishShortName": "Nepal",
+   "alpha2Code": "NP"
+  },
+  {
+   "id": 5026,
+   "englishShortName": "Netherlands",
+   "alpha2Code": "NL"
+  },
+  {
+   "id": 5165,
+   "englishShortName": "New Caledonia",
+   "alpha2Code": "NC"
+  },
+  {
+   "id": 5166,
+   "englishShortName": "New Zealand",
+   "alpha2Code": "NZ"
+  },
+  {
+   "id": 5167,
+   "englishShortName": "Nicaragua",
+   "alpha2Code": "NI"
+  },
+  {
+   "id": 5168,
+   "englishShortName": "Niger",
+   "alpha2Code": "NE"
+  },
+  {
+   "id": 5169,
+   "englishShortName": "Nigeria",
+   "alpha2Code": "NG"
+  },
+  {
+   "id": 5170,
+   "englishShortName": "Niue",
+   "alpha2Code": "NU"
+  },
+  {
+   "id": 5171,
+   "englishShortName": "Norfolk Island",
+   "alpha2Code": "NF"
+  },
+  {
+   "id": 5130,
+   "englishShortName": "North Korea",
+   "alpha2Code": "KP"
+  },
+  {
+   "id": 5172,
+   "englishShortName": "Northern Marianas",
+   "alpha2Code": "MP"
+  },
+  {
+   "id": 5027,
+   "englishShortName": "Norway",
+   "alpha2Code": "NO"
+  },
+  {
+   "id": 17774,
+   "englishShortName": "OLAF",
+   "alpha2Code": "OLAF"
+  },
+  {
+   "id": 5173,
+   "englishShortName": "Oman",
+   "alpha2Code": "OM"
+  },
+  {
+   "id": 5174,
+   "englishShortName": "Pakistan",
+   "alpha2Code": "PK"
+  },
+  {
+   "id": 5175,
+   "englishShortName": "Palau",
+   "alpha2Code": "PW"
+  },
+  {
+   "id": 5177,
+   "englishShortName": "Panama",
+   "alpha2Code": "PA"
+  },
+  {
+   "id": 5178,
+   "englishShortName": "Papua New Guinea",
+   "alpha2Code": "PG"
+  },
+  {
+   "id": 5179,
+   "englishShortName": "Paraguay",
+   "alpha2Code": "PY"
+  },
+  {
+   "id": 5180,
+   "englishShortName": "Peru",
+   "alpha2Code": "PE"
+  },
+  {
+   "id": 5181,
+   "englishShortName": "Philippines",
+   "alpha2Code": "PH"
+  },
+  {
+   "id": 5182,
+   "englishShortName": "Pitcairn Islands",
+   "alpha2Code": "PN"
+  },
+  {
+   "id": 5028,
+   "englishShortName": "Poland",
+   "alpha2Code": "PL"
+  },
+  {
+   "id": 5029,
+   "englishShortName": "Portugal",
+   "alpha2Code": "PT"
+  },
+  {
+   "id": 5183,
+   "englishShortName": "Puerto Rico",
+   "alpha2Code": "PR"
+  },
+  {
+   "id": 5184,
+   "englishShortName": "Qatar",
+   "alpha2Code": "QA"
+  },
+  {
+   "id": 5140,
+   "englishShortName": "Republic of North Macedonia",
+   "alpha2Code": "MK"
+  },
+  {
+   "id": 5030,
+   "englishShortName": "Romania",
+   "alpha2Code": "RO"
+  },
+  {
+   "id": 5186,
+   "englishShortName": "Russia",
+   "alpha2Code": "RU"
+  },
+  {
+   "id": 5187,
+   "englishShortName": "Rwanda",
+   "alpha2Code": "RW"
+  },
+  {
+   "id": 5185,
+   "englishShortName": "Réunion",
+   "alpha2Code": "RE"
+  },
+  {
+   "id": 5188,
+   "englishShortName": "Saint Barthélemy",
+   "alpha2Code": "BL"
+  },
+  {
+   "id": 5189,
+   "englishShortName": "Saint Helena",
+   "alpha2Code": "SH"
+  },
+  {
+   "id": 5190,
+   "englishShortName": "Saint Kitts and Nevis",
+   "alpha2Code": "KN"
+  },
+  {
+   "id": 5191,
+   "englishShortName": "Saint Lucia",
+   "alpha2Code": "LC"
+  },
+  {
+   "id": 5192,
+   "englishShortName": "Saint Martin",
+   "alpha2Code": "MF"
+  },
+  {
+   "id": 5193,
+   "englishShortName": "Saint Pierre and Miquelon",
+   "alpha2Code": "PM"
+  },
+  {
+   "id": 5194,
+   "englishShortName": "Saint Vincent and the Grenadines",
+   "alpha2Code": "VC"
+  },
+  {
+   "id": 5195,
+   "englishShortName": "Samoa",
+   "alpha2Code": "WS"
+  },
+  {
+   "id": 5196,
+   "englishShortName": "San Marino",
+   "alpha2Code": "SM"
+  },
+  {
+   "id": 5198,
+   "englishShortName": "Saudi Arabia",
+   "alpha2Code": "SA"
+  },
+  {
+   "id": 5199,
+   "englishShortName": "Senegal",
+   "alpha2Code": "SN"
+  },
+  {
+   "id": 5200,
+   "englishShortName": "Serbia",
+   "alpha2Code": "RS"
+  },
+  {
+   "id": 5246,
+   "englishShortName": "Serbia and Montenegro",
+   "alpha2Code": "YU"
+  },
+  {
+   "id": 5201,
+   "englishShortName": "Seychelles",
+   "alpha2Code": "SC"
+  },
+  {
+   "id": 5202,
+   "englishShortName": "Sierra Leone",
+   "alpha2Code": "SL"
+  },
+  {
+   "id": 5203,
+   "englishShortName": "Singapore",
+   "alpha2Code": "SG"
+  },
+  {
+   "id": 5255,
+   "englishShortName": "Sint Maarten",
+   "alpha2Code": "SX"
+  },
+  {
+   "id": 5033,
+   "englishShortName": "Slovakia",
+   "alpha2Code": "SK"
+  },
+  {
+   "id": 5032,
+   "englishShortName": "Slovenia",
+   "alpha2Code": "SI"
+  },
+  {
+   "id": 5204,
+   "englishShortName": "Solomon Islands",
+   "alpha2Code": "SB"
+  },
+  {
+   "id": 5205,
+   "englishShortName": "Somalia",
+   "alpha2Code": "SO"
+  },
+  {
+   "id": 5206,
+   "englishShortName": "South Africa",
+   "alpha2Code": "ZA"
+  },
+  {
+   "id": 5249,
+   "englishShortName": "South Georgia and the South Sandwich Islands",
+   "alpha2Code": "GS"
+  },
+  {
+   "id": 5131,
+   "englishShortName": "South Korea",
+   "alpha2Code": "KR"
+  },
+  {
+   "id": 17681,
+   "englishShortName": "South Sudan",
+   "alpha2Code": "SS"
+  },
+  {
+   "id": 5010,
+   "englishShortName": "Spain",
+   "alpha2Code": "ES"
+  },
+  {
+   "id": 5207,
+   "englishShortName": "Sri Lanka",
+   "alpha2Code": "LK"
+  },
+  {
+   "id": 5208,
+   "englishShortName": "Sudan",
+   "alpha2Code": "SD"
+  },
+  {
+   "id": 5209,
+   "englishShortName": "Suriname",
+   "alpha2Code": "SR"
+  },
+  {
+   "id": 5210,
+   "englishShortName": "Svalbard and Jan Mayen",
+   "alpha2Code": "SJ"
+  },
+  {
+   "id": 5031,
+   "englishShortName": "Sweden",
+   "alpha2Code": "SE"
+  },
+  {
+   "id": 5004,
+   "englishShortName": "Switzerland",
+   "alpha2Code": "CH"
+  },
+  {
+   "id": 5212,
+   "englishShortName": "Syria",
+   "alpha2Code": "SY"
+  },
+  {
+   "id": 5197,
+   "englishShortName": "São Tomé and Príncipe",
+   "alpha2Code": "ST"
+  },
+  {
+   "id": 5213,
+   "englishShortName": "Taiwan",
+   "alpha2Code": "TW"
+  },
+  {
+   "id": 5214,
+   "englishShortName": "Tajikistan",
+   "alpha2Code": "TJ"
+  },
+  {
+   "id": 5215,
+   "englishShortName": "Tanzania",
+   "alpha2Code": "TZ"
+  },
+  {
+   "id": 5216,
+   "englishShortName": "Thailand",
+   "alpha2Code": "TH"
+  },
+  {
+   "id": 5217,
+   "englishShortName": "Timor-Leste",
+   "alpha2Code": "TL"
+  },
+  {
+   "id": 5218,
+   "englishShortName": "Togo",
+   "alpha2Code": "TG"
+  },
+  {
+   "id": 5219,
+   "englishShortName": "Tokelau",
+   "alpha2Code": "TK"
+  },
+  {
+   "id": 5220,
+   "englishShortName": "Tonga",
+   "alpha2Code": "TO"
+  },
+  {
+   "id": 5221,
+   "englishShortName": "Trinidad and Tobago",
+   "alpha2Code": "TT"
+  },
+  {
+   "id": 5222,
+   "englishShortName": "Tunisia",
+   "alpha2Code": "TN"
+  },
+  {
+   "id": 5224,
+   "englishShortName": "Turkmenistan",
+   "alpha2Code": "TM"
+  },
+  {
+   "id": 5225,
+   "englishShortName": "Turks and Caicos Islands",
+   "alpha2Code": "TC"
+  },
+  {
+   "id": 5226,
+   "englishShortName": "Tuvalu",
+   "alpha2Code": "TV"
+  },
+  {
+   "id": 5223,
+   "englishShortName": "Türkiye",
+   "alpha2Code": "TR"
+  },
+  {
+   "id": 5239,
+   "englishShortName": "US Virgin Islands",
+   "alpha2Code": "VI"
+  },
+  {
+   "id": 5227,
+   "englishShortName": "Uganda",
+   "alpha2Code": "UG"
+  },
+  {
+   "id": 5228,
+   "englishShortName": "Ukraine",
+   "alpha2Code": "UA"
+  },
+  {
+   "id": 5229,
+   "englishShortName": "United Arab Emirates",
+   "alpha2Code": "AE"
+  },
+  {
+   "id": 5014,
+   "englishShortName": "United Kingdom",
+   "alpha2Code": "GB"
+  },
+  {
+   "id": 5000,
+   "englishShortName": "United Kingdom (Northern Ireland)",
+   "alpha2Code": "XI"
+  },
+  {
+   "id": 5230,
+   "englishShortName": "United States",
+   "alpha2Code": "US"
+  },
+  {
+   "id": 5231,
+   "englishShortName": "United States Minor Outlying Islands",
+   "alpha2Code": "UM"
+  },
+  {
+   "id": 5232,
+   "englishShortName": "Uruguay",
+   "alpha2Code": "UY"
+  },
+  {
+   "id": 5233,
+   "englishShortName": "Uzbekistan",
+   "alpha2Code": "UZ"
+  },
+  {
+   "id": 5234,
+   "englishShortName": "Vanuatu",
+   "alpha2Code": "VU"
+  },
+  {
+   "id": 5235,
+   "englishShortName": "Vatican City",
+   "alpha2Code": "VA"
+  },
+  {
+   "id": 5236,
+   "englishShortName": "Venezuela",
+   "alpha2Code": "VE"
+  },
+  {
+   "id": 5237,
+   "englishShortName": "Vietnam",
+   "alpha2Code": "VN"
+  },
+  {
+   "id": 5240,
+   "englishShortName": "Wallis and Futuna",
+   "alpha2Code": "WF"
+  },
+  {
+   "id": 5176,
+   "englishShortName": "West Bank and Gaza Strip",
+   "alpha2Code": "PS"
+  },
+  {
+   "id": 5241,
+   "englishShortName": "Western Sahara",
+   "alpha2Code": "EH"
+  },
+  {
+   "id": 5242,
+   "englishShortName": "Yemen",
+   "alpha2Code": "YE"
+  },
+  {
+   "id": 5243,
+   "englishShortName": "Zambia",
+   "alpha2Code": "ZM"
+  },
+  {
+   "id": 5244,
+   "englishShortName": "Zimbabwe",
+   "alpha2Code": "ZW"
+  },
+  {
+   "id": 5034,
+   "englishShortName": "Åland Islands",
+   "alpha2Code": "AX"
+  }
+ ]
+}

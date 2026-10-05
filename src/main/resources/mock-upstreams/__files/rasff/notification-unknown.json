@@ -1,0 +1,10 @@
+{
+ "status": "UNAUTHORIZED",
+ "timestamp": "05-10-2026 03:13:42",
+ "eventId": "a01c7318-43b9-4d2d-88ba-d1caf6a664f9",
+ "messageTitle": "Unauthorized Access",
+ "message": "[ERR-1004] Unauthorized Access",
+ "messageDetails": [],
+ "errorCode": "GENERIC_TECHNICAL_ERROR",
+ "exceptionDTO": null
+}

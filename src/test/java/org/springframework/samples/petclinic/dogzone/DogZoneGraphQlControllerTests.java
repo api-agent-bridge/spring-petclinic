@@ -22,6 +22,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledInNativeImage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.graphql.test.autoconfigure.GraphQlTest;
+import org.springframework.context.annotation.ComponentScan.Filter;
+import org.springframework.context.annotation.FilterType;
 import org.springframework.graphql.execution.ErrorType;
 import org.springframework.graphql.test.tester.GraphQlTester;
 import org.springframework.samples.petclinic.dogzone.DogZone.Lighting;
@@ -41,9 +43,12 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 
 /**
- * Test class for the {@link DogZoneGraphQlController}
+ * Test class for the {@link DogZoneGraphQlController}. The query loads the owner through
+ * the Petclinic controller, so the slice keeps the controllers of the Petclinic data and
+ * leaves out those of the other external services.
  */
-@GraphQlTest
+@GraphQlTest(excludeFilters = @Filter(type = FilterType.REGEX,
+		pattern = "org\\.springframework\\.samples\\.petclinic\\.(ema|rasff|famhp|eurostat)\\..*"))
 @DisabledInNativeImage
 @DisabledInAotMode
 class DogZoneGraphQlControllerTests {

@@ -1,0 +1,138 @@
+{
+  "id": 874603,
+  "reference": "2026.8405",
+  "subject": "Obecność ciała obcego w karmie dla psów //Presence of a foreign object in dog food",
+  "ecValidationDate": "23-09-2026 09:49:14",
+  "lastUpdate": "23-09-2026 09:49:14",
+  "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+  },
+  "productType": {
+    "id": 282,
+    "description": "feed"
+  },
+  "notificationBasis": {
+    "id": 18683,
+    "description": "consumer complaint"
+  },
+  "product": {
+    "id": 31050062,
+    "description": "karma dla psów //  dog food",
+    "productCategory": {
+      "id": 18429,
+      "description": "pet food"
+    },
+    "productDescriptions": [
+      {
+        "id": 31050139,
+        "weight": "12.0",
+        "weightUnit": {
+          "id": 18973,
+          "description": "kg"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      }
+    ],
+    "measures": [
+      {
+        "id": 31050262,
+        "takenBy": {
+          "id": 5028,
+          "organizationName": "Poland",
+          "isoCode": "PL"
+        },
+        "actionTaken": {
+          "id": 18827,
+          "description": "no action taken"
+        }
+      }
+    ],
+    "distributionStatus": {
+      "id": 228,
+      "description": "product traded online"
+    }
+  },
+  "risk": {
+    "id": 142091,
+    "riskDecision": "potential risk"
+  },
+  "organizationFlags": [
+    {
+      "organization": {
+        "id": 31,
+        "description": "Poland",
+        "code": "PL",
+        "countryNetworkOrganizationId": 5028
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 874603,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 874603,
+          "flagType": "NOTIFYING"
+        },
+        {
+          "notificationId": 874603,
+          "flagType": "DISTRIBUTION"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 2,
+        "description": "Spain",
+        "code": "ES",
+        "countryNetworkOrganizationId": 5010
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 874603,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 874603,
+          "flagType": "ORIGIN"
+        },
+        {
+          "notificationId": 874603,
+          "flagType": "OPERATOR"
+        }
+      ]
+    }
+  ],
+  "notificationStatus": "ec_validated",
+  "additionalInformations": [
+    {
+      "id": 31050063,
+      "organization": "Główny Inspektorat Weterynarii// General Veterinary Inspectorate; Chief Sanitary Inspectorate ",
+      "contactPerson": "A contact person of the notifying authority"
+    }
+  ],
+  "localConsumerLinksByCountry": {
+    "5010": [
+      {
+        "id": 35,
+        "countryNetworkOrganizationId": 5010,
+        "link": "http://aplicaciones.magrama.es/silum/web/novedades/novedades.jsp"
+      },
+      {
+        "id": 36,
+        "countryNetworkOrganizationId": 5010,
+        "link": "https://www.aesan.gob.es/AECOSAN/web/seguridad_alimentaria/seccion/alertas_alimentarias.htm"
+      }
+    ],
+    "5028": [
+      {
+        "id": 32,
+        "countryNetworkOrganizationId": 5028,
+        "link": "https://www.gov.pl/web/gis/glowny-inspektorat-sanitarny"
+      }
+    ]
+  }
+}

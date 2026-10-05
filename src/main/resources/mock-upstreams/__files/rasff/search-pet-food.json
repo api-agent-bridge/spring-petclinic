@@ -1,0 +1,336 @@
+{
+ "notifications": [
+  {
+   "notifId": 876211,
+   "ecValidationDate": "29-09-2026 15:32:19",
+   "reference": "2026.8625",
+   "notifyingCountry": {
+    "organizationName": "Hungary",
+    "isoCode": "HU"
+   },
+   "subject": "Foreign body in pet food for cats from Germany ",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+   },
+   "riskDecision": {
+    "id": 20042,
+    "description": "potential risk"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Germany",
+     "isoCode": "DE"
+    }
+   ]
+  },
+  {
+   "notifId": 876109,
+   "ecValidationDate": "29-09-2026 15:24:08",
+   "reference": "2026.8624",
+   "notifyingCountry": {
+    "organizationName": "Netherlands",
+    "isoCode": "NL"
+   },
+   "subject": "Pet food supplements skipped veterinary checks at BCP",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+   },
+   "riskDecision": {
+    "id": 18762,
+    "description": "not serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "United States",
+     "isoCode": "US"
+    }
+   ]
+  },
+  {
+   "notifId": 874603,
+   "ecValidationDate": "23-09-2026 09:49:14",
+   "reference": "2026.8405",
+   "notifyingCountry": {
+    "organizationName": "Poland",
+    "isoCode": "PL"
+   },
+   "subject": "Obecność ciała obcego w karmie dla psów //Presence of a foreign object in dog food",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+   },
+   "riskDecision": {
+    "id": 20042,
+    "description": "potential risk"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Spain",
+     "isoCode": "ES"
+    }
+   ]
+  },
+  {
+   "notifId": 873890,
+   "ecValidationDate": "18-09-2026 13:17:51",
+   "reference": "2026.8305",
+   "notifyingCountry": {
+    "organizationName": "Belgium",
+    "isoCode": "BE"
+   },
+   "subject": "Salmonella in raw petfood from the Netherlands",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+   },
+   "riskDecision": {
+    "id": 20042,
+    "description": "potential risk"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Netherlands",
+     "isoCode": "NL"
+    }
+   ]
+  },
+  {
+   "notifId": 873294,
+   "ecValidationDate": "16-09-2026 15:08:07",
+   "reference": "2026.8204",
+   "notifyingCountry": {
+    "organizationName": "Croatia",
+    "isoCode": "HR"
+   },
+   "subject": "Salmonella spp. and enterobacteriaceae in pet food",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 306,
+    "description": "alert notification"
+   },
+   "riskDecision": {
+    "id": 20060,
+    "description": "potentially serious"
+   },
+   "published": true,
+   "originCountries": [
+    {
+     "organizationName": "Croatia",
+     "isoCode": "HR"
+    }
+   ]
+  },
+  {
+   "notifId": 872341,
+   "ecValidationDate": "11-09-2026 10:57:09",
+   "reference": "2026.8038",
+   "notifyingCountry": {
+    "organizationName": "Slovenia",
+    "isoCode": "SI"
+   },
+   "subject": "Consignment of petfood skipped veterinary controls in Border Control Post",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+   },
+   "riskDecision": {
+    "id": 20042,
+    "description": "potential risk"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "United Kingdom",
+     "isoCode": "GB"
+    }
+   ]
+  },
+  {
+   "notifId": 871861,
+   "ecValidationDate": "09-09-2026 16:00:38",
+   "reference": "2026.7973",
+   "notifyingCountry": {
+    "organizationName": "Germany",
+    "isoCode": "DE"
+   },
+   "subject": "Excessive levels of vitamin A, vitamin D, and selenium, and the unauthorized feed additive sodium saccharin (E954) in dietary supplements for piglets from Germany",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 303,
+    "description": "information notification for follow-up"
+   },
+   "riskDecision": {
+    "id": 20060,
+    "description": "potentially serious"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Germany",
+     "isoCode": "DE"
+    }
+   ]
+  },
+  {
+   "notifId": 869202,
+   "ecValidationDate": "02-09-2026 14:39:03",
+   "reference": "2026.7761",
+   "notifyingCountry": {
+    "organizationName": "Hungary",
+    "isoCode": "HU"
+   },
+   "subject": "CBD in animal feed from Slovakia",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+   },
+   "riskDecision": {
+    "id": 20042,
+    "description": "potential risk"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Slovakia",
+     "isoCode": "SK"
+    }
+   ]
+  },
+  {
+   "notifId": 869234,
+   "ecValidationDate": "02-09-2026 12:46:36",
+   "reference": "2026.7750",
+   "notifyingCountry": {
+    "organizationName": "Hungary",
+    "isoCode": "HU"
+   },
+   "subject": "CBD in animal feed from the Netherlands",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+   },
+   "riskDecision": {
+    "id": 20042,
+    "description": "potential risk"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "Netherlands",
+     "isoCode": "NL"
+    }
+   ]
+  },
+  {
+   "notifId": 869131,
+   "ecValidationDate": "02-09-2026 12:36:30",
+   "reference": "2026.7749",
+   "notifyingCountry": {
+    "organizationName": "Hungary",
+    "isoCode": "HU"
+   },
+   "subject": "CBD in animal feed from the UK",
+   "productCategory": {
+    "id": 18429,
+    "description": "pet food"
+   },
+   "productType": {
+    "id": 282,
+    "description": "feed"
+   },
+   "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+   },
+   "riskDecision": {
+    "id": 20042,
+    "description": "potential risk"
+   },
+   "published": false,
+   "originCountries": [
+    {
+     "organizationName": "United Kingdom",
+     "isoCode": "GB"
+    }
+   ]
+  }
+ ],
+ "totalPages": 27,
+ "totalElements": 270
+}

@@ -1,0 +1,3210 @@
+[
+ {
+  "id": "62bc0719cf1d5301f17d3874",
+  "type": "targetSpecies",
+  "code": "African Goshawk",
+  "label": "African Goshawk",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d399b",
+  "type": "targetSpecies",
+  "code": "Alpaca",
+  "label": "Alpaca",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3859",
+  "type": "targetSpecies",
+  "code": "Amphibians",
+  "label": "Amphibians",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a93",
+  "type": "targetSpecies",
+  "code": "Antelope",
+  "label": "Antelope",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3c3e",
+  "type": "targetSpecies",
+  "code": "Arctic char",
+  "label": "Arctic char",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3c49",
+  "type": "targetSpecies",
+  "code": "Atlantic salmon",
+  "label": "Atlantic salmon",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0652",
+  "type": "authorisationType",
+  "code": "PI",
+  "label": "Authorisation for parallel import",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b73",
+  "type": "targetSpecies",
+  "code": "Badger",
+  "label": "Badger",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3ba2",
+  "type": "targetSpecies",
+  "code": "Bat",
+  "label": "Bat",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3ba6",
+  "type": "targetSpecies",
+  "code": "Bear",
+  "label": "Bear",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3fb6",
+  "type": "targetSpecies",
+  "code": "Bearded dragon",
+  "label": "Bearded dragon",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d02",
+  "type": "targetSpecies",
+  "code": "Beaver",
+  "label": "Beaver",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3dca",
+  "type": "legalBasis",
+  "code": "",
+  "label": "BIBLIOGRAPHIC APPLICATION - Article 22 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3811",
+  "type": "targetSpecies",
+  "code": "Bison",
+  "label": "Bison",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b65",
+  "type": "targetSpecies",
+  "code": "Bivalves",
+  "label": "Bivalves",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d387b",
+  "type": "targetSpecies",
+  "code": "Black Kite",
+  "label": "Black Kite",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3af8",
+  "type": "targetSpecies",
+  "code": "Bobcat",
+  "label": "Bobcat",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d387e",
+  "type": "targetSpecies",
+  "code": "Budgerigar",
+  "label": "Budgerigar",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3814",
+  "type": "targetSpecies",
+  "code": "Buffalo",
+  "label": "Buffalo",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f67",
+  "type": "targetSpecies",
+  "code": "Buffalo (bull for reproduction)",
+  "label": "Buffalo (bull for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f62",
+  "type": "targetSpecies",
+  "code": "Buffalo (bull)",
+  "label": "Buffalo (bull)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3f10",
+  "type": "targetSpecies",
+  "code": "Buffalo (calf)",
+  "label": "Buffalo (calf)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3f09",
+  "type": "targetSpecies",
+  "code": "Buffalo (female)",
+  "label": "Buffalo (female)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3f06",
+  "type": "targetSpecies",
+  "code": "Buffalo (male)",
+  "label": "Buffalo (male)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3881",
+  "type": "targetSpecies",
+  "code": "Bustard",
+  "label": "Bustard",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3885",
+  "type": "targetSpecies",
+  "code": "Buzzard",
+  "label": "Buzzard",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39a1",
+  "type": "targetSpecies",
+  "code": "Camel",
+  "label": "Camel",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e6d",
+  "type": "targetSpecies",
+  "code": "Carp",
+  "label": "Carp",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3c4d",
+  "type": "targetSpecies",
+  "code": "Carp - Koi",
+  "label": "Carp - Koi",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0712",
+  "type": "targetSpecies",
+  "code": "Fe",
+  "label": "Cat",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b02",
+  "type": "targetSpecies",
+  "code": "Cat (adult female for reproduction)",
+  "label": "Cat (adult female for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3afd",
+  "type": "targetSpecies",
+  "code": "Cat (adult female)",
+  "label": "Cat (adult female)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b05",
+  "type": "targetSpecies",
+  "code": "Cat (adult male)",
+  "label": "Cat (adult male)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b26",
+  "type": "targetSpecies",
+  "code": "Cat (kitten)",
+  "label": "Cat (kitten)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b0b",
+  "type": "targetSpecies",
+  "code": "Cat (lactating queen)",
+  "label": "Cat (lactating queen)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b1e",
+  "type": "targetSpecies",
+  "code": "Cat (pregnant queen)",
+  "label": "Cat (pregnant queen)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f070d",
+  "type": "targetSpecies",
+  "code": "Bo",
+  "label": "Cattle",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d381b",
+  "type": "targetSpecies",
+  "code": "Cattle (bull for reproduction)",
+  "label": "Cattle (bull for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3828",
+  "type": "targetSpecies",
+  "code": "Cattle (bull)",
+  "label": "Cattle (bull)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d381f",
+  "type": "targetSpecies",
+  "code": "Cattle (bullock)",
+  "label": "Cattle (bullock)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3988",
+  "type": "targetSpecies",
+  "code": "Cattle (calf)",
+  "label": "Cattle (calf)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3819",
+  "type": "targetSpecies",
+  "code": "Cattle (cow for reproduction)",
+  "label": "Cattle (cow for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3817",
+  "type": "targetSpecies",
+  "code": "Cattle (cow)",
+  "label": "Cattle (cow)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3824",
+  "type": "targetSpecies",
+  "code": "Cattle (dairy cattle)",
+  "label": "Cattle (dairy cattle)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3fb9",
+  "type": "targetSpecies",
+  "code": "Cattle (dairy cow at drying-off)",
+  "label": "Cattle (dairy cow at drying-off)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3f21",
+  "type": "targetSpecies",
+  "code": "Cattle (dairy cow)",
+  "label": "Cattle (dairy cow)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3826",
+  "type": "targetSpecies",
+  "code": "Cattle (dry cow)",
+  "label": "Cattle (dry cow)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3822",
+  "type": "targetSpecies",
+  "code": "Cattle (for meat production)",
+  "label": "Cattle (for meat production)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d398d",
+  "type": "targetSpecies",
+  "code": "Cattle (heifer)",
+  "label": "Cattle (heifer)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d382b",
+  "type": "targetSpecies",
+  "code": "Cattle (lactating cow)",
+  "label": "Cattle (lactating cow)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d395d",
+  "type": "targetSpecies",
+  "code": "Cattle (newborn calf)",
+  "label": "Cattle (newborn calf)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d381d",
+  "type": "targetSpecies",
+  "code": "Cattle (ox)",
+  "label": "Cattle (ox)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3975",
+  "type": "targetSpecies",
+  "code": "Cattle (pre-ruminant)",
+  "label": "Cattle (pre-ruminant)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3964",
+  "type": "targetSpecies",
+  "code": "Cattle (pregnant cow)",
+  "label": "Cattle (pregnant cow)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d396e",
+  "type": "targetSpecies",
+  "code": "Cattle (pregnant heifer)",
+  "label": "Cattle (pregnant heifer)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d397b",
+  "type": "targetSpecies",
+  "code": "Cattle (ruminant)",
+  "label": "Cattle (ruminant)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ee5",
+  "type": "targetSpecies",
+  "code": "Cattle (suckling calf)",
+  "label": "Cattle (suckling calf)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a10",
+  "type": "targetSpecies",
+  "code": "Chamois",
+  "label": "Chamois",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3899",
+  "type": "targetSpecies",
+  "code": "Chicken",
+  "label": "Chicken",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3895",
+  "type": "targetSpecies",
+  "code": "Chicken (broiler)",
+  "label": "Chicken (broiler)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38ac",
+  "type": "targetSpecies",
+  "code": "Chicken (chick)",
+  "label": "Chicken (chick)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3890",
+  "type": "targetSpecies",
+  "code": "Chicken (cockerel)",
+  "label": "Chicken (cockerel)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38a0",
+  "type": "targetSpecies",
+  "code": "Chicken (embryonated eggs)",
+  "label": "Chicken (embryonated eggs)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38a5",
+  "type": "targetSpecies",
+  "code": "Chicken (for reproduction)",
+  "label": "Chicken (for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3889",
+  "type": "targetSpecies",
+  "code": "Chicken (hen)",
+  "label": "Chicken (hen)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d388d",
+  "type": "targetSpecies",
+  "code": "Chicken (layer hen)",
+  "label": "Chicken (layer hen)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f88",
+  "type": "targetSpecies",
+  "code": "Chicken (one day-old chick)",
+  "label": "Chicken (one day-old chick)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f8c",
+  "type": "targetSpecies",
+  "code": "Chicken (pullet for egg production, future layer)",
+  "label": "Chicken (pullet for egg production, future layer)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3fbe",
+  "type": "targetSpecies",
+  "code": "Chicken (pullet future breeder)",
+  "label": "Chicken (pullet future breeder)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38b1",
+  "type": "targetSpecies",
+  "code": "Chicken (pullet)",
+  "label": "Chicken (pullet)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3bab",
+  "type": "targetSpecies",
+  "code": "Chimpanzee",
+  "label": "Chimpanzee",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d0b",
+  "type": "targetSpecies",
+  "code": "Chinchilla",
+  "label": "Chinchilla",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38b6",
+  "type": "targetSpecies",
+  "code": "Cockatiel",
+  "label": "Cockatiel",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38b8",
+  "type": "targetSpecies",
+  "code": "Cockatoo",
+  "label": "Cockatoo",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e8d",
+  "type": "targetSpecies",
+  "code": "Cod",
+  "label": "Cod",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62c2da2c13c016027427835e",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Combination veterinary medicinal products - Article 20 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3dbb",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Combination veterinary medicinal products - Article 20 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38bc",
+  "type": "targetSpecies",
+  "code": "Common canary",
+  "label": "Common canary",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0650",
+  "type": "authorisationType",
+  "code": "HORECH",
+  "label": "Complex Homeopathic medicinal product - Registration",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b2c",
+  "type": "targetSpecies",
+  "code": "Cougar",
+  "label": "Cougar",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d384e",
+  "type": "targetSpecies",
+  "code": "Crocodile",
+  "label": "Crocodile",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38c1",
+  "type": "targetSpecies",
+  "code": "Crow",
+  "label": "Crow",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3869",
+  "type": "targetSpecies",
+  "code": "Crustacean",
+  "label": "Crustacean",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f070e",
+  "type": "targetSpecies",
+  "code": "Ca",
+  "label": "Dog",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39be",
+  "type": "targetSpecies",
+  "code": "Dog (adult male for reproduction)",
+  "label": "Dog (adult male for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39ba",
+  "type": "targetSpecies",
+  "code": "Dog (adult male)",
+  "label": "Dog (adult male)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39b7",
+  "type": "targetSpecies",
+  "code": "Dog (bitch for reproduction)",
+  "label": "Dog (bitch for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39b1",
+  "type": "targetSpecies",
+  "code": "Dog (bitch)",
+  "label": "Dog (bitch)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39c8",
+  "type": "targetSpecies",
+  "code": "Dog (lactating bitch)",
+  "label": "Dog (lactating bitch)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39d8",
+  "type": "targetSpecies",
+  "code": "Dog (pregnant bitch)",
+  "label": "Dog (pregnant bitch)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39ed",
+  "type": "targetSpecies",
+  "code": "Dog (puppy)",
+  "label": "Dog (puppy)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3bb3",
+  "type": "targetSpecies",
+  "code": "Dolphin",
+  "label": "Dolphin",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3ab4",
+  "type": "targetSpecies",
+  "code": "Donkey",
+  "label": "Donkey",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d18",
+  "type": "targetSpecies",
+  "code": "Dormouse",
+  "label": "Dormouse",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38c7",
+  "type": "targetSpecies",
+  "code": "Duck",
+  "label": "Duck",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38cc",
+  "type": "targetSpecies",
+  "code": "Duck (broiler)",
+  "label": "Duck (broiler)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38d4",
+  "type": "targetSpecies",
+  "code": "Duck (duckling)",
+  "label": "Duck (duckling)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3eaf",
+  "type": "targetSpecies",
+  "code": "Duck (for reproduction)",
+  "label": "Duck (for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f77",
+  "type": "targetSpecies",
+  "code": "Duck (mullard)",
+  "label": "Duck (mullard)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38db",
+  "type": "targetSpecies",
+  "code": "Eagle",
+  "label": "Eagle",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3c61",
+  "type": "targetSpecies",
+  "code": "Eel - European",
+  "label": "Eel - European",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a85",
+  "type": "targetSpecies",
+  "code": "Elk (Alces alces)",
+  "label": "Elk (Alces alces)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38dd",
+  "type": "targetSpecies",
+  "code": "Emu",
+  "label": "Emu",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3de9",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Exceptional circumstances - Article 25 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62c2dbdf13c0160274278367",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Exceptional circumstances - Article 25 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a8a",
+  "type": "targetSpecies",
+  "code": "Fallow deer",
+  "label": "Fallow deer",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b7a",
+  "type": "targetSpecies",
+  "code": "Ferret",
+  "label": "Ferret",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3912",
+  "type": "targetSpecies",
+  "code": "Finch",
+  "label": "Finch",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0716",
+  "type": "targetSpecies",
+  "code": "Ps",
+  "label": "Fish",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3c8f",
+  "type": "targetSpecies",
+  "code": "Fish (for meat production)",
+  "label": "Fish (for meat production)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ca0",
+  "type": "targetSpecies",
+  "code": "Fish (for reproduction)",
+  "label": "Fish (for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3cac",
+  "type": "targetSpecies",
+  "code": "Fish (fresh water)",
+  "label": "Fish (fresh water)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ca7",
+  "type": "targetSpecies",
+  "code": "Fish (roe)",
+  "label": "Fish (roe)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ccf",
+  "type": "targetSpecies",
+  "code": "Fish (salt water)",
+  "label": "Fish (salt water)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3df6",
+  "type": "legalBasis",
+  "code": "",
+  "label": "FIXED COMBINATION -  Article 6bis, §3 of Law 25/03/1964",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e14",
+  "type": "legalBasis",
+  "code": "",
+  "label": "FIXED COMBINATION -  Article 6bis, §8 of Law 25/03/1964",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e0b",
+  "type": "legalBasis",
+  "code": "",
+  "label": "FIXED COMBINATION - Article 10b of Directive 2001/83/EC",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d390b",
+  "type": "targetSpecies",
+  "code": "Fowl",
+  "label": "Fowl",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39f3",
+  "type": "targetSpecies",
+  "code": "Fox",
+  "label": "Fox",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f4185",
+  "type": "deliveryModus",
+  "code": "",
+  "label": "Free delivery",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f4186",
+  "type": "deliveryModus",
+  "code": "",
+  "label": "Free delivery or medical prescription according to the pack size",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f4187",
+  "type": "deliveryModus",
+  "code": "",
+  "label": "Free delivery or medical prescription/written request according to the pack size",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3850",
+  "type": "targetSpecies",
+  "code": "Frog",
+  "label": "Frog",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e16",
+  "type": "legalBasis",
+  "code": "",
+  "label": "FULL - Article 6, §1, 3rd paragraph of Law 25/03/1964",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3df8",
+  "type": "legalBasis",
+  "code": "",
+  "label": "FULL - Article 6, §1, 3rd paragraph of Law 25/03/1964",
+  "usage": [
+   "human",
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e09",
+  "type": "legalBasis",
+  "code": "",
+  "label": "FULL - Article 8(3) of Directive 2001/83/EC",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "693af6169fccf61e1259177b",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Full application - Article 8 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "693af64e9fccf61e1259177d",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Full application - Article 8 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3da7",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Full application - known active substance - Article 8 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62c2d8b113c0160274278359",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Full application - known active substance - Article 8 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62c2d84e13c0160274278357",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Full application - new active substance - Article 8 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f90",
+  "type": "targetSpecies",
+  "code": "Future breeder pullet",
+  "label": "Future breeder pullet",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e0e",
+  "type": "legalBasis",
+  "code": "",
+  "label": "GENERIC - Article 10(1) of Directive 2001/83/EC",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3daf",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Generic - Article 18 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62c2d9a913c016027427835b",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Generic - Article 18 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3df9",
+  "type": "legalBasis",
+  "code": "",
+  "label": "GENERIC - Article 2.8 a) 3rd indent of Royal Decree 3/7/1969",
+  "usage": [
+   "human",
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3dfd",
+  "type": "legalBasis",
+  "code": "",
+  "label": "GENERIC - Article 6bis, §1, paragraph 1-4 of Law 25/03/1964",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e19",
+  "type": "legalBasis",
+  "code": "",
+  "label": "GENERIC - Article 6bis, §6, 5th paragraph, 2nd indent of Law 25/03/1964",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d20",
+  "type": "targetSpecies",
+  "code": "Gerbil",
+  "label": "Gerbil",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3eb7",
+  "type": "targetSpecies",
+  "code": "Gilthead",
+  "label": "Gilthead",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f070f",
+  "type": "targetSpecies",
+  "code": "Capr",
+  "label": "Goat",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f5d",
+  "type": "targetSpecies",
+  "code": "Goat (adult female for reproduction)",
+  "label": "Goat (adult female for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a18",
+  "type": "targetSpecies",
+  "code": "Goat (adult female)",
+  "label": "Goat (adult female)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a21",
+  "type": "targetSpecies",
+  "code": "Goat (adult male)",
+  "label": "Goat (adult male)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a27",
+  "type": "targetSpecies",
+  "code": "Goat (dry adult)",
+  "label": "Goat (dry adult)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a47",
+  "type": "targetSpecies",
+  "code": "Goat (kid)",
+  "label": "Goat (kid)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a30",
+  "type": "targetSpecies",
+  "code": "Goat (lactating adult)",
+  "label": "Goat (lactating adult)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a39",
+  "type": "targetSpecies",
+  "code": "Goat (pre-ruminant)",
+  "label": "Goat (pre-ruminant)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a35",
+  "type": "targetSpecies",
+  "code": "Goat (pregnant nanny)",
+  "label": "Goat (pregnant nanny)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a3e",
+  "type": "targetSpecies",
+  "code": "Goat (ruminant)",
+  "label": "Goat (ruminant)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ef4",
+  "type": "targetSpecies",
+  "code": "Goat (suckling kid)",
+  "label": "Goat (suckling kid)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38e2",
+  "type": "targetSpecies",
+  "code": "Goose",
+  "label": "Goose",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38e7",
+  "type": "targetSpecies",
+  "code": "Guinea fowl",
+  "label": "Guinea fowl",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d2c",
+  "type": "targetSpecies",
+  "code": "Guinea pig",
+  "label": "Guinea pig",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ebd",
+  "type": "targetSpecies",
+  "code": "Halibut",
+  "label": "Halibut",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d35",
+  "type": "targetSpecies",
+  "code": "Hamster",
+  "label": "Hamster",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b50",
+  "type": "targetSpecies",
+  "code": "Hare",
+  "label": "Hare",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3bba",
+  "type": "targetSpecies",
+  "code": "Hedgehog",
+  "label": "Hedgehog",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3dfe",
+  "type": "legalBasis",
+  "code": "",
+  "label": "HOMEOPATHIC -  Article 6, §1 of Law 25/03/1964",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e07",
+  "type": "legalBasis",
+  "code": "",
+  "label": "HOMEOPATHIC -  Article 6, §1, 5th paragraph of Law 25/03/1964",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f064e",
+  "type": "authorisationType",
+  "code": "HOMA",
+  "label": "Homeopathic medicinal product - Marketing authorisation",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3957",
+  "type": "targetSpecies",
+  "code": "Homing pigeon",
+  "label": "Homing pigeon",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f070b",
+  "type": "targetSpecies",
+  "code": "Ap",
+  "label": "Honey bee",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0711",
+  "type": "targetSpecies",
+  "code": "Eq",
+  "label": "Horse",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3adc",
+  "type": "targetSpecies",
+  "code": "Horse (colt)",
+  "label": "Horse (colt)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e5e",
+  "type": "targetSpecies",
+  "code": "Horse (filly)",
+  "label": "Horse (filly)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e88",
+  "type": "targetSpecies",
+  "code": "Horse (foal)",
+  "label": "Horse (foal)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3abd",
+  "type": "targetSpecies",
+  "code": "Horse (gelding)",
+  "label": "Horse (gelding)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3ab9",
+  "type": "targetSpecies",
+  "code": "Horse (mare)",
+  "label": "Horse (mare)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3ad1",
+  "type": "targetSpecies",
+  "code": "Horse (non food-producing)",
+  "label": "Horse (non food-producing)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f7c",
+  "type": "targetSpecies",
+  "code": "Horse (non-food producing foal)",
+  "label": "Horse (non-food producing foal)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3ac9",
+  "type": "targetSpecies",
+  "code": "Horse (pony)",
+  "label": "Horse (pony)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3acd",
+  "type": "targetSpecies",
+  "code": "Horse (pregnant mare)",
+  "label": "Horse (pregnant mare)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3ac5",
+  "type": "targetSpecies",
+  "code": "Horse (stallion)",
+  "label": "Horse (stallion)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3ad7",
+  "type": "targetSpecies",
+  "code": "Horse (suckling colt)",
+  "label": "Horse (suckling colt)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ee9",
+  "type": "targetSpecies",
+  "code": "Horse (suckling filly)",
+  "label": "Horse (suckling filly)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3eef",
+  "type": "targetSpecies",
+  "code": "Horse (suckling foal)",
+  "label": "Horse (suckling foal)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e0f",
+  "type": "legalBasis",
+  "code": "",
+  "label": "HYBRID - Article 10(3) of Directive 2001/83/EC",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "69f1ffb74cb0cd18e7ea9374",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Hybrid - Article 19(1) of Regulation (EU) 2019/6 ",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "6401ca47d8797e16327112d6",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Hybrid - Article 19(1) of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3dff",
+  "type": "legalBasis",
+  "code": "",
+  "label": "HYBRID - Article 2.8 a) 3rd indent 2nd paragraph of Royal Decree 3/7/1969",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e01",
+  "type": "legalBasis",
+  "code": "",
+  "label": "HYBRID - Article 6bis, §1, 7th paragraph of Law 25/03/1964",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e1c",
+  "type": "legalBasis",
+  "code": "",
+  "label": "HYBRID - Article 6bis, §6, 6th paragraph of Law 25/03/1964",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62c34b0813c0160274278379",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Hybrid – bioavailability studies cannot be used to demonstrate bioequivalence - Article 19(1)(b) of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62c34a9113c0160274278377",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Hybrid application – change in pharmaceutical form - Article 19(1)(a) of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62c3494913c0160274278373",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Hybrid application – change in strength - Article 19(1)(a) of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e22",
+  "type": "legalBasis",
+  "code": "",
+  "label": "Hybrid application – change in strength - Article 19(1)(a) of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3853",
+  "type": "targetSpecies",
+  "code": "Iguana",
+  "label": "Iguana",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e0c",
+  "type": "legalBasis",
+  "code": "",
+  "label": "INFORMED CONSENT - Article 10c of Directive 2001/83/EC",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e02",
+  "type": "legalBasis",
+  "code": "",
+  "label": "INFORMED CONSENT - Article 2.8 a) 1st indent of Royal Decree 3/7/1969",
+  "usage": [
+   "human",
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62c2daa413c0160274278360",
+  "type": "legalBasis",
+  "code": "",
+  "label": "INFORMED CONSENT - Article 21 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3dc1",
+  "type": "legalBasis",
+  "code": "",
+  "label": "INFORMED CONSENT - Article 21 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e04",
+  "type": "legalBasis",
+  "code": "",
+  "label": "INFORMED CONSENT - Article 6bis, §4 of Law 25/03/1964",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e20",
+  "type": "legalBasis",
+  "code": "",
+  "label": "INFORMED CONSENT - Article 6bis, §9 of Law 25/03/1964",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39f9",
+  "type": "targetSpecies",
+  "code": "Jackal",
+  "label": "Jackal",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b2f",
+  "type": "targetSpecies",
+  "code": "Jaguar",
+  "label": "Jaguar",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38ee",
+  "type": "targetSpecies",
+  "code": "Kestrel",
+  "label": "Kestrel",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38f5",
+  "type": "targetSpecies",
+  "code": "Kite",
+  "label": "Kite",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b34",
+  "type": "targetSpecies",
+  "code": "Leopard",
+  "label": "Leopard",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b38",
+  "type": "targetSpecies",
+  "code": "Lion",
+  "label": "Lion",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3855",
+  "type": "targetSpecies",
+  "code": "Lizard",
+  "label": "Lizard",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d39a8",
+  "type": "targetSpecies",
+  "code": "Llama",
+  "label": "Llama",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b3c",
+  "type": "targetSpecies",
+  "code": "Lynx",
+  "label": "Lynx",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38fa",
+  "type": "targetSpecies",
+  "code": "Macaw",
+  "label": "Macaw",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f064d",
+  "type": "authorisationType",
+  "code": "MA",
+  "label": "Marketing authorisation",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3bc7",
+  "type": "targetSpecies",
+  "code": "Marsupial",
+  "label": "Marsupial",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e67",
+  "type": "targetSpecies",
+  "code": "Marten",
+  "label": "Marten",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f73",
+  "type": "targetSpecies",
+  "code": "Meagre",
+  "label": "Meagre",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f4183",
+  "type": "deliveryModus",
+  "code": "",
+  "label": "Medical prescription",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f4184",
+  "type": "deliveryModus",
+  "code": "",
+  "label": "Medical prescription or written request",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b82",
+  "type": "targetSpecies",
+  "code": "Mink",
+  "label": "Mink",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3bce",
+  "type": "targetSpecies",
+  "code": "Monkey",
+  "label": "Monkey",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a90",
+  "type": "targetSpecies",
+  "code": "Moose",
+  "label": "Moose",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f37",
+  "type": "targetSpecies",
+  "code": "Mouflon",
+  "label": "Mouflon",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f31",
+  "type": "targetSpecies",
+  "code": "Mountain goat",
+  "label": "Mountain goat",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d3f",
+  "type": "targetSpecies",
+  "code": "Mouse",
+  "label": "Mouse",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3ae0",
+  "type": "targetSpecies",
+  "code": "Mule",
+  "label": "Mule",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e80",
+  "type": "targetSpecies",
+  "code": "Muscovy duck",
+  "label": "Muscovy duck",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0653",
+  "type": "authorisationType",
+  "code": "Not VMP",
+  "label": "Notified veterinary medicinal product",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "63cfb50298b4610c66acf785",
+  "type": "targetSpecies",
+  "code": "Nutria",
+  "label": "Nutria",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0715",
+  "type": "targetSpecies",
+  "code": "Pas",
+  "label": "Ornamental bird",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3cb3",
+  "type": "targetSpecies",
+  "code": "Ornamental fish",
+  "label": "Ornamental fish",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d38ff",
+  "type": "targetSpecies",
+  "code": "Ostrich",
+  "label": "Ostrich",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b86",
+  "type": "targetSpecies",
+  "code": "Otter",
+  "label": "Otter",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3935",
+  "type": "targetSpecies",
+  "code": "Owl",
+  "label": "Owl",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3c1f",
+  "type": "targetSpecies",
+  "code": "Panda",
+  "label": "Panda",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d393a",
+  "type": "targetSpecies",
+  "code": "Parakeet",
+  "label": "Parakeet",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e05",
+  "type": "legalBasis",
+  "code": "",
+  "label": "PARALLEL IMPORT - Royal Decree 19/04/2001",
+  "usage": [
+   "human",
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e02",
+  "type": "legalBasis",
+  "code": "",
+  "label": "PARALLEL TRADE - Article 102 of Regulation 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3941",
+  "type": "targetSpecies",
+  "code": "Parrot",
+  "label": "Parrot",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3947",
+  "type": "targetSpecies",
+  "code": "Partridge",
+  "label": "Partridge",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3926",
+  "type": "targetSpecies",
+  "code": "Pekin duck",
+  "label": "Pekin duck",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d394c",
+  "type": "targetSpecies",
+  "code": "Peregrine Falcon",
+  "label": "Peregrine Falcon",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3951",
+  "type": "targetSpecies",
+  "code": "Pheasant",
+  "label": "Pheasant",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0718",
+  "type": "targetSpecies",
+  "code": "Su",
+  "label": "Pig",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3dad",
+  "type": "targetSpecies",
+  "code": "Pig (female)",
+  "label": "Pig (female)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3dd3",
+  "type": "targetSpecies",
+  "code": "Pig (for reproduction)",
+  "label": "Pig (for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3da3",
+  "type": "targetSpecies",
+  "code": "Pig (male for reproduction)",
+  "label": "Pig (male for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d96",
+  "type": "targetSpecies",
+  "code": "Pig (male)",
+  "label": "Pig (male)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ec3",
+  "type": "targetSpecies",
+  "code": "Pig (newborn piglet)",
+  "label": "Pig (newborn piglet)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3dfb",
+  "type": "targetSpecies",
+  "code": "Pig (piglet)",
+  "label": "Pig (piglet)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ddc",
+  "type": "targetSpecies",
+  "code": "Pig (pregnant sow)",
+  "label": "Pig (pregnant sow)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d8b",
+  "type": "targetSpecies",
+  "code": "Pig (sow for reproduction)",
+  "label": "Pig (sow for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d71",
+  "type": "targetSpecies",
+  "code": "Pig (sow)",
+  "label": "Pig (sow)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d80",
+  "type": "targetSpecies",
+  "code": "Pig (sow, multipar)",
+  "label": "Pig (sow, multipar)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d88",
+  "type": "targetSpecies",
+  "code": "Pig (sow, nullipar)",
+  "label": "Pig (sow, nullipar)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d79",
+  "type": "targetSpecies",
+  "code": "Pig (sow, primipar)",
+  "label": "Pig (sow, primipar)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3de6",
+  "type": "targetSpecies",
+  "code": "Pig (suckling piglet)",
+  "label": "Pig (suckling piglet)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3db9",
+  "type": "targetSpecies",
+  "code": "Pig (weaned piglet)",
+  "label": "Pig (weaned piglet)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3df1",
+  "type": "targetSpecies",
+  "code": "Pig (young female)",
+  "label": "Pig (young female)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0710",
+  "type": "targetSpecies",
+  "code": "Co",
+  "label": "Pigeon",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3fc7",
+  "type": "targetSpecies",
+  "code": "pigeon (ornamental pigeon)",
+  "label": "pigeon (ornamental pigeon)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3dc8",
+  "type": "targetSpecies",
+  "code": "Pigs (for fattening)",
+  "label": "Pigs (for fattening)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b90",
+  "type": "targetSpecies",
+  "code": "Polecat",
+  "label": "Polecat",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3c27",
+  "type": "targetSpecies",
+  "code": "Primates",
+  "label": "Primates",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d37eb",
+  "type": "targetSpecies",
+  "code": "Quail",
+  "label": "Quail",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0713",
+  "type": "targetSpecies",
+  "code": "Lm",
+  "label": "Rabbit",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f42",
+  "type": "targetSpecies",
+  "code": "Rabbit (adult female)",
+  "label": "Rabbit (adult female)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b58",
+  "type": "targetSpecies",
+  "code": "Rabbit (exclusively kept as pet)",
+  "label": "Rabbit (exclusively kept as pet)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b54",
+  "type": "targetSpecies",
+  "code": "Rabbit (female for reproduction)",
+  "label": "Rabbit (female for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "63cfb4dd98b4610c66acf783",
+  "type": "targetSpecies",
+  "code": "Rabbit (for reproductie)",
+  "label": "Rabbit (for reproductie)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f6e",
+  "type": "targetSpecies",
+  "code": "Rabbit (male for reproduction)",
+  "label": "Rabbit (male for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3f16",
+  "type": "targetSpecies",
+  "code": "Rabbit (non food-producing)",
+  "label": "Rabbit (non food-producing)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b5c",
+  "type": "targetSpecies",
+  "code": "Rabbit (pregnant)",
+  "label": "Rabbit (pregnant)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f95",
+  "type": "targetSpecies",
+  "code": "Raccoon",
+  "label": "Raccoon",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a02",
+  "type": "targetSpecies",
+  "code": "Raccoon dog",
+  "label": "Raccoon dog",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d5c",
+  "type": "targetSpecies",
+  "code": "Rat",
+  "label": "Rat",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3aa7",
+  "type": "targetSpecies",
+  "code": "Red deer",
+  "label": "Red deer",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3aaa",
+  "type": "targetSpecies",
+  "code": "Reindeer",
+  "label": "Reindeer",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d385b",
+  "type": "targetSpecies",
+  "code": "Reptile",
+  "label": "Reptile",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d4c",
+  "type": "targetSpecies",
+  "code": "Rodents",
+  "label": "Rodents",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3aaf",
+  "type": "targetSpecies",
+  "code": "Roe deer",
+  "label": "Roe deer",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3cc8",
+  "type": "targetSpecies",
+  "code": "Salmonid",
+  "label": "Salmonid",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3c75",
+  "type": "targetSpecies",
+  "code": "Salmonid (female)",
+  "label": "Salmonid (female)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3edd",
+  "type": "targetSpecies",
+  "code": "Sea bream",
+  "label": "Sea bream",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3cd9",
+  "type": "targetSpecies",
+  "code": "Seabass",
+  "label": "Seabass",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ee1",
+  "type": "targetSpecies",
+  "code": "Seabass (unspecified)",
+  "label": "Seabass (unspecified)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0714",
+  "type": "targetSpecies",
+  "code": "Ov",
+  "label": "Sheep",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a78",
+  "type": "targetSpecies",
+  "code": "Sheep (dairy sheep)",
+  "label": "Sheep (dairy sheep)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a5b",
+  "type": "targetSpecies",
+  "code": "Sheep (dry ewe)",
+  "label": "Sheep (dry ewe)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f6b",
+  "type": "targetSpecies",
+  "code": "Sheep (ewe for reproduction)",
+  "label": "Sheep (ewe for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a52",
+  "type": "targetSpecies",
+  "code": "Sheep (ewe)",
+  "label": "Sheep (ewe)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a74",
+  "type": "targetSpecies",
+  "code": "Sheep (for meat production)",
+  "label": "Sheep (for meat production)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a5f",
+  "type": "targetSpecies",
+  "code": "Sheep (lactating ewe)",
+  "label": "Sheep (lactating ewe)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a81",
+  "type": "targetSpecies",
+  "code": "Sheep (lamb)",
+  "label": "Sheep (lamb)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a57",
+  "type": "targetSpecies",
+  "code": "Sheep (male)",
+  "label": "Sheep (male)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a68",
+  "type": "targetSpecies",
+  "code": "Sheep (pre-ruminant)",
+  "label": "Sheep (pre-ruminant)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a64",
+  "type": "targetSpecies",
+  "code": "Sheep (pregnant ewe)",
+  "label": "Sheep (pregnant ewe)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3a6c",
+  "type": "targetSpecies",
+  "code": "Sheep (ruminant)",
+  "label": "Sheep (ruminant)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ef7",
+  "type": "targetSpecies",
+  "code": "Sheep (suckling lamb)",
+  "label": "Sheep (suckling lamb)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e10",
+  "type": "legalBasis",
+  "code": "",
+  "label": "SIMILAR BIOLOGICAL - Article 10(4) of Directive 2001/83/EC",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d84",
+  "type": "legalBasis",
+  "code": "",
+  "label": "SIMILAR BIOLOGICAL - Article 18 of Regulation (EU) 2019/6",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e06",
+  "type": "legalBasis",
+  "code": "",
+  "label": "SIMILAR BIOLOGICAL - Article 6bis, §1, 8th paragraph of Law 25/03/1964",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e22",
+  "type": "legalBasis",
+  "code": "",
+  "label": "SIMILAR BIOLOGICAL - Article 6bis, §6, 7th paragraph of Law 25/03/1964",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3860",
+  "type": "targetSpecies",
+  "code": "Snake",
+  "label": "Snake",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d37ee",
+  "type": "targetSpecies",
+  "code": "Snipe",
+  "label": "Snipe",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f99",
+  "type": "targetSpecies",
+  "code": "Sole",
+  "label": "Sole",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d37f1",
+  "type": "targetSpecies",
+  "code": "Sparrow",
+  "label": "Sparrow",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d386c",
+  "type": "targetSpecies",
+  "code": "Spider",
+  "label": "Spider",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f3c",
+  "type": "targetSpecies",
+  "code": "Squirrel",
+  "label": "Squirrel",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d37f6",
+  "type": "targetSpecies",
+  "code": "Starling",
+  "label": "Starling",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e74",
+  "type": "targetSpecies",
+  "code": "Sturgeon",
+  "label": "Sturgeon",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d37fa",
+  "type": "targetSpecies",
+  "code": "Swan",
+  "label": "Swan",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b44",
+  "type": "targetSpecies",
+  "code": "Tiger",
+  "label": "Tiger",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3863",
+  "type": "targetSpecies",
+  "code": "Tortoise",
+  "label": "Tortoise",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f0651",
+  "type": "authorisationType",
+  "code": "TURE",
+  "label": "Traditional herbal medicinal product - Registration",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "5ef9dc4b56b9a76fb8260533",
+  "type": "legalBasis",
+  "code": "",
+  "label": "TRADITIONAL USE -  Article 6, §1, 5th paragraph of Law 25/03/1964",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e7b",
+  "type": "targetSpecies",
+  "code": "Trout",
+  "label": "Trout",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3cf4",
+  "type": "targetSpecies",
+  "code": "Trout (embryonated egg)",
+  "label": "Trout (embryonated egg)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3f26",
+  "type": "targetSpecies",
+  "code": "Trout (fry)",
+  "label": "Trout (fry)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3ce3",
+  "type": "targetSpecies",
+  "code": "Trout (salmon brown)",
+  "label": "Trout (salmon brown)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3cef",
+  "type": "targetSpecies",
+  "code": "Trout - Golden/Rainbow/Redband/Steelhead",
+  "label": "Trout - Golden/Rainbow/Redband/Steelhead",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b48",
+  "type": "targetSpecies",
+  "code": "Tsushima wild cat",
+  "label": "Tsushima wild cat",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3cfe",
+  "type": "targetSpecies",
+  "code": "Turbot",
+  "label": "Turbot",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3804",
+  "type": "targetSpecies",
+  "code": "Turkey",
+  "label": "Turkey",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3801",
+  "type": "targetSpecies",
+  "code": "Turkey (cockerel)",
+  "label": "Turkey (cockerel)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3efc",
+  "type": "targetSpecies",
+  "code": "Turkey (for meat production)",
+  "label": "Turkey (for meat production)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3808",
+  "type": "targetSpecies",
+  "code": "Turkey (for reproduction)",
+  "label": "Turkey (for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3fa7",
+  "type": "targetSpecies",
+  "code": "Turkey (hen for reproduction)",
+  "label": "Turkey (hen for reproduction)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d37fd",
+  "type": "targetSpecies",
+  "code": "Turkey (hen)",
+  "label": "Turkey (hen)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3f9c",
+  "type": "targetSpecies",
+  "code": "Turkey (poult for breeding)",
+  "label": "Turkey (poult for breeding)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071dcf1d5301f17d3fa2",
+  "type": "targetSpecies",
+  "code": "Turkey (poult for egg production, future layer)",
+  "label": "Turkey (poult for egg production, future layer)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d380b",
+  "type": "targetSpecies",
+  "code": "Turkey (poult)",
+  "label": "Turkey (poult)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d3865",
+  "type": "targetSpecies",
+  "code": "Turtle",
+  "label": "Turtle",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc0719cf1d5301f17d380e",
+  "type": "targetSpecies",
+  "code": "Turtle dove",
+  "label": "Turtle dove",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c84be45d7429c9f064f",
+  "type": "authorisationType",
+  "code": "HOREUH",
+  "label": "Unitary Homeopathic medicinal product - Registration",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3d65",
+  "type": "targetSpecies",
+  "code": "Vole",
+  "label": "Vole",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3f00",
+  "type": "targetSpecies",
+  "code": "Wapiti (Cervus canadensis)",
+  "label": "Wapiti (Cervus canadensis)",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e0d",
+  "type": "legalBasis",
+  "code": "",
+  "label": "WELL ESTABLISHED USE - Article 10a of Directive 2001/83/EC",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e08",
+  "type": "legalBasis",
+  "code": "",
+  "label": "WELL ESTABLISHED USE - Article 6bis, §2 of Law 25/03/1964",
+  "usage": [
+   "human"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "52ab0c86be45d7429c9f3e23",
+  "type": "legalBasis",
+  "code": "",
+  "label": "WELL ESTABLISHED USE - Article 6bis, §7 of Law 25/03/1964",
+  "usage": [
+   "veterinary"
+  ],
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3c31",
+  "type": "targetSpecies",
+  "code": "Whale",
+  "label": "Whale",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3eca",
+  "type": "targetSpecies",
+  "code": "White tailed deer",
+  "label": "White tailed deer",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071ccf1d5301f17d3e03",
+  "type": "targetSpecies",
+  "code": "Wild boar",
+  "label": "Wild boar",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071acf1d5301f17d3a09",
+  "type": "targetSpecies",
+  "code": "Wolf",
+  "label": "Wolf",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3b62",
+  "type": "targetSpecies",
+  "code": "Young rabbit",
+  "label": "Young rabbit",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "62bc071bcf1d5301f17d3af3",
+  "type": "targetSpecies",
+  "code": "Zebra",
+  "label": "Zebra",
+  "usage": null,
+  "isRMA": null,
+  "sequence": 0
+ },
+ {
+  "id": "615c61ca82a96f1a1b5ca4fa",
+  "type": "documentType",
+  "code": "bijsluiter",
+  "label": "Leaflet",
+  "usage": [
+   "human",
+   "veterinary"
+  ],
+  "isRMA": false,
+  "sequence": 1
+ },
+ {
+  "id": "616fdcbf0e81e34b6a03c7f2",
+  "type": "documentType",
+  "code": "skp",
+  "label": "SPC",
+  "usage": [
+   "human",
+   "veterinary"
+  ],
+  "isRMA": false,
+  "sequence": 2
+ },
+ {
+  "id": "615c78b682a96f1a1b818c5d",
+  "type": "documentType",
+  "code": "rma_patients",
+  "label": "RMA",
+  "usage": [
+   "human",
+   "veterinary"
+  ],
+  "isRMA": true,
+  "sequence": 3
+ },
+ {
+  "id": "623b295da738256c8f9694fb",
+  "type": "documentType",
+  "code": "rma_professionals",
+  "label": "RMA",
+  "usage": [
+   "human",
+   "veterinary"
+  ],
+  "isRMA": true,
+  "sequence": 4
+ },
+ {
+  "id": "615c726882a96f1a1b78ceb8",
+  "type": "documentType",
+  "code": "dhpc",
+  "label": "DHPC",
+  "usage": [
+   "human",
+   "veterinary"
+  ],
+  "isRMA": false,
+  "sequence": 5
+ },
+ {
+  "id": "616fefe10e81e34b6a2090f6",
+  "type": "documentType",
+  "code": "srmp",
+  "label": "sRMP",
+  "usage": [
+   "human"
+  ],
+  "isRMA": false,
+  "sequence": 6
+ }
+]

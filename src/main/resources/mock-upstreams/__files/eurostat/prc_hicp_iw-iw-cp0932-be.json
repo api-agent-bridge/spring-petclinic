@@ -1,0 +1,188 @@
+{
+ "version": "2.0",
+ "class": "dataset",
+ "label": "Harmonised index of consumer prices (HICP) - ECOICOP ver.2 - item weights",
+ "source": "ESTAT",
+ "updated": "2026-09-17T11:00:00+0200",
+ "value": {
+  "0": 7.87,
+  "1": 7.65,
+  "2": 7.64,
+  "3": 7.42,
+  "4": 7.55
+ },
+ "id": [
+  "freq",
+  "coicop18",
+  "statinfo",
+  "geo",
+  "time"
+ ],
+ "size": [
+  1,
+  1,
+  1,
+  1,
+  5
+ ],
+ "dimension": {
+  "freq": {
+   "label": "Time frequency",
+   "category": {
+    "index": {
+     "A": 0
+    },
+    "label": {
+     "A": "Annual"
+    }
+   }
+  },
+  "coicop18": {
+   "label": "Classification of individual consumption by purpose (COICOP) - 2018",
+   "category": {
+    "index": {
+     "CP0932": 0
+    },
+    "label": {
+     "CP0932": "Pets and pet products (D)"
+    }
+   }
+  },
+  "statinfo": {
+   "label": "Statistical information",
+   "category": {
+    "index": {
+     "IW": 0
+    },
+    "label": {
+     "IW": "Item weights"
+    }
+   }
+  },
+  "geo": {
+   "label": "Geopolitical entity (reporting)",
+   "category": {
+    "index": {
+     "BE": 0
+    },
+    "label": {
+     "BE": "Belgium"
+    }
+   }
+  },
+  "time": {
+   "label": "Time",
+   "category": {
+    "index": {
+     "2022": 0,
+     "2023": 1,
+     "2024": 2,
+     "2025": 3,
+     "2026": 4
+    },
+    "label": {
+     "2022": "2022",
+     "2023": "2023",
+     "2024": "2024",
+     "2025": "2025",
+     "2026": "2026"
+    }
+   }
+  }
+ },
+ "extension": {
+  "lang": "EN",
+  "description": "<p><span style=\"color: rgb(81, 85, 96);\">In the Harmonised indices of consumer prices (HICP), item weights are assigned to all goods and services as well as special aggregates,&nbsp;determining&nbsp;their share in the calculation of the higher-level indices.&nbsp;They are updated annually and for each country and year, the item weights add up to 1,000.&nbsp;</span>This dataset is compiled according to the European Classification of Individual Consumption According to Purpose (ECOICOP) ver. 2.</p>",
+  "id": "PRC_HICP_IW",
+  "agencyId": "ESTAT",
+  "version": "1.0",
+  "datastructure": {
+   "id": "PRC_HICP_IW",
+   "agencyId": "ESTAT",
+   "version": "9.1"
+  },
+  "annotation": [
+   {
+    "type": "CREATED",
+    "date": "2026-01-23T09:13:26+0100"
+   },
+   {
+    "type": "DISSEMINATION_DOI_XML",
+    "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/PRC_HICP_IW\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/PRC_HICP_IW</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2026-01-23</dct:issued></adms:Identifier></adms:identifier>"
+   },
+   {
+    "type": "DISSEMINATION_EXPLANATORY_LINK",
+    "title": "text-category",
+    "href": "https://ec.europa.eu/eurostat/databrowser-backend/api/public/explanatory-notes/get/Info_note_HICP_COICOP18_20260128.pdf",
+    "text": "Information note"
+   },
+   {
+    "type": "DISSEMINATION_EXPLANATORY_LINK",
+    "title": "text-category",
+    "href": "https://ec.europa.eu/eurostat/databrowser-backend/api/public/explanatory-notes/get/Info_note_HICP_COICOP18_20260128.pdf"
+   },
+   {
+    "type": "DISSEMINATION_EXPLANATORY_LINK",
+    "title": "text-category",
+    "href": "https://ec.europa.eu/eurostat/databrowser-backend/api/public/explanatory-notes/get/Info_note_HICP_COICOP18_20260128.pdf"
+   },
+   {
+    "type": "DISSEMINATION_OBJECT_TYPE",
+    "title": "DATASET"
+   },
+   {
+    "type": "DISSEMINATION_TIMESTAMP_DATA",
+    "date": "2026-09-17T11:00:00+0200"
+   },
+   {
+    "type": "DISSEMINATION_TIMESTAMP_GLOBAL",
+    "date": "2026-09-17T11:00:00+0200"
+   },
+   {
+    "type": "DISSEMINATION_TIMESTAMP_PLANNED",
+    "date": "2026-09-17T11:00:00+0200"
+   },
+   {
+    "type": "ESMS_HTML",
+    "title": "Explanatory texts (metadata)",
+    "href": "https://ec.europa.eu/eurostat/cache/metadata/en/prc_hicp_esms.htm"
+   },
+   {
+    "type": "ESMS_SDMX",
+    "title": "Explanatory texts (metadata)",
+    "href": "https://ec.europa.eu/eurostat/api/dissemination/files?file=metadata/prc_hicp_esms.sdmx.zip"
+   },
+   {
+    "type": "OBS_COUNT",
+    "title": "485376"
+   },
+   {
+    "type": "OBS_PERIOD_OVERALL_LATEST",
+    "title": "2026"
+   },
+   {
+    "type": "OBS_PERIOD_OVERALL_OLDEST",
+    "title": "1996"
+   },
+   {
+    "type": "SOURCE_INSTITUTIONS",
+    "text": "Eurostat"
+   },
+   {
+    "type": "UPDATE_DATA",
+    "date": "2026-09-17T11:00:00+0200"
+   },
+   {
+    "type": "UPDATE_STRUCTURE",
+    "date": "2026-02-25T11:00:00+0100"
+   }
+  ],
+  "positions-with-no-data": {
+   "freq": [],
+   "coicop18": [],
+   "statinfo": [],
+   "geo": [],
+   "time": []
+  }
+ }
+}

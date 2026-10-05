@@ -1,0 +1,292 @@
+{
+  "mappings": [
+    {
+      "name": "EMA report medicines-output-medicines_json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/medicines-output-medicines_json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/medicines-output-medicines_json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 2746 records of the report"
+      }
+    },
+    {
+      "name": "EMA report documents-output-epar_documents_json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/documents-output-epar_documents_json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/documents-output-epar_documents_json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 20241 records of the report"
+      }
+    },
+    {
+      "name": "EMA report documents-output-non_epar_documents_json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/documents-output-non_epar_documents_json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/documents-output-non_epar_documents_json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 50426 records of the report"
+      }
+    },
+    {
+      "name": "EMA report events-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/events-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/events-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 2501 records of the report"
+      }
+    },
+    {
+      "name": "EMA report general-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/general-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/general-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 1065 records of the report"
+      }
+    },
+    {
+      "name": "EMA report medicine-use-outside-eu-output-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/medicine-use-outside-eu-output-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/medicine-use-outside-eu-output-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 19 of the 19 records of the report"
+      }
+    },
+    {
+      "name": "EMA report medicines-output-herbal_medicines-report-output-json_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/medicines-output-herbal_medicines-report-output-json_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/medicines-output-herbal_medicines-report-output-json_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 251 records of the report"
+      }
+    },
+    {
+      "name": "EMA report medicines-output-maximum_residue_limits-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/medicines-output-maximum_residue_limits-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/medicines-output-maximum_residue_limits-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 529 records of the report"
+      }
+    },
+    {
+      "name": "EMA report medicines-output-orphan_designations-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/medicines-output-orphan_designations-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/medicines-output-orphan_designations-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 3310 records of the report"
+      }
+    },
+    {
+      "name": "EMA report medicines-output-paediatric_investigation_plans-output-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/medicines-output-paediatric_investigation_plans-output-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/medicines-output-paediatric_investigation_plans-output-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 3377 records of the report"
+      }
+    },
+    {
+      "name": "EMA report medicines-output-periodic_safety_update_report_single_assessments-output-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/medicines-output-periodic_safety_update_report_single_assessments-output-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/medicines-output-periodic_safety_update_report_single_assessments-output-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 2720 records of the report"
+      }
+    },
+    {
+      "name": "EMA report medicines-output-post_authorisation_json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/medicines-output-post_authorisation_json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/medicines-output-post_authorisation_json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 152 records of the report"
+      }
+    },
+    {
+      "name": "EMA report news-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/news-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/news-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 3890 records of the report"
+      }
+    },
+    {
+      "name": "EMA report referrals-output-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/referrals-output-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/referrals-output-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 592 records of the report"
+      }
+    },
+    {
+      "name": "EMA report shortages-output-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/shortages-output-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/shortages-output-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 85 of the 85 records of the report"
+      }
+    },
+    {
+      "name": "EMA report dhpc-output-json-report_en",
+      "priority": 2,
+      "request": {
+        "method": "GET",
+        "urlPath": "/ema/en/documents/report/dhpc-output-json-report_en.json"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "ema/dhpc-output-json-report_en.json"
+      },
+      "metadata": {
+        "description": "The first 100 of the 174 records of the report"
+      }
+    }
+  ]
+}

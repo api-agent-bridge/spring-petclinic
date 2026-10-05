@@ -1,0 +1,124 @@
+{
+ "hazardCategories": [
+  {
+   "id": 21806,
+   "description": "GMO / novel food"
+  },
+  {
+   "id": 21789,
+   "description": "TSEs"
+  },
+  {
+   "id": 21797,
+   "description": "adulteration / fraud"
+  },
+  {
+   "id": 21798,
+   "description": "allergens"
+  },
+  {
+   "id": 21782,
+   "description": "biological contaminants"
+  },
+  {
+   "id": 21802,
+   "description": "biotoxins (other)"
+  },
+  {
+   "id": 21786,
+   "description": "chemical contamination (other)"
+  },
+  {
+   "id": 21793,
+   "description": "composition"
+  },
+  {
+   "id": 26845,
+   "description": "environmental pollutants"
+  },
+  {
+   "id": 21803,
+   "description": "feed additives"
+  },
+  {
+   "id": 21792,
+   "description": "food additives and flavourings"
+  },
+  {
+   "id": 21787,
+   "description": "foreign bodies"
+  },
+  {
+   "id": 26581,
+   "description": "genetically modified"
+  },
+  {
+   "id": 21783,
+   "description": "heavy metals"
+  },
+  {
+   "id": 21790,
+   "description": "industrial contaminants"
+  },
+  {
+   "id": 21794,
+   "description": "labelling absent/incomplete/incorrect"
+  },
+  {
+   "id": 21784,
+   "description": "migration"
+  },
+  {
+   "id": 21800,
+   "description": "mycotoxins"
+  },
+  {
+   "id": 26602,
+   "description": "natural toxins (other)"
+  },
+  {
+   "id": 21804,
+   "description": "non-pathogenic micro-organisms"
+  },
+  {
+   "id": 21805,
+   "description": "not determined (other)"
+  },
+  {
+   "id": 26580,
+   "description": "novel food"
+  },
+  {
+   "id": 21807,
+   "description": "organoleptic aspects"
+  },
+  {
+   "id": 21788,
+   "description": "packaging defective / incorrect"
+  },
+  {
+   "id": 21785,
+   "description": "parasitic infestation"
+  },
+  {
+   "id": 21801,
+   "description": "pathogenic micro-organisms"
+  },
+  {
+   "id": 21795,
+   "description": "pesticide residues"
+  },
+  {
+   "id": 21799,
+   "description": "poor or insufficient controls"
+  },
+  {
+   "id": 21791,
+   "description": "radiation"
+  },
+  {
+   "id": 21796,
+   "description": "residues of veterinary medicinal products"
+  }
+ ]
+}

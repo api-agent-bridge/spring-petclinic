@@ -1,0 +1,241 @@
+{
+  "id": 869234,
+  "reference": "2026.7750",
+  "subject": "CBD in animal feed from the Netherlands",
+  "ecValidationDate": "02-09-2026 12:46:36",
+  "lastUpdate": "24-09-2026 12:39:26",
+  "notificationClassification": {
+    "id": 304,
+    "description": "information notification for attention"
+  },
+  "productType": {
+    "id": 282,
+    "description": "feed"
+  },
+  "notificationBasis": {
+    "id": 18682,
+    "description": "monitoring of media"
+  },
+  "product": {
+    "id": 30977943,
+    "description": "CBD oil",
+    "productCategory": {
+      "id": 18429,
+      "description": "pet food"
+    },
+    "productDescriptions": [
+      {
+        "id": 30977953,
+        "productAspect": "10 ml – 2% CBD - 240 drops",
+        "weight": "10.0",
+        "weightUnit": {
+          "id": 18971,
+          "description": "ml"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 30977980,
+        "productAspect": "20 ml – 2% CBD - 480 drops",
+        "weight": "20.0",
+        "weightUnit": {
+          "id": 18971,
+          "description": "ml"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 30977993,
+        "productAspect": "10 ml – 2% CBD - 240 drops",
+        "weight": "10.0",
+        "weightUnit": {
+          "id": 18971,
+          "description": "ml"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      },
+      {
+        "id": 30978041,
+        "productAspect": "20 ml – 2% CBD - 480 drops",
+        "weight": "20.0",
+        "weightUnit": {
+          "id": 18971,
+          "description": "ml"
+        },
+        "temperature": {
+          "id": 27368,
+          "description": "ambient"
+        }
+      }
+    ],
+    "distributionStatus": {
+      "id": 228,
+      "description": "product traded online"
+    }
+  },
+  "risk": {
+    "id": 140717,
+    "riskDecision": "potential risk",
+    "hazardObserved": "Unauthorised CBD in feed"
+  },
+  "organizationFlags": [
+    {
+      "organization": {
+        "id": 52,
+        "description": "Hungary",
+        "code": "HU",
+        "countryNetworkOrganizationId": 5017
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 869234,
+          "flagType": "NOTIFYING"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 38,
+        "description": "Netherlands",
+        "code": "NL",
+        "countryNetworkOrganizationId": 5026
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 869234,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 872047,
+          "flagType": "FOR_ATTENTION"
+        },
+        {
+          "notificationId": 869234,
+          "flagType": "ORIGIN"
+        },
+        {
+          "notificationId": 869234,
+          "flagType": "OPERATOR"
+        }
+      ]
+    },
+    {
+      "organization": {
+        "id": 42,
+        "description": "Romania",
+        "code": "RO",
+        "countryNetworkOrganizationId": 5030
+      },
+      "notificationFlags": [
+        {
+          "notificationId": 869234,
+          "flagType": "FOR_FOLLOW_UP"
+        },
+        {
+          "notificationId": 869234,
+          "flagType": "OPERATOR"
+        }
+      ]
+    }
+  ],
+  "followups": [
+    {
+      "fupNumber": 1,
+      "fupId": 872047,
+      "networkOrganizationId": 1,
+      "organizationDescription": "European Commission",
+      "organizationCode": "EU",
+      "fupDate": "10-09-2026 10:56:01",
+      "fupType": {
+        "id": 27665,
+        "description": "request"
+      },
+      "additionalInfoId": 31015749
+    },
+    {
+      "fupNumber": 2,
+      "fupId": 870807,
+      "networkOrganizationId": 52,
+      "organizationDescription": "Hungary",
+      "organizationCode": "HU",
+      "fupDate": "18-09-2026 11:05:50",
+      "fupType": {
+        "id": 27670,
+        "description": "notification reclassification"
+      },
+      "additionalInfoId": 30999318
+    },
+    {
+      "fupNumber": 3,
+      "fupId": 875072,
+      "networkOrganizationId": 179,
+      "organizationDescription": "Bucuresti",
+      "organizationCode": "RO",
+      "fupDate": "24-09-2026 12:39:26",
+      "fupType": {
+        "id": 27659,
+        "description": "outcome of investigations and measures taken"
+      },
+      "additionalInfoId": 31057155
+    }
+  ],
+  "notificationStatus": "ec_validated",
+  "additionalInformations": [
+    {
+      "id": 30999318,
+      "organization": "Nébih",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31057155,
+      "organization": "NSVFSA//////DSVSA Bucuresti",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 30977944,
+      "organization": "Nébih",
+      "contactPerson": "A contact person of the notifying authority"
+    },
+    {
+      "id": 31015749,
+      "organization": "European Commission"
+    }
+  ],
+  "localConsumerLinksByCountry": {
+    "5026": [
+      {
+        "id": 30,
+        "countryNetworkOrganizationId": 5026,
+        "link": "https://www.nvwa.nl/onderwerpen/voedselveiligheid/veiligheidswaarschuwingen/overzicht-veiligheidswaarschuwingen"
+      }
+    ],
+    "5030": [
+      {
+        "id": 33,
+        "countryNetworkOrganizationId": 5030,
+        "link": "https://www.ansvsa.ro/informatii-pentru-public/produse-rechemateretrase/"
+      }
+    ],
+    "5017": [
+      {
+        "id": 20,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://nkfh.gov.hu/"
+      },
+      {
+        "id": 21,
+        "countryNetworkOrganizationId": 5017,
+        "link": "https://portal.nebih.gov.hu/termekvisszahivas"
+      }
+    ]
+  }
+}

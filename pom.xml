@@ -36,6 +36,7 @@
     <nohttp-checkstyle.version>0.0.11</nohttp-checkstyle.version>
     <spring-format.version>0.0.47</spring-format.version>
     <wiremock.version>3.13.2</wiremock.version>
+    <spring-ai.version>2.0.1</spring-ai.version>
   </properties>
 
   <dependencies>
@@ -92,6 +93,12 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-security-oauth2-resource-server</artifactId>
+    </dependency>
+    <!-- The embedding model behind the schema search of GATool's dynamic tools, served by Ollama -->
+    <dependency>
+      <groupId>org.springframework.ai</groupId>
+      <artifactId>spring-ai-starter-model-ollama</artifactId>
+      <version>${spring-ai.version}</version>
     </dependency>
     <!-- Serves recorded responses of the external services when the "mock" profile is active -->
     <dependency>

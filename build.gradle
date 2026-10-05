@@ -93,6 +93,7 @@ checkstyleNohttp {
 
 nohttp {
   source.exclude "**/node_modules/**"
+  source.exclude "**/target/**"
 }
 
 tasks.named("formatMain").configure { dependsOn("checkstyleMain") }

@@ -1,3 +1,21 @@
+# GATool demo: Spring Petclinic behind GraphQL and MCP
+
+This fork of [Spring Petclinic](https://github.com/spring-projects/spring-petclinic) demos GATool, which serves a GraphQL API to AI agents as MCP tools. `main` is the original Spring Petclinic, and this section is its only change. The demo is built up on the branches below, and each branch adds to the one before it:
+
+| Branch | What it adds |
+| --- | --- |
+| [`step-1-graphql-petclinic`](../../tree/step-1-graphql-petclinic) | A GraphQL API over Petclinic's data: queries for owners, pets, visits, vets and pet types, and the five writes of the web forms as mutations |
+| [`step-2-gatool-petclinic`](../../tree/step-2-gatool-petclinic) | GATool, serving the GraphQL API as MCP tools generated from the schema |
+| [`step-3-curatedOperations`](../../tree/step-3-curatedOperations) | Curated GATool operations in place of the generated tools |
+| [`step-4-automatedEval`](../../tree/step-4-automatedEval) | promptfoo evals that ask local Ollama models questions through the MCP tools, and check their answers and tool calls |
+| [`step-5-dogZones`](../../tree/step-5-dogZones) | The off-leash dog zones nearest to an owner, from the City of Antwerp's SOAP services, and a mock mode that answers from recorded responses |
+| [`step-6-security`](../../tree/step-6-security) | The MCP endpoint secured as an OAuth 2.1 resource server, with tokens from Keycloak |
+| [`step-6b-security`](../../tree/step-6b-security) | The tests of the web pages, running again with the MCP endpoint secured |
+| [`step-7-dynamicTools`](../../tree/step-7-dynamicTools) | GATool's three dynamic tools (`searchSchema`, `introspectType` and `executeGraphql`) in place of the curated ones, with an embedding model in Ollama to search the schema |
+| [`step-8-largeSchema`](../../tree/step-8-largeSchema) | A large schema with public data on medicines, food safety alerts, prices and species, from EMA, the Belgian medicines database, RASFF, Eurostat and GBIF. MCP calls without a token are allowed on this branch, for the demo |
+
+---
+
 # Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml)[![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/gradle-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/gradle-build.yml)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/spring-projects/spring-petclinic) [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=7517918)

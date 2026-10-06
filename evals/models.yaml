@@ -5,10 +5,6 @@
 - id: ./mcp-agent.mjs
   label: qwen3.5-0.8b
   config: { model: 'qwen3.5:0.8b' }
-# Meta
-- id: ./mcp-agent.mjs
-  label: llama3.2-3b
-  config: { model: 'llama3.2:latest' }
 # Liquid AI
 - id: ./mcp-agent.mjs
   label: lfm2.5-8b

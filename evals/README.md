@@ -15,18 +15,17 @@ Every model runs the way Ollama ships it, the way `ollama run` runs it, and the 
 - **Sampling.** The provider leaves the sampling options out of its requests. Ollama starts from its defaults (temperature 0.8, top_k 40, top_p 0.9) and applies the parameters of the model's Modelfile over them, which `ollama show --parameters <model>` lists. Ollama's OpenAI-compatible endpoint, `/v1/chat/completions`, sets temperature 1.0 and top_p 1.0 when a request leaves them out (`openai/openai.go` in Ollama 0.32.15), so the provider calls `/api/chat` instead.
 - **Thinking.** Ollama turns thinking on for every model that supports it ([docs](https://docs.ollama.com/capabilities/thinking)). Each answer goes back into the conversation with its thinking, as Ollama's [tool calling docs](https://docs.ollama.com/capabilities/tool-calling) do it.
 - **Context.** On this Mac, with more than 48 GiB of GPU memory, Ollama gives each model 262,144 tokens of context, or the model's maximum where that is smaller ([docs](https://docs.ollama.com/context-length)). The `CONTEXT` column of `ollama ps` shows it. The largest request of a full run was 6,410 tokens.
-- **Quantization.** The default Ollama tag of each model: `qwen3.5:0.8b` is 8-bit, `gpt-oss:20b` is MXFP4, and the other ten are 4-bit (`Q4_K_M`).
+- **Quantization.** The default Ollama tag of each model: `qwen3.5:0.8b` is 8-bit, `gpt-oss:20b` is MXFP4, and the other nine are 4-bit (`Q4_K_M`).
 - **System prompt.** Ours says the assistant works for a veterinary clinic and gives today's date. It replaces the system prompt a model brings, such as Ornith's "agentic coding assistant" or Mistral's default one.
 - **Loading.** The provider loads the model before the 60 seconds of a question start, so a large model keeps all of its time for the question. The grid shows the loading time in a column of its own.
 
 promptfoo's [guide for comparing open models](https://www.promptfoo.dev/docs/guides/compare-open-source-models/) runs every model at temperature 0.01. We run each one at its own settings instead, because that is how people use them.
 
-Where the Modelfile leaves a value out, the model runs at Ollama's default, and for five models that differs from what their maker recommends:
+Where the Modelfile leaves a value out, the model runs at Ollama's default, and for four models that differs from what their maker recommends:
 
 | Model | Ollama runs it with | The maker recommends | Source |
 | --- | --- | --- | --- |
 | `qwen3.5:0.8b` | temperature 1, top_k 20, top_p 0.95, presence_penalty 1.5 | the same, for thinking mode | [Qwen](https://huggingface.co/Qwen/Qwen3.5-0.8B) |
-| `llama3.2` | temperature 0.8, top_k 40, top_p 0.9 | temperature 0.6, top_p 0.9 | [Meta](https://github.com/meta-llama/llama-models/blob/main/models/llama3/generation.py) |
 | `lfm2.5:8b` | temperature 0.2, top_k 80, repeat_penalty 1.05, top_p 0.9 | the same, without top_p | [Liquid AI](https://huggingface.co/LiquidAI/LFM2.5-8B-A1B) |
 | `granite4.1:8b` | temperature 0.8, top_k 40, top_p 0.9 | IBM does not publish a recommendation | [IBM](https://huggingface.co/ibm-granite/granite-4.1-8b) |
 | `ornith:9b` | temperature 0.6, top_k 20, top_p 0.95 | the same | [Ornith](https://huggingface.co/ornith-ai/Ornith-1.0-9B) |
@@ -111,7 +110,7 @@ npm run view                           # the grid in a browser, with every answe
 
 ## How long it takes
 
-On a trial run, `qwen3:8b` took 54 seconds for six read questions and `llama3.2` took 5 seconds, because `qwen3:8b` reasons before each answer. The sixteen read questions on 22 models took 72 minutes. `laguna-s-2.1` took 23 of those minutes, because Ollama loads its 66 GB again for every question. `models.yaml` now keeps one model for each maker, and the read questions on those 12 models take about 30 minutes. Run the full grid before the talk.
+On a trial run, `qwen3:8b` took 54 seconds for six read questions and `llama3.2` took 5 seconds, because `qwen3:8b` reasons before each answer. The sixteen read questions on 22 models took 72 minutes. `laguna-s-2.1` took 23 of those minutes, because Ollama loads its 66 GB again for every question. `models.yaml` now keeps one model for each maker apart from Meta. `llama3.2` called a tool for the greeting and for the capital of Croatia in every run, and passed 16 of 48 runs in the three-repeat run of 6 October 2026, so it left the list. The read questions on the 11 models take about 30 minutes, and about 90 with `--repeat 3`. Run the full grid before the talk.
 
 The agent has 60 seconds for each question, counted from the moment the model is in memory. A model that runs out of time ends the run with an error, which the grid shows as `E1`. `timeoutSeconds` in the `config` of a provider changes the limit. `promptfoo view` keeps every run in `~/.promptfoo` and works without an account or a network, so the grid is ready on stage, and one question on two models runs live in a minute or two.
 
@@ -124,7 +123,7 @@ Every model writes to the same app. After the first model, Harold Davis already 
 | File | What it is |
 | --- | --- |
 | `mcp-agent.mjs` | The promptfoo provider that runs the agent loop over MCP |
-| `models.yaml` | The 12 local models, one for each maker, smallest first |
+| `models.yaml` | The 11 local models, smallest first |
 | `queries.yaml` | The sixteen read questions with their checks |
 | `mutations.yaml` | The seven write questions with their checks |
 | `assert-tools.mjs` | The check of the tool calls |
